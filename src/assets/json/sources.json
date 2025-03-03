@@ -1,0 +1,1906 @@
+{
+  "entries": {
+    "allianz-leadform": {
+      "default": {
+        "origin": "generic",
+        "source": "",
+        "category": "leadFormDirect",
+        "woher": {
+          "de": "Online-Formular auf Allianz Website",
+          "fr": "Formulaire en ligne sur le site web d'Allianz",
+          "it": "Modulo online sul sito web di Allianz"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "lby_kb-formular": {
+        "origin": "leadByYou",
+        "source": "social",
+        "category": "unspecifiedProduct",
+        "woher": {
+          "de": "LeadByYou: Dein persönliches standard Leadformular",
+          "fr": "LeadByYou: ton formulaire de lead standard personnel",
+          "it": "LeadByYou: il tuo modulo standard personale"
+        },
+        "was": {
+          "de": "Hat eine Beratung angefordert",
+          "fr": "A demandé un conseil",
+          "it": "Ha chiesto una consulenza"
+        }
+      },
+      "KB-Formular": {
+        "origin": "leadByYou",
+        "source": "social",
+        "category": "unspecifiedProduct",
+        "woher": {
+          "de": "LeadByYou: Dein persönliches standard Leadformular",
+          "fr": "LeadByYou: ton formulaire de lead standard personnel",
+          "it": "LeadByYou: il tuo modulo standard personale"
+        },
+        "was": {
+          "de": "Hat eine Beratung angefordert",
+          "fr": "A demandé un conseil",
+          "it": "Ha chiesto una consulenza"
+        }
+      },
+      "Vereinsinitiative": {
+        "origin": "leadByYou",
+        "source": "social",
+        "category": "vorsorge",
+        "woher": {
+          "de": "LeadByYou: Vereinsinitiative",
+          "fr": "LeadByYou: initiative d'association",
+          "it": "LeadByYou: Campagna associazioni"
+        },
+        "was": {
+          "de": "Hat eine Beratung angefordert",
+          "fr": "A demandé un conseil",
+          "it": "Ha chiesto una consulenza"
+        }
+      },
+      "lby_vereinsinitiative": {
+        "origin": "leadByYou",
+        "source": "social",
+        "category": "vorsorge",
+        "woher": {
+          "de": "LeadByYou: Vereinsinitiative",
+          "fr": "LeadByYou: initiative d'association",
+          "it": "LeadByYou: Campagna associazioni"
+        },
+        "was": {
+          "de": "Hat eine Beratung angefordert",
+          "fr": "A demandé un conseil",
+          "it": "Ha chiesto una consulenza"
+        }
+      },
+      "lby_khh": {
+        "origin": "leadByYou",
+        "source": "social",
+        "category": "haushalt",
+        "woher": {
+          "de": "LeadByYou: Kombi-Haushaltsversicherung",
+          "fr": "LeadByYou: assurance combinée ménage",
+          "it": "LeadByYou: Assicurazione combinata di economia domestica"
+        },
+        "was": {
+          "de": "Hat eine Beratung angefordert",
+          "fr": "A demandé un conseil",
+          "it": "Ha chiesto una consulenza"
+        }
+      },
+      "lby_rechtsschutz": {
+        "origin": "leadByYou",
+        "source": "social",
+        "category": "rechtsschutz",
+        "woher": {
+          "de": "LeadByYou: Rechtsschutz",
+          "fr": "LeadByYou: protection juridique",
+          "it": "LeadByou: Protezione giuridica"
+        },
+        "was": {
+          "de": "Hat eine Beratung angefordert",
+          "fr": "A demandé un conseil",
+          "it": "Ha chiesto una consulenza"
+        }
+      },
+      "lby_reise": {
+        "origin": "leadByYou",
+        "source": "social",
+        "category": "reisen",
+        "woher": {
+          "de": "LeadByYou: Reise",
+          "fr": "LeadByYou: voyage",
+          "it": "LeadByou: Viaggi"
+        },
+        "was": {
+          "de": "Hat eine Beratung angefordert",
+          "fr": "A demandé un conseil",
+          "it": "Ha chiesto una consulenza"
+        }
+      },
+      "lby_vorsorgeluecke": {
+        "origin": "leadByYou",
+        "source": "social",
+        "category": "vorsorge",
+        "woher": {
+          "de": "LeadByYou: Vorsorgelücke",
+          "fr": "LeadByYou: lacune de prévoyance",
+          "it": "LeadByou: Lacune previdenziali"
+        },
+        "was": {
+          "de": "Hat eine Beratung angefordert",
+          "fr": "A demandé un conseil",
+          "it": "Ha chiesto una consulenza"
+        }
+      },
+      "lby_kmu": {
+        "origin": "leadByYou",
+        "source": "social",
+        "category": "kmu",
+        "woher": {
+          "de": "LeadByYou: KMU",
+          "fr": "LeadByYou: PME",
+          "it": "LeadByou: PMI"
+        },
+        "was": {
+          "de": "Hat eine Beratung angefordert",
+          "fr": "A demandé un conseil",
+          "it": "Ha chiesto una consulenza"
+        }
+      },
+      "lby_fondsanlagen": {
+        "origin": "leadByYou",
+        "source": "social",
+        "category": "fondsanlagen",
+        "woher": {
+          "de": "LeadByYou: Fondsanlagen",
+          "fr": "LeadByYou: Fonds de Placements",
+          "it": "LeadByYou: Investimenti in Fondi"
+        },
+        "was": {
+          "de": "Hat eine Beratung angefordert",
+          "fr": "A demandé un conseil",
+          "it": "Ha chiesto una consulenza"
+        }
+      },
+      "mustervertrag_cap": {
+        "origin": "campaign",
+        "source": "mail",
+        "category": "rechtsschutz",
+        "form_url": {
+          "de": "https://allianzmsche.sharepoint.com/:b:/t/CH0116-3104371/EasqUfqRtNpAmaVpquYIrV8BoQXj8mwjyLwmH2wfDod94g?e=tPcfWx",
+          "fr": "https://allianzmsche.sharepoint.com/:b:/t/CH0116-3104371/EZUg0cDlNX9Gv_Q77-nAmpgBAFLMGrvn78JpgIPzmQIqrg?e=tbX6D9",
+          "it": "https://allianzmsche.sharepoint.com/:b:/t/CH0116-3104371/EVUOgViz_uVPoOHrYN4pDmEBiPCbxPV6zsreYPf_KQfiTw?e=A1vLRK"
+        },
+        "woher": {
+          "de": "Mail zu CAP Rechtsschutz",
+          "fr": "E-mail concernant la protection juridique",
+          "it": "Em-mail relativa a Protezione giuridica CAP"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_angebot_haushaltsversicherung": {
+        "origin": "angebot",
+        "source": "direct",
+        "category": "haushaltsversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/privatkunden/angebote/wohnen-recht/haushaltsversicherung.html",
+          "fr": "https://www.allianz.ch/fr/clients-prives/offres/habitation-droits/assurance-rc-menage.html",
+          "it": "https://www.allianz.ch/it/clienti-privati/offerte/casa-tutela-diritti/assicurazione-economia-domestica.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Haushaltsversicherung (P)",
+          "fr": "Formulaire en ligne: Assurance-rc-menage (P)",
+          "it": "Modulo online assicurazione-economia-domestica (P)"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil/Offre",
+          "it": "Consulenz/Offerta"
+        }
+      },
+      "p_angebot_haftpflichtversicherung": {
+        "origin": "angebot",
+        "source": "direct",
+        "category": "haftpflichtversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/privatkunden/angebote/wohnen-recht/haftpflichtversicherung.html",
+          "fr": "https://www.allianz.ch/fr/clients-prives/offres/habitation-droits/assurance-rc.html",
+          "it": "https://www.allianz.ch/it/clienti-privati/offerte/casa-tutela-diritti/assicurazione-rc-privata.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Haftpflichtversicherung (P)",
+          "fr": "Formulaire en ligne: Assurance-rc (P)",
+          "it": "Modulo online assicurazione-rc-privata (P)"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil/Offre",
+          "it": "Consulenz/Offerta"
+        }
+      },
+      "p_angebot_hausratversicherung": {
+        "origin": "angebot",
+        "source": "direct",
+        "category": "hausratversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/privatkunden/angebote/wohnen-recht/hausratversicherung.html",
+          "fr": "https://www.allianz.ch/fr/clients-prives/offres/habitation-droits/assurance-menage.html",
+          "it": "https://www.allianz.ch/it/clienti-privati/offerte/casa-tutela-diritti/assicurazione-mobilia-domestica.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Hausratversicherung (P)",
+          "fr": "Formulaire en ligne: Assurance-menage (P)",
+          "it": "Modulo online assicurazione-mobilia-domestica (P)"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil/Offre",
+          "it": "Consulenz/Offerta"
+        }
+      },
+      "p_angebot_hausrat-all-risk": {
+        "origin": "angebot",
+        "source": "direct",
+        "category": "hausrat-all-risk",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/privatkunden/angebote/wohnen-recht/hausrat-all-risk.html",
+          "fr": "https://www.allianz.ch/fr/clients-prives/offres/habitation-droits/menage-all-risk.html",
+          "it": "https://www.allianz.ch/it/clienti-privati/offerte/casa-tutela-diritti/mobilia-domestica-all-risk.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Hausrat-All-Risk (P)",
+          "fr": "Formulaire en ligne: Menage-all-risk (P)",
+          "it": "Modulo online mobilia-domestica-all-risk (P)"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil/Offre",
+          "it": "Consulenz/Offerta"
+        }
+      },
+      "saeule-3a_angebot": {
+        "origin": "productSpecific",
+        "source": "sea",
+        "category": "säule3a",
+        "woher": {
+          "de": "Online-Formular zu Vorsorgelücke",
+          "fr": "Formulaire en ligne sur les lacunes de prévoyance",
+          "it": "Modulo online sulle lacune previdenziali"
+        },
+        "was": {
+          "de": "Beratung / Offerte",
+          "fr": "Conseil / offre",
+          "it": "Consulenza / offerta"
+        }
+      },
+      "khh_angebot_tutti": {
+        "origin": "productSpecific",
+        "source": "display",
+        "category": "khh",
+        "woher": {
+          "de": "Inserat auf tutti.ch (KHH)",
+          "fr": "Annonce sur tutti.ch (CM)",
+          "it": "Pubblicità su tutti.ch (EDC)"
+        },
+        "was": {
+          "de": "Beratung/Offerte basierend auf Inserat",
+          "fr": "Conseil/offre sur la base de l'annonce",
+          "it": "Consulenza/offerta basata sulla pubblicità"
+        }
+      },
+      "khh_angebot": {
+        "origin": "productSpecific",
+        "source": "sea",
+        "category": "khh",
+        "woher": {
+          "de": "Online-Formular zu KHH",
+          "fr": "Formulaire en ligne CM",
+          "it": "Modulo online per la EDC"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil / offre",
+          "it": "Consulenza/offerta"
+        }
+      },
+      "khh_jugendrabatt": {
+        "origin": "productSpecific",
+        "source": "sea",
+        "category": "khh",
+        "woher": {
+          "de": "Online-Formular zu KHH (20% Jugendrabatt)",
+          "fr": "Formulaire en ligne: CM (20% de réduction pour les jeunes)",
+          "it": "Modulo online: EDC (sconto giovani del 30%)"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil / offre",
+          "it": "Consulenza/offerta"
+        }
+      },
+      "vorsorgeluecken_angebot": {
+        "origin": "productSpecific",
+        "source": "sea",
+        "category": "vorsorge",
+        "woher": {
+          "de": "Online-Formular zu Vorsorgelücken",
+          "fr": "Formulaire en ligne: Lacunes de prévoyance",
+          "it": "Modulo online: Lacune previdenziali"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil / offre",
+          "it": "Consulenza/offerta"
+        }
+      },
+      "reise_angebot": {
+        "origin": "productSpecific",
+        "source": "sea",
+        "category": "reisen",
+        "woher": {
+          "de": "Online-Formular zu Reise",
+          "fr": "Formulaire en ligne Voyage",
+          "it": "Modulo online per l'assicurazione viaggi"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil / offre",
+          "it": "Consulenza/offerta"
+        }
+      },
+      "mf_angebot": {
+        "origin": "productSpecific",
+        "source": "sea",
+        "category": "auto",
+        "woher": {
+          "de": "Online-Formular zu MF",
+          "fr": "Formulaire en ligne voiture",
+          "it": "Modulo online per l'assicurazione auto"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil / offre",
+          "it": "Consulenza/offerta"
+        }
+      },
+      "fondsanlagen_angebot": {
+        "origin": "productSpecific",
+        "source": "sea",
+        "category": "fondsanlagen",
+        "form_url": {
+          "de": "https://allianzms.sharepoint.com/sites/ch0012-connect-az-suisse-ga-info-plattform/SitePages/03_GA2024_Digital%20Campaigns.aspx#push-allianz-fondsanlagen-mit-200.-zusatzkapital-via-google-suche-und-exklusive-werbepartner*",
+          "fr": "https://allianzms.sharepoint.com/sites/ch0012-connect-az-suisse-ga-info-plattform/SitePages/fr/03_GA2024_Digital%20Campaigns.aspx#push-allianz-placements-en-fonds-avec-200.-capital-bonus-via",
+          "it": "https://allianzms.sharepoint.com/sites/ch0012-connect-az-suisse-ga-info-plattform/SitePages/03_GA2024_Digital%20Campaigns.aspx#push-allianz-fondsanlagen-mit-200.-zusatzkapital-via-google-suche-und-exklusive-werbepartner*"
+        },
+        "woher": {
+          "de": "Online-Formular zu Fondsanlagen (Aktion mit CHF 200.- Bonuskapital)",
+          "fr": "Formulaire fonds de placement (action avec CHF 200.- de capital bonus)",
+          "it": "Modulo online per gli investimenti in fondi (promozione con 200 CHF di capitale bonus)"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil / offre",
+          "it": "Consulenza/offerta"
+        }
+      },
+      "kmu_angebot": {
+        "origin": "productSpecific",
+        "source": "sea",
+        "category": "kmu",
+        "woher": {
+          "de": "Online-Formular zu KMU",
+          "fr": "Formularie en ligne: PME",
+          "it": "Modulo online: PMI"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil / offre",
+          "it": "Consulenza/offerta"
+        }
+      },
+      "mf_angebot_tutti": {
+        "origin": "productSpecific",
+        "source": "display",
+        "category": "mf",
+        "woher": {
+          "de": "Inserat auf tutti.ch (MF)",
+          "fr": "Annonce sur tutti.ch (VM)",
+          "it": "Pubblicità su tutti.ch (VM)"
+        },
+        "was": {
+          "de": "Beratung/Offerte basierend auf Inserat",
+          "fr": "Conseil/offre sur la base de l'annonce",
+          "it": "Consulenza/offerta basata sulla pubblicità"
+        }
+      },
+      "mf_angebot_anibis": {
+        "origin": "productSpecific",
+        "source": "display",
+        "category": "mf",
+        "woher": {
+          "de": "Inserat auf anibis.ch (MF)",
+          "fr": "Annonce sur anibis.ch (VM)",
+          "it": "Pubblicità su anibis.ch (VM)"
+        },
+        "was": {
+          "de": "Beratung/Offerte basierend auf Inserat",
+          "fr": "Conseil/offre sur la base de l'annonce",
+          "it": "Consulenza/offerta basata sulla pubblicità"
+        }
+      },
+      "rs_angebot": {
+        "origin": "productSpecific",
+        "source": "sea",
+        "category": "privatrechtsschutz",
+        "woher": {
+          "de": "Online-Formular zu Fondsanlagen",
+          "fr": "Formulaire fonds de placement",
+          "it": "Modulo online per gli investimenti in fondi"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil / offre",
+          "it": "Consulenza/offerta"
+        }
+      },
+      "lby_mf": {
+        "origin": "leadByYou",
+        "source": "social",
+        "category": "auto",
+        "woher": {
+          "de": "Online-Formular zu Fondsanlagen",
+          "fr": "Formulaire fonds de placement",
+          "it": "Modulo online per gli investimenti in fondi"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil / offre",
+          "it": "Consulenza/offerta"
+        }
+      },
+      "moveagain_khh": {
+        "origin": "productSpecific",
+        "source": "affiliate",
+        "category": "moveagain",
+        "woher": {
+          "de": "Online-Formular zu Fondsanlagen",
+          "fr": "Formulaire fonds de placement",
+          "it": "Modulo online per gli investimenti in fondi"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil / offre",
+          "it": "Consulenza/offerta"
+        }
+      },
+      "fondsanlagen_angebot_affiliate": {
+        "origin": "productSpecific",
+        "source": "affiliate",
+        "category": "fondsanlagen",
+        "form_url": {
+          "de": "https://allianzms.sharepoint.com/sites/ch0012-connect-az-suisse-ga-info-plattform/SitePages/03_GA2024_Digital%20Campaigns.aspx#push-allianz-fondsanlagen-mit-200.-zusatzkapital-via-google-suche-und-exklusive-werbepartner*",
+          "fr": "https://allianzms.sharepoint.com/sites/ch0012-connect-az-suisse-ga-info-plattform/SitePages/fr/03_GA2024_Digital%20Campaigns.aspx#push-allianz-placements-en-fonds-avec-200.-capital-bonus-via",
+          "it": ""
+        },
+        "woher": {
+          "de": "Online-Formular zu Fondsanlagen (Aktion mit CHF 200.- Bonuskapital)",
+          "fr": "Formulaire fonds de placement (action avec CHF 200.- de capital bonus)",
+          "it": "Modulo online per gli investimenti in fondi (promozione con 200 CHF di capitale bonus)"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil / offre",
+          "it": "Consulenza/offerta"
+        }
+      },
+      "u_angebote_betriebsversicherung": {
+        "origin": "angebote",
+        "source": "direct",
+        "category": "betriebsversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/angebote/kombi-produkte/betriebsversicherung.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/offres/produits-combines/assurance-entreprise.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/offerte/prodotti-combinati/assicurazione-commercio.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Betrieb (U)",
+          "fr": "Formulaire en ligne: Assurance entreprise (CE)",
+          "it": "Modulo online: Assicurazione commercio (CA)"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil / offre",
+          "it": "Consulenza/offerta"
+        }
+      },
+      "u_angebote_cyberversicherung": {
+        "origin": "angebote",
+        "source": "direct",
+        "category": "cyberversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/angebote/kombi-produkte/cyberversicherung.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/offres/produits-combines/assurance-cyber-risk.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/offerte/prodotti-combinati/assicurazione-cyber.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Cyber Risk (U)",
+          "fr": "Formulaire en ligne: Cyber Risk (CE)",
+          "it": "Modulo online: Assicurazione Cyber (CA)"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil / offre",
+          "it": "Consulenza/offerta"
+        }
+      },
+      "u_angebote_gebaeudeversicherung": {
+        "origin": "angebote",
+        "source": "direct",
+        "category": "gebaeudeversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/angebote/kombi-produkte/gebaeudeversicherung-unternehmen.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/offres/produits-combines/assurance-construction.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/offerte/prodotti-combinati/assicurazione-stabili-aziende.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Gebäude (U)",
+          "fr": "Formulaire en ligne: Assurance construction (CE)",
+          "it": "Modulo online: Assicurazione costruzioni (CA)"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil/offre",
+          "it": "Consulenza/offerta"
+        }
+      },
+      "u_angebote_bauversicherung": {
+        "origin": "angebote",
+        "source": "direct",
+        "category": "bauversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/angebote/kombi-produkte/bauversicherung.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/offres/produits-combines/assurance-batiments-entreprises.html",
+          "it": ""
+        },
+        "woher": {
+          "de": "Online-Formular zu Bauversicherung (U)",
+          "fr": "Formulaire en ligne: Assurance btiments entreprises (CE)",
+          "it": "Modulo online: Assicurazione stabili aziende (CA)"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil/offre",
+          "it": "Consulenza/offerta"
+        }
+      },
+      "u_angebote_berufliche-vorsorge": {
+        "origin": "angebote",
+        "source": "direct",
+        "category": "berufliche-vorsorge",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/angebote/gesundheit-vorsorge/berufliche-vorsorge.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/offres/sante-prevoyance/prevoyance-professionnelle.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/offerte/salute-previdenza/previdenza-professionale.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Berufliche Vorsorge (U)",
+          "fr": "Formulaire en ligne: Prvoyance professionnelle (CE)",
+          "it": "Modulo online: Previdenza professionale (CA)"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil/offre",
+          "it": "Consulenza/offerta"
+        }
+      },
+      "u_angebote_unfallversicherung": {
+        "origin": "angebote",
+        "source": "direct",
+        "category": "unfallversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/angebote/gesundheit-vorsorge/unfallversicherung.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/offres/sante-prevoyance/assurance-accident.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/offerte/salute-previdenza/assicurazione-infortuni.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Unfall (U)",
+          "fr": "Formulaire en ligne: assurance-accident (CE)",
+          "it": "Modulo online: Assicurazione infortuni (CA)"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil/offre",
+          "it": "Consulenza/offerta"
+        }
+      },
+      "u_angebote_krankentaggeldversicherung": {
+        "origin": "angebote",
+        "source": "direct",
+        "category": "krankentaggeldversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/angebote/gesundheit-vorsorge/krankentaggeldversicherung.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/offres/sante-prevoyance/assurance-indemnites-journalieres.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/offerte/salute-previdenza/assicurazione-indennita-giornaliera-di-malattia.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Krankentaggeld (U)",
+          "fr": "Formulaire en ligne: Assurance d'indemnits journalires (CE)",
+          "it": "Modulo online: Assicurazione indennit giornaliera di malattia (CA)"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil/offre",
+          "it": "Consulenza/offerta"
+        }
+      },
+      "u_angebote_anlagestiftung": {
+        "origin": "angebote",
+        "source": "direct",
+        "category": "anlagestiftung",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/angebote/gesundheit-vorsorge/anlagestiftung.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/offres/sante-prevoyance/fondation-de-placement.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/offerte/salute-previdenza/fondazione-investimento.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Anlagestiftung (U)",
+          "fr": "Formulaire en ligne: Fondation de placement (CE)",
+          "it": "Modulo online: Fondazione dinvestimento (CA)"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil/offre",
+          "it": "Consulenza/offerta"
+        }
+      },
+      "u_angebote_bvg_selbstaendige-ohne-personal": {
+        "origin": "angebote",
+        "source": "direct",
+        "category": "bvg_selbstaendige-ohne-personal",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/angebote/gesundheit-vorsorge/bvg-selbstaendigkeit.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/offres/sante-prevoyance/lpp-independants.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/offerte/salute-previdenza/lpp-indipendenti.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu BVG fr Selbstndigerwerbende ohne Angestellte (U)",
+          "fr": "Formulaire en ligne: LPP pour les indpendants sans personnel (CE)",
+          "it": "Modulo online: LPP per indipendenti senza personale (CA)"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil/offre",
+          "it": "Consulenza/offerta"
+        }
+      },
+      "u_angebote_sachversicherung": {
+        "origin": "angebote",
+        "source": "direct",
+        "category": "sachversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/angebote/sachen-recht/sachversicherung.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/offres/choses-droit/assurance-des-choses.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/offerte/cose-e-protezione-giuridica/assicurazione-cose.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Sach (U)",
+          "fr": "Formulaire en ligne: Assurance des choses (CE)",
+          "it": "Modulo online: Assicurazione cose (CA)"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil/offre",
+          "it": "Consulenza/offerta"
+        }
+      },
+      "u_angebote_all_risks": {
+        "origin": "angebote",
+        "source": "direct",
+        "category": "all_risks",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/angebote/sachen-recht/all-risks.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/offres/choses-droit/all-risks.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/offerte/cose-e-protezione-giuridica/assicurazione-cose-all-risks.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu All Risks Sach (U)",
+          "fr": "Formulaire en ligne: Assurance des choses All Risks (CE)",
+          "it": "Modulo online: Assicurazione cose All Risks (CA)"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil/offre",
+          "it": "Consulenza/offerta"
+        }
+      },
+      "u_angebote_transportversicherung": {
+        "origin": "angebote",
+        "source": "direct",
+        "category": "transportversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/angebote/sachen-recht/transportversicherung.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/offres/choses-droit/assurance-transport.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/offerte/cose-e-protezione-giuridica/assicurazione-trasporti.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Transport (U)",
+          "fr": "Formulaire en ligne: Transport (CE)",
+          "it": "Modulo online: Assicurazione trasporti (CA)"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil/offre",
+          "it": "Consulenza/offerta"
+        }
+      },
+      "u_angebote_bauwesenversicherung": {
+        "origin": "angebote",
+        "source": "direct",
+        "category": "bauwesenversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/angebote/sachen-recht/transportversicherung.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/offres/choses-droit/assurance-travaux-construction.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/offerte/cose-e-protezione-giuridica/assicurazione-lavori-costruzione-aziende.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Bauwesen (U)",
+          "fr": "Formulaire en ligne: Assurance travaux de construction (CE)",
+          "it": "Modulo online: Assicurazione dei lavori di costruzione per aziende (CA)"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil/offre",
+          "it": "Consulenza/offerta"
+        }
+      },
+      "u_angebote_baugarantie": {
+        "origin": "angebote",
+        "source": "direct",
+        "category": "baugarantie",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/angebote/vermoegen/baugarantie.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/offres/patrimoine/garantie-de-construction.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/offerte/patrimonio/garanzie-di-costruzione.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Baugarantie (U)",
+          "fr": "Formulaire en ligne: Garantie de construction (CE)",
+          "it": "Modulo online: Garanzie-di-costruzione (CA)"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil/offre",
+          "it": "Consulenza/offerta"
+        }
+      },
+      "u_angebote_betriebshaftpflichtversicherung": {
+        "origin": "angebote",
+        "source": "direct",
+        "category": "betriebshaftpflichtversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/angebote/vermoegen/betriebshaftpflichtversicherung.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/offres/patrimoine/assurance-rc-professionnelle.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/offerte/patrimonio/rc-aziendale-e-professionale.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Betriebs- und Berufshafpftlicht (U)",
+          "fr": "Formulaire en ligne: Assurance RC professionnelle (CE)",
+          "it": "Modulo online: Rc-aziendale-e-professionale (CA)"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil/offre",
+          "it": "Consulenza/offerta"
+        }
+      },
+      "u_angebote_bauherrenhaftpflicht": {
+        "origin": "angebote",
+        "source": "direct",
+        "category": "bauherrenhaftpflicht",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/angebote/vermoegen/bauherrenhaftpflicht-unternehmen.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/offres/patrimoine/assurance-rc-maitre-d-ouvrage.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/offerte/patrimonio/rc-committente-aziende.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Bauherrenhaftpflicht (U)",
+          "fr": "Formulaire en ligne: Assurance RC du matre d'ouvrage (CE)",
+          "it": "Modulo online: Rc-committente-aziende (CA)"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil/offre",
+          "it": "Consulenza/offerta"
+        }
+      },
+      "u_angebote_montageversicherung": {
+        "origin": "angebote",
+        "source": "direct",
+        "category": "montageversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/angebote/vermoegen/montageversicherung.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/offres/patrimoine/assurance-montage.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/offerte/patrimonio/assicurazione-montaggio.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Montage (U)",
+          "fr": "Formulaire en ligne: assurance-montage (CE)",
+          "it": "Modulo online: Assicurazione-montaggio (CA)"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil/offre",
+          "it": "Consulenza/offerta"
+        }
+      },
+      "u_angebote_organhaftpflichtversicherung": {
+        "origin": "angebote",
+        "source": "direct",
+        "category": "organhaftpflichtversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/angebote/vermoegen/organhaftpflichtversicherung.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/offres/patrimoine/rc-mandataires-sociaux.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/offerte/patrimonio/rc-organi-societari.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Organhaftpflicht (U)",
+          "fr": "Formulaire en ligne: Assurance RC des mandataires sociaux (CE)",
+          "it": "Modulo online: Rc-organi-societari (CA)"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil/offre",
+          "it": "Consulenza/offerta"
+        }
+      },
+      "u_angebote_vereine": {
+        "origin": "angebote",
+        "source": "direct",
+        "category": "vereine",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/angebote/nach-unternehmensgroesse/vereine.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/offres/selon-taille-entreprise/associations.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/offerte/per-dimensione-aziendale/associazioni.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Vereine (U)",
+          "fr": "Formulaire en ligne: Associations (CE)",
+          "it": "Modulo online: Associazioni (CA)"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil/offre",
+          "it": "Consulenza/offerta"
+        }
+      },
+      "u_angebote_kmu": {
+        "origin": "angebote",
+        "source": "direct",
+        "category": "kmu",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/angebote/nach-unternehmensgroesse/kmu.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/offres/selon-taille-entreprise/pme.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/offerte/per-dimensione-aziendale/pmi.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu KMU (U)",
+          "fr": "Formulaire en ligne: PME (CE)",
+          "it": "Modulo online: Pmi (CA)"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil/offre",
+          "it": "Consulenza/offerta"
+        }
+      },
+      "u_angebote_midcorp": {
+        "origin": "angebote",
+        "source": "direct",
+        "category": "midcorp",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/angebote/nach-unternehmensgroesse/midcorp.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/offres/selon-taille-entreprise/midcorp.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/offerte/per-dimensione-aziendale/midcorp.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Mittlere und grosse Unternehmen (U)",
+          "fr": "Formulaire en ligne: Moyennes et grandes entreprises (CE)",
+          "it": "Modulo online: Midcorp (CA)"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil/offre",
+          "it": "Consulenza/offerta"
+        }
+      },
+      "u_angebote_internationale-unternehmen": {
+        "origin": "angebote",
+        "source": "direct",
+        "category": "internationale-unternehmen",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/angebote/nach-unternehmensgroesse/internationale-unternehmen.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/offres/selon-taille-entreprise/entreprises-internationales.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/offerte/per-dimensione-aziendale/aziende-internazionali.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Internationale Unternehmen (U)",
+          "fr": "Formulaire en ligne: Entreprises internationales (CE)",
+          "it": "Modulo online: Aziende-internazionali (CA)"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil/offre",
+          "it": "Consulenza/offerta"
+        }
+      },
+      "u_angebote_startup": {
+        "origin": "angebote",
+        "source": "direct",
+        "category": "startup",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/angebote/nach-unternehmensgroesse/startup.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/offres/selon-taille-entreprise/start-up.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/offerte/per-dimensione-aziendale/start-up.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Start-ups (U)",
+          "fr": "Formulaire en ligne: Start-up (CE)",
+          "it": "Modulo online: Start-up (CA)"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil/offre",
+          "it": "Consulenza/offerta"
+        }
+      },
+      "u_services_beratung": {
+        "origin": "services",
+        "source": "direct",
+        "category": "beratung",
+        "woher": {
+          "de": "Online-Service-Formular zu Allgemeine Anfragen (U)",
+          "fr": "Formulaire en ligne: Demande de conseil (CE)",
+          "it": "Modulo online: Richiesta di consulenza (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_service_agentur-suchen": {
+        "origin": "services",
+        "source": "direct",
+        "category": "agentur-suchen",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/services/kontakt/agentur-suchen.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/services/contact/recherche-agence.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/servizi/contatto/ricerca-agenzia.html"
+        },
+        "woher": {
+          "de": "Online-Service-Formular zu Agentur suchen (U)",
+          "fr": "Formulaire en ligne: Recherche d'agence (CE)",
+          "it": "Modulo online: Ricerca agenzia (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_serice_geschaeftspartner-suchen": {
+        "origin": "services",
+        "source": "direct",
+        "category": "geschaeftspartner-suchen",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/services/kontakt/geschaeftspartner-suchen.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/services/contact/recherche-partenaires-commerciaux.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/servizi/contatto/ricerca-partner-convenzionati.html"
+        },
+        "woher": {
+          "de": "Online-Service-Formular zu Geschäftspartner suchen (U)",
+          "fr": "Formulaire en ligne: Recherche partenaires commerciaux (CE)",
+          "it": "Modulo online: Ricerca partner convenzionati (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_service_risk-engineering": {
+        "origin": "services",
+        "source": "direct",
+        "category": "risk-engineering",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/services/vorteile-dienstleistungen/risk-engineering.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/services/avantages-services/risk-engineering.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/servizi/vantaggi-servizi/risk-engineering.html"
+        },
+        "woher": {
+          "de": "Online-Service-Formular zu Risk Engineering (U)",
+          "fr": "Formulaire en ligne: Risk Engineering (CE)",
+          "it": "Modulo online: Risk Engineering (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_service_bgv-kennzahlen": {
+        "origin": "services",
+        "source": "direct",
+        "category": "bgv-kennzahlen",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/services/vorteile-dienstleistungen/zinsen-konditionen.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/services/avantages-services/taux-conditions.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/servizi/vantaggi-servizi/tassi-condizioni.html"
+        },
+        "woher": {
+          "de": "Online-Service-Formular zu BVG-Kennzahlen (U)",
+          "fr": "Formulaire en ligne: Chiffres-cls LPP (CE)",
+          "it": "Modulo online: Valori LPP (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_service_bvg-portal": {
+        "origin": "services",
+        "source": "direct",
+        "category": "bvg-portal",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/services/meine-versicherung/bvg-portal.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/services/avantages-services/taux-conditions.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/servizi/la-mia-assicurazione/portale-lpp.html"
+        },
+        "woher": {
+          "de": "Online-Service-Formular zu BVG Portal (U)",
+          "fr": "Formulaire en ligne: Portail LPP (CE)",
+          "it": "Modulo online: Portale LPP (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_service_lohnmeldung": {
+        "origin": "services",
+        "source": "direct",
+        "category": "lohnmeldung",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/services/meine-versicherung/lohnmeldung.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/services/mon-assurance/declaration-donnees-salariales.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/servizi/la-mia-assicurazione/dichiarazioni-salariali.html"
+        },
+        "woher": {
+          "de": "Online-Service-Formular zu Lohnmeldung (U)",
+          "fr": "Formulaire en ligne: Dclaration donnes salariales (ELM) (CE)",
+          "it": "Modulo online: Dichiarazioni salariali (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_service_schadenmeldung": {
+        "origin": "services",
+        "source": "direct",
+        "category": "schadenmeldung",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/services/meine-versicherung/schadenmeldung.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/services/mon-assurance/declarer-sinistres.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/servizi/la-mia-assicurazione/notifica-dei-sinistri.html"
+        },
+        "woher": {
+          "de": "Online-Service-Formular zu Schadenmeldung (U)",
+          "fr": "Formulaire en ligne: Dclaration des sinistres (Sunet) (CE)",
+          "it": "Modulo online: Notifica dei sinistri (Sunet) (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_service_benutzerverwaltung": {
+        "origin": "services",
+        "source": "direct",
+        "category": "benutzerverwaltung",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/services/meine-versicherung/benutzerverwaltung.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/services/mon-assurance/gestion-utilisateur.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/servizi/la-mia-assicurazione/gestione-utenti.html"
+        },
+        "woher": {
+          "de": "Online-Service-Formular zu Benutzerverwaltung (U)",
+          "fr": "Formulaire en ligne: Gestion des utilisateurs",
+          "it": "Modulo online: Amministrazione degli utenti"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_ratgeber_generic": {
+        "origin": "ratgeber",
+        "source": "direct",
+        "category": "generic",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/ratgeber.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/guide-business.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/guida-business.html"
+        },
+        "woher": {
+          "de": "Online-Formular Allgemein (U)",
+          "fr": "Formulaire en ligne : Généralits (CE)",
+          "it": "Modulo online: Generale (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_ratgeber_aerzte": {
+        "origin": "ratgeber",
+        "source": "direct",
+        "category": "aerzte",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/ratgeber/aerzte-versicherung.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/guide-business/assurances-pour-medecins.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/guida-business/assicurazioni-per-medici.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber: Versicherungen für Ärztinnen und Ärzte (U)",
+          "fr": "Formulaire en ligne: Assurances pour les médecins (CE)",
+          "it": "Modulo online: Assicurazioni per i medici (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_ratgeber_rechtsanwalt": {
+        "origin": "ratgeber",
+        "source": "direct",
+        "category": "rechtsanwalt",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/ratgeber/rechtsanwalt-versicherung.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/guide-business/assurance-avocat.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/guida-business/assicurazione-avvocati.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber: Versicherungen für Anwältinnen und Anwälte (U)",
+          "fr": "Formulaire en ligne: Assurances pour avocats (CE)",
+          "it": "Modulo online: Assicurazioni per avvocati (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_ratgeber_treuhaender": {
+        "origin": "ratgeber",
+        "source": "direct",
+        "category": "treuhaender",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/ratgeber/treuhaender-versicherung.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/guide-business/assurances-fiduciaires.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/guida-business/assicurazioni-fiduciari.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber:Versicherungen für Treuhänder:innen und Treuhandbüros (U)",
+          "fr": "Formulaire en ligne: Les assurances pour les fiduciaires (CE)",
+          "it": "Modulo online: Assicurazioni per amministratori fiduciari (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_ratgeber_kmu": {
+        "origin": "ratgeber",
+        "source": "direct",
+        "category": "kmu",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/ratgeber/versicherungen-kmu.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/guide-business/assurances-pme.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/guida-business/assicurazioni-pmi.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber: Versicherungen für KMU (U)",
+          "fr": "Formulaire en ligne: Assurances pour les PME (CE)",
+          "it": "Modulo online: Assicurazioni per Pmi (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_ratgeber_startups": {
+        "origin": "ratgeber",
+        "source": "direct",
+        "category": "startups",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/ratgeber/versicherungen-startups.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/guide-business/assurances-start-up.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/guida-business/assicurazioni-start-up.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber: Versicherungen für Start-ups (U)",
+          "fr": "Formulaire en ligne: Assurances pour les start-up (CE)",
+          "it": "Modulo online: Assicurazioni per start up (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_ratgeber_selbststaendige": {
+        "origin": "ratgeber",
+        "source": "direct",
+        "category": "selbststaendige",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/ratgeber/versicherungen-selbststaendige.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/guide-business/assurances-independants.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/guida-business/assicurazioni-start-up.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber: Versicherungen und Altersvorsorge für Selbstständige (U)",
+          "fr": "Formulaire en ligne: Assurances et prvoyance vieillesse pour les indépendants (CE)",
+          "it": "Modulo online: Assicurazioni e soluzioni previdenziali per i lavoratori indipendenti (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_ratgeber_betriebsunterbrechungen": {
+        "origin": "ratgeber",
+        "source": "direct",
+        "category": "betriebsunterbrechungen",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/ratgeber/betriebsunterbrechungen.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/guide-business/interruptions-exploitation.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/guida-business/interruzione-di-esercizio.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber: Betriebsunterbrechung (U)",
+          "fr": "Formulaire en ligne: Interruption dexploitation (CE)",
+          "it": "Modulo online: Interruzione di esercizio (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_ratgeber_betriebs-und-berufshaftpflicht": {
+        "origin": "ratgeber",
+        "source": "direct",
+        "category": "betriebs-und-berufshaftpflicht",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/ratgeber/betriebs-und-berufshaftpflicht.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/guide-business/RC-entreprise-et-professionnelle.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/guida-business/rc-aziendale-e-professionale.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber: Betriebs- oder Berufshaftpflicht? (U)",
+          "fr": "Formulaire en ligne: Une RC entreprise ou professionnelle? (CE)",
+          "it": "Modulo online: Responsabilit civile aziendale o responsabilit civile professionale? (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_ratgeber_teilzeit-arbeitnehmer": {
+        "origin": "ratgeber",
+        "source": "direct",
+        "category": "teilzeit-arbeitnehmer",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/ratgeber/teilzeit-arbeitnehmer.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/guide-business/temps-partiel.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/guida-business/lavoro-part-time.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber: Angestellte und Teilzeitarbeit (U)",
+          "fr": "Formulaire en ligne: Employs et travail  temps partiel (CE)",
+          "it": "Modulo online: Dipendenti e lavoro a tempo parziale (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_ratgeber_vorgehen-schadenfall": {
+        "origin": "ratgeber",
+        "source": "direct",
+        "category": "vorgehen-schadenfall",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/ratgeber/vorgehen-schadenfall.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/guide-business/temps-partiel.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/guida-business/procedura-sinistro.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber: Schaden melden (U)",
+          "fr": "Formulaire en ligne: Dclarer un sinistre (CE)",
+          "it": "Modulo online: Denuncia di sinistro (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_ratgeber_arbeitnehmerhaftung": {
+        "origin": "ratgeber",
+        "source": "direct",
+        "category": "arbeitnehmerhaftung",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/ratgeber/arbeitnehmerhaftung.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/guide-business/responsabilite-des-employes.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/guida-business/responsabilita-lavoratori.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber: Schaden am Arbeitsplatz wer haftet? (U)",
+          "fr": "Formulaire en ligne: Responsabilit des employs (CE)",
+          "it": "Modulo online: Sulla responsabilit civile del lavoratore: negligenza lieve o grave e fattori individuali (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_ratgeber_health-corner": {
+        "origin": "ratgeber",
+        "source": "direct",
+        "category": "health-corner",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/ratgeber/health-corner.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/guide-business/health-corner.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/guida-business/health-corner.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber: Health Corner (U)",
+          "fr": "Formulaire en ligne: Health Corner (CE)",
+          "it": "Modulo online: Health Corner (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_ratgeber_bvg-news": {
+        "origin": "ratgeber",
+        "source": "direct",
+        "category": "bvg-news",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/ratgeber/bvg-news.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/guide-business/lpp-news.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/guida-business/lpp-news-it.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber: BVG News 2024 (U)",
+          "fr": "Formulaire en ligne: LPP News 2024 (CE)",
+          "it": "Modulo online: LPP News 2024 (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_ratgeber_bvg-vorsorgeplan": {
+        "origin": "ratgeber",
+        "source": "direct",
+        "category": "bvg-vorsorgeplan",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/ratgeber/bvg-vorsorgeplan.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/guide-business/plan-de-prevoyance-lpp.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/guida-business/piano-previdenziale-lpp.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber: BVG Vorsorgeplan (U)",
+          "fr": "Formulaire en ligne: Plan de prvoyance LPP (CE)",
+          "it": "Modulo online: Piano previdenziale LPP (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_ratgeber_fristlose-kuendigung": {
+        "origin": "ratgeber",
+        "source": "direct",
+        "category": "fristlose-kuendigung",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/ratgeber/fristlose-kuendigung.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/guide-business/resiliation-extraordinaire.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/guida-business/licenziamento-senza-preavviso.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber: Fristlose Kündigung wegen Krankmeldung (U)",
+          "fr": "Formulaire en ligne: Rsiliation immdiate pour maladie (CE)",
+          "it": "Modulo online: Licenziamento immediato in seguito a notifica di malattia (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_ratgeber_unterversicherung": {
+        "origin": "ratgeber",
+        "source": "direct",
+        "category": "unterversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/ratgeber/unterversicherung.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/guide-business/sous-assurance.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/guida-business/sottoassicurazione.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber: Unterversicherung (U)",
+          "fr": "Formulaire en ligne: Sous-assurance (CE)",
+          "it": "Modulo online: Sottoassicurazione (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_angebote_flottenversicherung": {
+        "origin": "angebote",
+        "source": "direct",
+        "category": "flottenversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/angebote/sachen-recht/flottenversicherung.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/offres/choses-droit/assurance-flotte.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/offerte/cose-e-protezione-giuridica/assicurazione-flotte.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Flotten (U)",
+          "fr": "Formulaire en ligne: Lassurance de flottes (CE)",
+          "it": "Modulo online: Assicurazione flotte (CA)"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil/offre",
+          "it": "Consulenza/offerta"
+        }
+      },
+      "u_angebote_flottenversicherung_praevention": {
+        "origin": "ratgeber",
+        "source": "direct",
+        "category": "flottenversicherung_praevention",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/angebote/sachen-recht/flottenversicherung.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/offres/choses-droit/assurance-flotte.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/offerte/cose-e-protezione-giuridica/assicurazione-flotte.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber: Schadenfälle bei Flotten mit gezielter Prävention minimieren (U)",
+          "fr": "Formulaire en ligne: Limiter les sinistres des flottes gràce  une prévention cible (CE)",
+          "it": "Modulo online: Prevenzione per ridurre i sinistri che interessano le flotte (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_ratgeber_kuendigungsschutz": {
+        "origin": "ratgeber",
+        "source": "direct",
+        "category": "kuendigungsschutz",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/ratgeber/kuendigungsschutz.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/guide-business/protection-conges.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/guida-business/tutela-dal-licenziamento.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber: Arbeitsunfähigkeit und Kündigungsschutz - das müssen Sie beachten (U)",
+          "fr": "Formulaire en ligne: Incapacit de travail et protection contre les congés: ce quil faut savoir (CE)",
+          "it": "Modulo online: Incapacit lavorativa e protezione dalla disdetta  aspetti principali (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_ratgeber_sabattical": {
+        "origin": "ratgeber",
+        "source": "direct",
+        "category": "sabattical",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/ratgeber/sabbatical-u.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/guide-business/conge-sabbatique.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/guida-business/congedo-non-retributo.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber: Unbezahlter Urlaub (U)",
+          "fr": "Formulaire en ligne: Cong non pay (CE)",
+          "it": "Modulo online: Congedo non retribuito (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_ratgeber_transportschaden": {
+        "origin": "ratgeber",
+        "source": "direct",
+        "category": "transportschaden",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/ratgeber/transportschaden.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/guide-business/dommages-de-transport.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/guida-business/danni-trasporto.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber: Verdeckter Transportschaden - wer haftet? (U)",
+          "fr": "Formulaire en ligne: Dommages cachs de transport: qui est responsable? (CE)",
+          "it": "Modulo online: Danni occulti da trasporto: chi paga? (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_ratgeber_gewerbliche-nutzung-drohnen": {
+        "origin": "ratgeber",
+        "source": "direct",
+        "category": "gewerbliche-nutzung-drohnen",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/ratgeber/gewerbliche-nutzung-drohnen.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/guide-business/assurance-drones.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/guida-business/assicurazione-droni.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber: Drohne gewerblich nutzen (U)",
+          "fr": "Formulaire en ligne: Utiliser des drones  des fins commerciales (CE)",
+          "it": "Modulo online: Utilizzo dei droni in ambito aziendale (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_ratgeber_erdbebenversicherung": {
+        "origin": "ratgeber",
+        "source": "direct",
+        "category": "erdbebenversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/ratgeber/erdbebenversicherung.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/guide-business/assurance-tremblements-de-terre.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/guida-business/assicurazione-terremoti.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber: Erdbebenversicherung (U)",
+          "fr": "Formulaire en ligne: Assurance tremblements de terre (CE)",
+          "it": "Modulo online: Assicurazione contro i terremoti (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_ratgeber_schneelast-schneedruck": {
+        "origin": "ratgeber",
+        "source": "direct",
+        "category": "schneelast-schneedruck",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/ratgeber/schneelast-schneedruck.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/guide-business/pression-poids-neige.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/guida-business/carico-pressione-neve.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber: Schneedruck (U)",
+          "fr": "Formulaire en ligne: Pression de la neige (CE)",
+          "it": "Modulo online: Pressione della neve (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_ratgeber_unternehmensrisiken": {
+        "origin": "ratgeber",
+        "source": "direct",
+        "category": "unternehmensrisiken",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/ratgeber/unternehmensrisiken.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/guide-business/pression-poids-neige.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/guida-business/rischi-imprese.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber: Risk Barometer 2023: Die Toprisiken (U)",
+          "fr": "Formulaire en ligne: Les principaux risques des entreprises suisses (CE)",
+          "it": "Modulo online: I rischi maggiori per le imprese svizzere (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_ratgeber_risk-barometer": {
+        "origin": "ratgeber",
+        "source": "direct",
+        "category": "unternehmen",
+        "form_url": {
+          "de": "https://app.23degrees.io/view/c09axubfNeiOGOrQ-bar-horizontal-top-10-geschaeftsrisiken-in-der",
+          "fr": "https://app.23degrees.io/view/c09axubfNeiOGOrQ-bar-horizontal-top-10-geschaeftsrisiken-in-der",
+          "it": "https://app.23degrees.io/view/c09axubfNeiOGOrQ-bar-horizontal-top-10-geschaeftsrisiken-in-der"
+        },
+        "woher": {
+          "de": "Online-Formular zu Risk Barometer",
+          "fr": "Formulaire en ligne pour le Risk Barometer",
+          "it": "Modulo online sul Risk Barometer"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_ratgeber_cyber_risk": {
+        "origin": "ratgeber",
+        "source": "direct",
+        "category": "cyber_risk",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/ratgeber/cyber-risk.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/guide-business/risk-barometer-cyberrisques.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/guida-business/risk-barometer-rischi-informatici.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber: Cyber-Risks: 5 Erkenntnisse aus dem Risk Barometer (U)",
+          "fr": "Formulaire en ligne: Cyberrisques: cinq enseignements tirs de lAllianz Risk Barometer (CE)",
+          "it": "Modulo online: Rischi informatici: cinque informazioni dal Risk Barometer (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_ratgeber_ransomware": {
+        "origin": "ratgeber",
+        "source": "direct",
+        "category": "ransomware",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/ratgeber/ransomware.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/guide-business/rancongiciels.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/guida-business/ransomware.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber: Wenn Hacker ein Unternehmen erpressen (U)",
+          "fr": "Formulaire en ligne: Les entreprises face au chantage informatique (CE)",
+          "it": "Modulo online: Estorsioni informatiche ai danni delle aziende (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_ratgeber_social-engineering": {
+        "origin": "ratgeber",
+        "source": "direct",
+        "category": "social-engineering",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/ratgeber/social-engineering.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/guide-business/social-engineering.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/guida-business/social-engineering.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber: Social Engineering: Wenn der Mensch zur Schwachstelle wird (U)",
+          "fr": "Formulaire en ligne: Social Engineering: Cyber Crime et dfaillances humaines (CE)",
+          "it": "Modulo online: Social engineering: quando luomo  il punto debole (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_ratgeber_hackerangriff": {
+        "origin": "ratgeber",
+        "source": "direct",
+        "category": "hackerangriff",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/ratgeber/hackerangriff.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/guide-business/piratage.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/guida-business/cyberattacco.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber: Hackerangriff (U)",
+          "fr": "Formulaire en ligne: Piratage informatique (CE)",
+          "it": "Modulo online: Attacco informatico (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_ratgeber_phishing": {
+        "origin": "ratgeber",
+        "source": "direct",
+        "category": "phishing",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/ratgeber/phishing.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/guide-business/hameconnage.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/guida-business/phishing.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber: Phishing (U)",
+          "fr": "Formulaire en ligne: Hameonnage (CE)",
+          "it": "Modulo online: Phishing (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_ratgeber_exportrisiken": {
+        "origin": "ratgeber",
+        "source": "direct",
+        "category": "exportrisiken",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/ratgeber/exportrisiken.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/guide-business/risques-exportation.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/guida-business/rischi-di-esportazione.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber: 7 Risiken beim Export in Schwellenländer (U)",
+          "fr": "Formulaire en ligne: Sept risques des exportations vers les pays mergents (CE)",
+          "it": "Modulo online: Sette rischi legati alle esportazioni nei paesi emergenti (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_ratgeber_internationale-programme": {
+        "origin": "ratgeber",
+        "source": "direct",
+        "category": "internationale-programme",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/ratgeber/internationale-programme.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/guide-business/programmes-internationaux.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/guida-business/programmi-internazionali.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber: Internationale Programme fr Transportversicherungen (U)",
+          "fr": "Formulaire en ligne: Programmes internationaux pour lassurance transport (CE)",
+          "it": "Modulo online: Programmi internazionali per lassicurazione trasporti (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "u_ratgeber_incoterms": {
+        "origin": "ratgeber",
+        "source": "direct",
+        "category": "incoterms",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/ratgeber/incoterms.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/guide-business/incoterms.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/guida-business/incoterms.html"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber: INCOTERMS und Versicherungsverbote (U)",
+          "fr": "Formulaire en ligne: INCOTERMS et interdictions dassurance (CE)",
+          "it": "Modulo online: INCOTERMS e divieti di assicurazione (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "a_allgemein_versicherung": {
+        "origin": "ratgeber",
+        "source": "direct",
+        "category": "versicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/de/geschaeftskunden/darum-allianz.html",
+          "fr": "https://www.allianz.ch/fr/clients-entreprises/les-raisons-de-choisir-allianz.html",
+          "it": "https://www.allianz.ch/it/clienti-commerciali/perche-scegliere-allianz.html"
+        },
+        "woher": {
+          "de": "Online-Formular Allgemein (U)",
+          "fr": "Formulaire en ligne : Gnralits (CE)",
+          "it": "Modulo online: Generale (CA)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "khh_angebot_anibis": {
+        "origin": "productSpecific",
+        "source": "display",
+        "category": "khh",
+        "woher": {
+          "de": "Inserat auf anibis.ch (KHH)",
+          "fr": "Annonce sur anibis.ch (CM)",
+          "it": "Pubblicità su anibis.ch (EDC)"
+        },
+        "was": {
+          "de": "Beratung/Offerte basierend auf Inserat",
+          "fr": "Conseil/offre sur la base de l'annonce",
+          "it": "Consulenza/offerta basata sulla pubblicità"
+        }
+      },
+      "mr_partner_louis": {
+        "origin": "productSpecific",
+        "source": "display",
+        "category": "mr",
+        "woher": {
+          "de": "Online-Formular zu MR (15.- Gutschein louis.ch)",
+          "fr": "Formulaire en ligne: Assurance moto",
+          "it": "Modulo online:  Assicurazione moto"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil/offre",
+          "it": "Consulenza/offerta"
+        }
+      },
+      "mf_asi": {
+        "origin": "productSpecific",
+        "source": "display",
+        "category": "mf",
+        "woher": {
+          "de": "Online-Formular zu Elektroauto-Versicherung (200.- Rabatt)",
+          "fr": "Formulaire en ligne: Assurance véh. électr. et hybrides (200.- de rabais)",
+          "it": "Modulo online: Assicurazione per auto elettriche e ibride (200.- sconto)"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil/offre",
+          "it": "Consulenza/offerta"
+        }
+      }
+    }
+  }
+}

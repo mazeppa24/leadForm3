@@ -1,0 +1,351 @@
+{
+  "app": {
+    "form": {
+      "client": "Je suis déjà assuré(e) chez Allianz.",
+      "language": "Langue de conseil",
+      "legal": "Par l’envoi de ce formulaire, vous déclarez approuver les mentions  <a href='https://www.allianz.ch/fr/informations/informations-juridiques.html' class='text-link' target='_blank'>légales et la déclaration</a> relative à la  <a href='https://www.allianz.ch/fr/informations/protection-des-donnees.html' class='text-link' target='_blank'>protection des données</a>.",
+      "message": {
+        "dateformat": "Veuillez saisir la date au format JJ.MM.AAAA."
+      },
+      "zipcodehint": "Nous avons besoin de votre NPA pour trouver un conseiller ou une conseillère proche de chez vous."
+    },
+    "hint": "Autres possibilités:<br>Passer à <a href='https://www.allianz.fr/' class='text-link' target='_blank'>Allianz France</a>",
+    "home": {
+      "url": "https://www.allianz.ch/fr/clients-prives.html"
+    },
+    "message": {
+      "error404": "Les données n'ont pas été trouvées",
+      "error409": "Des données incohérentes ont été trouvées",
+      "loadingdata": "Les données sont chargées..."
+    },
+    "meta": {
+      "title": "Demander conseil pour une assurance bateau | Demande de conseil | Allianz"
+    },
+    "modal": {
+      "client": {
+        "accordion_1": {
+          "label": "Clients privés",
+          "option_1": {
+            "label": "Mettre à jour les coordonnées",
+            "url": "https://www.allianz.ch/fr/clients-prives/services/contact/actualiser-les-donnees.html#/formrunner"
+          },
+          "option_2": {
+            "label": "Déclaration de sinistre",
+            "url": "https://www.allianz.ch/fr/clients-prives/services/mon-assurance/declaration-de-sinistre.html"
+          },
+          "option_3": {
+            "label": "Paiements et factures",
+            "url": "https://www.allianz.ch/fr/clients-prives/services/mon-assurance/questions-paiements-factures.html#/formrunner"
+          },
+          "option_4": {
+            "label": "Envoi électronique de documents",
+            "url": "https://www.allianz.ch/fr/clients-prives/services/mon-assurance/attestation-assurance-electronique.html#/formrunner"
+          },
+          "option_5": {
+            "label": "S'inscrire à Allianz Plus",
+            "url": "https://www.allianz.ch/fr/clients-prives/services/avantages/allianz-plus.html#/formrunner"
+          }
+        },
+        "accordion_2": {
+          "label": "Clients entreprises",
+          "option_1": {
+            "label": "LPP",
+            "url": "https://www.allianz.ch/fr/clients-entreprises/services/mon-assurance/portail-lpp.html"
+          },
+          "option_2": {
+            "label": "LAA & AMC",
+            "url": "https://www.allianz.ch/fr/clients-entreprises/services/mon-assurance/declarer-sinistres.html"
+          },
+          "option_3": {
+            "label": "Portail de cautionnement",
+            "url": "https://www.allianz.ch/fr/clients-entreprises/services/mon-assurance/portail-de-cautionnement.html"
+          },
+          "option_4": {
+            "label": "Déclaration de sinistre",
+            "url": "https://www.allianz.ch/fr/clients-entreprises/services/mon-assurance/declaration-de-sinistre.html"
+          },
+          "option_5": {
+            "label": "Services PME ",
+            "url": "https://www.allianz.ch/fr/clients-entreprises/services/avantages-services/avantages-partenaires.html"
+          },
+          "option_6": {
+            "label": "Paiements et factures",
+            "url": "https://www.allianz.ch/fr/clients-entreprises/services/mon-assurance/questions-paiements-factures.html#/formrunner"
+          }
+        },
+        "headline": "Connaissez-vous déjà nos services en ligne?",
+        "help": "Si vous souhaitez obtenir un conseil (p. ex. sur un produit), veuillez remplir le formulaire de conseil."
+      },
+      "phone": {
+        "copy": " Vous avez choisi un autre préfixe. Veuillez choisir un préfixe des pays suivants: Suisse, Allemagne, France, Italie ou Autriche    Dans le cas contraire, nous ne pourrons malheureusement pas vous rappeler.",
+        "headline": "Autre préfixe?"
+      },
+      "zip": {
+        "copy": "Vous avez saisi un numéro postal d’acheminement à 5 chiffres. Veuillez saisir le numéro postal d’acheminement  de votre domicile actuel ou futur en Suisse.   Veuillez noter que vous devez avoir un domicile en Suisse pour vous faire assurer en Suisse.<br><br>Vouliez-vous accéder à <a class='text-link'  style='color:#006192' href='https://www.allianz.fr' target='_blank'>Allianz France?</a>",
+        "headline": "Pas de code postal suisse?"
+      }
+    },
+    "name": "Demander un conseil sans engagement"
+  },
+  "copy": {
+    "headline": "Demander un conseil sans engagement",
+    "section_headline_1": "Données personnelles",
+    "popup": "Der Marktwert ist der Wert, zu welchem das Boot zum jetzigen Zeitpunkt auf dem Markt zum Kauf angeboten werden würde.",
+    "step_1": {
+      "contact": {
+        "label": "Quelle",
+        "option_1": "Boot24",
+        "option_2": "Antragsstrecke Abrecher",
+        "option_3": "C2S - Totalschaden",
+        "option_4": "C2S - Positives Kundenfeedback",
+        "option_5": "C2S - Vertragsanpassung",
+        "option_6": "Service to Sale",
+        "option_7": "Kundenkontakt E-Mail",
+        "option_8": "Kundenkontakt Telefon",
+        "option_9": "Kooperationen Leads",
+        "option_10": "Facebook",
+        "option_11": "Allianz Business Partner"
+
+      },
+      "group_1": {
+        "label": "Comment le bateau est-il propulsé ?",
+        "option_1": "Moteur",
+        "option_2": "Voile"
+      },
+      "group_2": {
+        "label": "Où le bateau est-il immatriculé ?",
+        "option_1": "Registre cantonal des bateaux",
+        "option_2": "Registre suisse des bateaux"
+      },
+      "info": "Nous vous contactons volontiers. Pour cela, nous avons besoin des données suivantes.",
+      "label": "Propulsion"
+    },
+    "step_2": {
+      "date": "1ère mise en circulation*",
+      "date_hint": "par ex. 01. 01. 2020",
+      "engines": "Nombre de moteurs",
+      "id2": "Numéro de matricule",
+      "kw": "Puissance du moteur",
+      "label": "Données du bateau",
+      "option_0": "Poids total supérieur à 15 tonnes",
+      "option_1": "Hivernage couvert",
+      "option_2": "Amarrage à la bouée",
+      "option_3": "Participation à des régates",
+      "option_4": "Renonciation à la déduction de la plus-value",
+      "option_5": "Couverture 'bris de machine'",
+      "personcount": "Nombre de personnes admises",
+      "price": "valeur de marché actuelle*",
+      "sail_area": "Surface de la voile en m2"
+    },
+    "step_3": {
+      "label": "Contact"
+    },
+    "step_4": {
+      "label": "Confirmation"
+    }
+  },
+  "core": {
+    "button": {
+      "back": "Retour",
+      "back_to_form": "Retour au formulaire de conseil",
+      "cancel": "Annuler",
+      "close": "Fermer",
+      "compute": "Calculer",
+      "delete": "Supprimer",
+      "deleteMailtemplate": "Supprimer le document",
+      "edit": "Traiter",
+      "forward": "Suivant",
+      "newMailtemplate": "Nouveau modèle de courriel",
+      "save": "Sauvegarder",
+      "submit": "Envoyer la demande",
+      "unDeleteDocument": "Supprimer le document"
+    },
+    "datepicker": {
+      "calendarLabel": "Agenda",
+      "nextMonthLabel": "Mois suivant",
+      "nextMultiYearLabel": "Vingt prochaines années",
+      "nextYearLabel": "Année suivante",
+      "openCalendarLabel": "Ouvrir l’agenda",
+      "prevMonthLabel": "Mois précédent",
+      "prevMultiYearLabel": "Vingt dernières années",
+      "prevYearLabel": "Année précédente",
+      "switchToMonthViewLabel": "Veuillez sélectionner une date",
+      "switchToMultiYearViewLabel": "Veuillez sélectionner l’année, le mois et le jour."
+    },
+    "label": {
+      "availability": "Quel est le meilleur moment pour vous contacter ?",
+      "time_1":" De 8h à 12h heures",
+      "time_2":"De 12h à 13h heures",
+      "time_3":"De 13h à 17h heures",
+      "time_4":"De 17h à 20h heures",
+      "address": "Adresse",
+      "addressNbr": "n°",
+      "birthdate": "Date de naissance",
+      "brand": "Marque*",
+      "city": "Lieu",
+      "email": "Email*",
+      "error": "Erreur",
+      "firstname": "Prénom*",
+      "id": "Numéro de coque",
+      "information": "Information",
+      "lastname": "Nom*",
+      "mandatory": "* champ obligatoire",
+      "model": "Modèle*",
+      "next": "Suivant",
+      "of": "sur",
+      "page": "Page",
+      "phonenumber": "Numéro de téléphone*",
+      "phonenumber_prefix": "par ex.",
+      "policyNumber": "N° de police",
+      "previous": "Retour",
+      "reloadApplication": "Applikation neu laden FR",
+      "salutation": "Titre de civilité",
+      "streetnumber": "Rue, n°",
+      "warning": "Attention",
+      "zip": "Code postal*",
+      "zipcity": "NPA, Localité"
+    },
+    "language": {
+      "de": "Allemand",
+      "en": "Anglais",
+      "es": "Espagnol",
+      "fr": "Français",
+      "it": "Italien",
+      "pt": "Portugais"
+    },
+    "message": {
+      "deleteSuccessful": "Suppression effectuée avec succès.",
+      "errorGeneral": "Une erreur inconnue est survenue.",
+      "errorRights": "Vous ne disposez pas des autorisations nécessaires pour effectuer cette opération.",
+      "errorSave": "Une erreur est survenue pendant l'enregistrement.",
+      "exportSuccessful": "Exportation effectuée avec succès.",
+      "logOffSuccessful": "Déconnexion effectuée avec succès.",
+      "logOnSuccessful": "Connexion effectuée avec succès.",
+      "mailSuccessful": "Courriel envoyé avec succès.",
+      "printSuccessful": "Impression effectuée avec succès.",
+      "refreshSuccessful": "Mise à jour effectuée avec succès.",
+      "requiredFields": "Veuillez compléter tous les champs obligatoires.",
+      "saveSuccessful": "Sauvegarde effectuée avec succès.",
+      "uploadSuccessful": "Fichier transféré avec succès.",
+      "kb_contact_message": "se fera un plaisir de vous contacter.",
+      "kb_contact_message_input": "Pour cela, nous avons besoin des informations suivantes.",
+      "kb_contact_no_profile_kbFormular": "Nous nous ferons un plaisir de vous contacter. Pour cela, nous avons besoin des informations suivantes."
+    },
+    "placeholder": {
+      "date": "JJ.MM.AAAA",
+      "email": "muster@example.com",
+      "mobilenumber": "+41 79 123 12 12",
+      "phonenumber": "+41 58 123 12 12",
+      "policyNumber": "T123456789"
+    },
+    "selectionvalue": {
+      "genderF": "féminin",
+      "genderM": "masculin",
+      "no": "Non",
+      "salutationF": "Madame",
+      "salutationM": "Monsieur",
+      "yes": "Oui"
+    },
+    "stepper": {
+      "type_1": "Bateau à moteur",
+      "type_2": "Voilier"
+    },
+    "text": {
+      "errorPageInstruction": "Une erreur inconnue est survenue et a automatiquement été signalée à l'administration.",
+      "errorPageRequest": "Votre demande n'a pas pu être traitée.",
+      "loader": "Seite wird geladen..."
+    },
+    "title": {
+      "errorPage": "L'opération a malheureusement échoué."
+    },
+    "validation": {
+      "ahv": "Veuillez saisir un numéro de carte de crédit valide.",
+      "birthdate": "Veuillez saisir la date au format JJ.MM.AAAA.",
+      "creditcard": "Veuillez saisir un numéro de carte de crédit valide.",
+      "email": "Veuillez saisir une adresse électronique valide.",
+      "fieldRequired": "Complétez le champ obligatoire.",
+      "iban": "Veuillez saisir un numéro IBAN valide.",
+      "mobileNumber": "Veuillez saisir un numéro de téléphone portable valide. Exemple: +41 79 123 12 12 ou 079 123 12 12",
+      "pattern": "Cette information est obligatoire. Vuillez saisir des caractères valides.",
+      "phoneNumber": "Nous avons impérativement besoin de cette information. Veuillez saisir un numéro de téléphone valide.",
+      "policyNumber": "Veuillez saisir un numéro de police valide. Exemple: T123456789",
+      "selectionRequired": "Sélectionnez le champ obligatoire.",
+      "url": "Veuillez saisir une adresse URL valide.",
+      "zip": "Cette information est obligatoire. Veuillez saisir un numéro postal d’acheminement valide composé de 4 chiffres."
+    }
+  },
+  "footer": {
+    "link_1_label": "Impressum",
+    "link_1_url": "https://www.allianz.ch/fr/informations/impressum.html",
+    "link_2_label": "Protection des données",
+    "link_2_url": "https://www.allianz.ch/fr/informations/protection-des-donnees.html",
+    "link_3_label": "Informations juridiques",
+    "link_3_url": "https://www.allianz.ch/fr/informations/informations-juridiques.html",
+    "link_4_label": "Contact"
+  },
+  "star": {
+    "label": {
+      "address": "Rue*",
+      "addressNbr": "n°*",
+      "birthdate": "Date de naissance*",
+      "city": "Localité*",
+      "email": "E-mail*",
+      "firstname": "Prénom*",
+      "information": "Information*",
+      "lastname": "Nom*",
+      "phonenumber": "Numéro de téléphone*",
+      "policyNumber": "N° de police*",
+      "salutation": "Titre de civilité*",
+      "streetnumber": "Rue*, n°*",
+      "zip": "NPA*",
+      "zipcity": "NPA*, Localité*"
+    }
+  },
+  "success": {
+    "btn_1": {
+      "label": "Vers l'assurance bateau",
+      "url": "https://www.allianz.ch/fr/clients-prives/offres/vehicules-voyages/assurance-bateaux.html"
+    },
+    "btn_2": {
+      "label": "Produits pour les clients enterprises",
+      "url": "https://www.allianz.ch/fr/clients-entreprises/offres.html"
+    },
+    "copy": "Nous avons bien reçu votre demande et vous contacterons dès que possible.",
+    "headline": "Merci beaucoup",
+    "headline_2": "En découvrir plus maintenant"
+  },
+  "mail": {
+    "subject": "Nouveau lead | Formulaire de contact | Merci de contacter le client / la cliente",
+    "label": {
+      "you_have_new_lead": "Tu as un <span style=\"color: #F86200\">nouveau lead</span>",
+      "test_mail": "<span style=\"color: #c93508\">Ceci est un TEST. <br> Veuillez l'ignorer!</span>",
+      "lead_assessment": "Évaluation du lead",
+      "lead": "Lead",
+      "personal_data": "Données personnelles ",
+      "additional_information": "Informations complémentaires",
+      "name": "Prénom et Nom",
+      "postal_code": "NPA",
+      "email": "E-mail",
+      "phone_number": "Téléphone",
+      "availability": "Joignabilité",
+      "is_customer": "Client(e) exis-tant(e)",
+      "is_customer_yes": "Oui",
+      "is_customer_no": "Non",
+      "feedback": "Feed-back sur le lead ",
+      "copyright": "© Allianz 2024",
+      "service_of": "",
+      "customerLang": "Langage du client",
+      "customerNumber": "Numéro de client",
+      "leadApp": "Application",
+      "leadDate": "Date de référence",
+      "campaign": "Campagne",
+      "environment": "Environnement",
+      "comments": "Commentaires",
+      "source": {
+        "where": "Provenance",
+        "what": "Objet",
+        "campaign_name": "Nom de la campagne"
+      }
+    }
+  }
+}

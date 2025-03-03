@@ -1,0 +1,251 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "allianz-leadform": {
+      "root": "",
+      "sourceRoot": "src",
+      "projectType": "application",
+      "prefix": "app",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "baseHref": "/",
+            "polyfills":[
+              "src/polyfills.ts"
+            ],
+            "tsConfig": "tsconfig.app.json",
+            "preserveSymlinks": true,
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "node_modules/@aposin/ng-aquila/css/utilities.css",
+              "node_modules/@angular/cdk/overlay-prebuilt.css",
+              "node_modules/@angular/cdk/a11y-prebuilt.css",
+              "node_modules/@allianz/ngx-ndbx/css/ndbx-base.css",
+              "node_modules/@allianz/ngx-ndbx/css/themes/ndbx.css",
+              "node_modules/@aposin/ng-aquila/css/normalize.css",
+              "node_modules/@aposin/ng-aquila/themes/aposin.css",
+              "src/styles.scss"
+            ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "node_modules/@allianzch/lib-ui-ndbx-ch/assets/styles",
+                "node_modules"
+              ]
+            },
+            "allowedCommonJsDependencies": [
+              "lodash"
+            ],
+            "scripts": [],
+            "extractLicenses": false,
+            "sourceMap": true,
+            "optimization": false,
+            "namedChunks": true
+          },
+          "configurations": {
+            "aem-production": {
+              "index": "src/index/prod/index.html",
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.aem.prod.ts"
+                }
+              ],
+              "optimization": {
+                "scripts": false,
+                "styles": {
+                  "minify": true,
+                  "inlineCritical": false
+                },
+                "fonts": false
+              },
+              "baseHref": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/",
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true
+            },
+            "aem-test": {
+              "index": "src/index/test/index.html",
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.aem.test.ts"
+                }
+              ],
+              "optimization": {
+                "scripts": false,
+                "styles": {
+                  "minify": true,
+                  "inlineCritical": false
+                },
+                "fonts": false
+              },
+              "baseHref": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform_test/",
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true
+            },
+            "local": {
+              "baseHref": "/",
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.local.ts"
+                }
+              ]
+            },
+            "dev": {
+              "baseHref": "/",
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.dev.ts"
+                }
+              ]
+            },
+            "test": {
+              "baseHref": "/",
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.test.ts"
+                }
+              ]
+            },
+            "abn": {
+              "baseHref": "/",
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.abn.ts"
+                }
+              ]
+            }
+          },
+          "defaultConfiguration": ""
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "buildTarget": "allianz-leadform:build"
+          },
+          "configurations": {
+            "local": {
+              "buildTarget": "allianz-leadform:build:local"
+            },
+            "dev": {
+              "buildTarget": "allianz-leadform:build:dev"
+            },
+            "test": {
+              "buildTarget": "allianz-leadform:build:test"
+            },
+            "abn": {
+              "buildTarget": "allianz-leadform:build:abn"
+            },
+            "prod": {
+              "buildTarget": "allianz-leadform:build:prod"
+            },
+            "mock": {
+              "buildTarget": "allianz-leadform:build:mock"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "buildTarget": "allianz-leadform:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "src/test.ts",
+            "polyfills": [
+              "src/polyfills.ts"
+            ],
+            "tsConfig": "src/tsconfig.spec.json",
+            "karmaConfig": "src/karma.conf.js",
+            "styles": [
+              "node_modules/@angular/cdk/overlay-prebuilt.css",
+              "node_modules/@angular/cdk/a11y-prebuilt.css",
+              "node_modules/@allianz/ngx-ndbx/css/ndbx-base.css",
+              "node_modules/@allianz/ngx-ndbx/css/themes/ndbx.css",
+              "node_modules/@aposin/ng-aquila/css/utilities.css",
+              "node_modules/@aposin/ng-aquila/css/normalize.css",
+              "node_modules/@aposin/ng-aquila/themes/aposin.css",
+              "src/styles.scss"
+            ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "node_modules/@allianzch/lib-ui-ndbx-ch/assets/styles",
+                "node_modules"
+              ]
+            },
+            "scripts": [],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "allianz-leadform-e2e": {
+      "root": "e2e/",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "e2e/protractor.conf.js",
+            "devServerTarget": "allianz-leadform:serve"
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "schematics": {
+    "@schematics/angular:component": {
+      "prefix": "app",
+      "style": "css"
+    },
+    "@schematics/angular:directive": {
+      "prefix": "app"
+    }
+  },
+  "cli": {
+    "analytics": false,
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
+  }
+}

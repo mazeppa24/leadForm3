@@ -1,0 +1,336 @@
+{
+  "app": {
+    "form": {
+      "client": "Ich bin bereits bei der Allianz versichert.",
+      "language": "Beratungssprache",
+      "legal": "By sending this form, you agree to the <a class='text-link' href='https://www.allianz.ch/en/information/legal-information.html' target='_blank'>legal information</a> and the <a class='text-link' href='https://www.allianz.ch/en/information/privacypolicy.html' target='_blank'>data protection statement</a>.",
+      "message": {
+        "dateformat": "Bitte geben Sie das Datum im Format TT.MM.JJJJ ein."
+      },
+      "zipcodehint": "Ihre PLZ benötigen wir, um einen Berater oder eine Beraterin in Ihrer Nähe zu finden."
+    },
+    "hint": "Weitere Möglichkeiten:<br>Zur <a href='https://www.allianz.de/' class='text-link' target='_blank'>Allianz Deutschland</a> wechseln",
+    "home": {
+      "url": "https://www.allianz.ch/de/privatkunden.html"
+    },
+    "message": {
+      "error404": "Daten wurden nicht gefunden",
+      "error409": "Faule Daten gefunden",
+      "loadingdata": "Daten werden geladen"
+    },
+    "meta": {
+      "title": "Request consultation | Allianz"
+    },
+    "modal": {
+      "client": {
+        "accordion_1": {
+          "label": "Privatpersonen",
+          "option_1": {
+            "label": "Kontaktdaten aktualisieren",
+            "url": "https://www.allianz.ch/de/privatkunden/services/kontakt/daten-aktualisieren.html#/formrunner"
+          },
+          "option_2": {
+            "label": "Schaden melden",
+            "url": "https://www.allianz.ch/de/privatkunden/services/meine-versicherung/schaden-melden.html"
+          },
+          "option_3": {
+            "label": "Zahlungen & Rechnungen",
+            "url": "https://www.allianz.ch/de/privatkunden/services/meine-versicherung/zahlungen-rechnungen.html#/formrunner"
+          },
+          "option_4": {
+            "label": "E-Versicherungsnachweis",
+            "url": "https://www.allianz.ch/de/privatkunden/services/meine-versicherung/elektronischer-versicherungsnachweis.html#/formrunner"
+          },
+          "option_5": {
+            "label": "Für Allianz Plus anmelden",
+            "url": "https://www.allianz.ch/de/privatkunden/services/vorteile/allianz-plus.html#/formrunner"
+          }
+        },
+        "accordion_2": {
+          "label": "Unternehmenskunden",
+          "option_1": {
+            "label": "BVG",
+            "url": "https://www.allianz.ch/de/geschaeftskunden/services/meine-versicherung/bvg-portal.html"
+          },
+          "option_2": {
+            "label": "UVG & KKV",
+            "url": "https://www.allianz.ch/de/geschaeftskunden/services/meine-versicherung/schadenmeldung.html"
+          },
+          "option_3": {
+            "label": "Kautionsportal",
+            "url": "https://www.allianz.ch/de/geschaeftskunden/services/meine-versicherung/kautionsportal.html"
+          },
+          "option_4": {
+            "label": "Schaden melden",
+            "url": "https://www.allianz.ch/de/geschaeftskunden/services/meine-versicherung/schaden-melden.html"
+          },
+          "option_5": {
+            "label": "KMU Services ",
+            "url": "https://www.allianz.ch/de/geschaeftskunden/services/vorteile-dienstleistungen/partnervorteile.html"
+          },
+          "option_6": {
+            "label": "Zahlungen & Rechnungen",
+            "url": "https://www.allianz.ch/de/geschaeftskunden/services/meine-versicherung/zahlungen-rechnungen.html#/formrunner"
+          }
+        },
+        "headline": "Kennen Sie schon unsere Online-Services?",
+        "help": "Wenn Sie eine Beratung (z.B. zu einem Produkt) wünschen, füllen Sie bitte das Beratungsformular aus."
+      },
+      "phone": {
+        "copy": "Sie haben eine andere Telefon-Vorwahl gewählt. Bitte wählen Sie eine Vorwahl der folgenden Länder: Schweiz, Deutschland, Frankreich, Italien oder Österreich. Andernfalls können wir Sie leider nicht zurückrufen.",
+        "headline": "Andere Vorwahl?"
+      },
+      "zip": {
+        "copy": "Sie haben eine 5-stellige Postleitzahl eingegeben. Bitte geben Sie die 4-stellige Postleitzahl Ihres aktuellen oder künftigen Schweizer Wohnorts ein. Bitte beachten Sie, dass Sie einen Wohnort in der Schweiz brauchen, um sich in der Schweiz versichern zu lassen.<br><br>Wollten Sie zur <a class='text-link' style='color:#006192' href='https://www.allianz.de' target='_blank'>Allianz Deutschland?</a>",
+        "headline": "Keine schweizer Postleitzahl? "
+      }
+    },
+    "name": "Unverbindliche Beratung anfordern"
+  },
+  "copy": {
+    "headline": "Unverbindliche Beratung anfordern",
+    "section_headline_1": "Persönliche Daten",
+    "popup": "Der Marktwert ist der Wert, zu welchem das Boot zum jetzigen Zeitpunkt auf dem Markt zum Kauf angeboten werden würde.",
+    "step_1": {
+      "contact": {
+        "label": "Quelle",
+        "option_1": "Boot24",
+        "option_2": "Antragsstrecke Abrecher",
+        "option_3": "C2S - Totalschaden",
+        "option_4": "C2S - Positives Kundenfeedback",
+        "option_5": "C2S - Vertragsanpassung",
+        "option_6": "Service to Sale",
+        "option_7": "Kundenkontakt E-Mail",
+        "option_8": "Kundenkontakt Telefon",
+        "option_9": "Kooperationen Leads",
+        "option_10": "Facebook",
+        "option_11": "Allianz Business Partner"
+      },
+      "group_1": {
+        "label": "Wie wird das Boot angetrieben?",
+        "option_1": "Motor",
+        "option_2": "Segel"
+      },
+      "group_2": {
+        "label": "Wo ist das Boot registriert?",
+        "option_1": "Kantonales Schiffsregister",
+        "option_2": "Schweizerisches Seeschiffsregister"
+      },
+      "info": "Gerne setzen wir uns mit Ihnen in Verbindung. Dafür benötigen wir folgende Angaben."
+    },
+    "step_2": {
+      "date": "1. Inverkehrssetzung*",
+      "date_hint": "z.B. 01.01.2020",
+      "engines": "Anzahl Motoren",
+      "id2": "Stamm-Nr.",
+      "kw": "Leistung Motor",
+      "label": "Fahrzeug-Daten",
+      "option_0": "Gesamtgewicht über 15 Tonnen",
+      "option_1": "Winterlager gedeckt?",
+      "option_2": "Bojenliegeplatz",
+      "option_3": "Teilnahme an Regatten",
+      "option_4": "Verzicht Mehrwertabzug",
+      "option_5": "Maschinenbruchdeckung",
+      "personcount": "Anzahl zugelassene Personen",
+      "price": "aktueller Marktwert*",
+      "sail_area": "Grösse der Segelfläche in m2"
+    },
+    "step_3": {
+      "label": "File entry"
+    },
+    "step_4": {
+      "label": "Confirmation"
+    }
+  },
+  "core": {
+    "button": {
+      "back": "Zurück",
+      "back_to_form": "Zurück zum Beratungsformular",
+      "cancel": "Abbrechen",
+      "close": "Schliessen",
+      "compute": "Berechnen",
+      "delete": "Löschen",
+      "deleteMailtemplate": "Mailtemplate löschen",
+      "edit": "Bearbeiten",
+      "forward": "Weiter",
+      "newMailtemplate": "Neues Mailtemplate",
+      "save": "Speichern",
+      "submit": "Send",
+      "unDeleteDocument": "Dokument wiederherstellen"
+    },
+    "datepicker": {
+      "calendarLabel": "Kalender",
+      "nextMonthLabel": "Nächster Monat",
+      "nextMultiYearLabel": "Nächsten 20 Jahre",
+      "nextYearLabel": "Nächstes Jahr",
+      "openCalendarLabel": "Kalender öffnen",
+      "prevMonthLabel": "Letzter Monat",
+      "prevMultiYearLabel": "Letzten 20 Jahre",
+      "prevYearLabel": "Letztes Jahr",
+      "switchToMonthViewLabel": "Bitte wählen Sie ein Datum aus",
+      "switchToMultiYearViewLabel": "Bitte wählen Sie das Jahr, den Monat und den Tag aus"
+    },
+    "label": {
+      "availability": "When is the best time to reach you?",
+      "time_1": "8-12 a.m.",
+      "time_2": "12-1 p.m.",
+      "time_3": "1-5 p.m.",
+      "time_4": "5-8 p.m.",
+      "sender": "Absender (Dein Name)",
+      "clientnr": "Kundennummmer",
+      "infos": "Weitere Infos",
+      "infos_hint": "An welchem Produkt besteht Interesse? Gibt es Besonderheiten, die wichtig sind?",
+      "address": "Adresse",
+      "addressNbr": "Nr",
+      "birthdate": "Geburtsdatum",
+      "brand": "Marke*",
+      "city": "Ort",
+      "email": "E-Mail*",
+      "error": "Fehler",
+      "firstname": "First name*",
+      "id": "Schalen-Nr. (HIN)",
+      "information": "Information",
+      "isCustomer": "Bestandskunde?",
+      "lastname": "Surname*",
+      "mandatory": "* Pflichtfelder",
+      "model": "Modell*",
+      "next": "Weiter",
+      "of": "von",
+      "page": "Seite",
+      "phonenumber": "Telephone number*",
+      "phonenumber_prefix": "z. B.",
+      "policyNumber": "Policennummer",
+      "previous": "Zurück",
+      "reloadApplication": "Reload application",
+      "salutation": "Anrede",
+      "streetnumber": "Strasse, Nr.",
+      "warning": "Warnung",
+      "zip": "Postcode*",
+      "zipcity": "PLZ, Ort"
+    },
+    "language": {
+      "de": "Deutsch",
+      "en": "Englisch",
+      "es": "Spanisch",
+      "fr": "Französisch",
+      "it": "Italienisch",
+      "pt": "Portugiesisch"
+    },
+    "message": {
+      "deleteSuccessful": "Löschung erfolgreich.",
+      "errorGeneral": "Ein unbekannter Fehler aufgetreten.",
+      "errorRights": "Sie haben nicht genügend Rechte um diese Aktion auszuführen.",
+      "errorSave": "Beim Speichern ist ein Fehler aufgetreten.",
+      "exportSuccessful": "Export erfolgreich.",
+      "logOffSuccessful": "Abmeldung erfolgreich.",
+      "logOnSuccessful": "Anmeldung erfolgreich.",
+      "mailSuccessful": "Mail wurde erfolgreich versandt.",
+      "printSuccessful": "Drucken erfolgreich abgeschlossen.",
+      "refreshSuccessful": "Aktualisierung erfolgreich.",
+      "requiredFields": "Bitte alle Pflichtfelder ausfüllen.",
+      "saveSuccessful": "Speichervorgang erfolgreich abgeschlossen.",
+      "uploadSuccessful": "Datei erfolgreich hochgeladen.",
+      "kb_contact_message": "will be happy to get in touch with you.",
+      "kb_contact_message_input": "We require the following information.",
+      "kb_contact_no_profile_kbFormular": "We will be happy to get in touch with you. We need the following information."
+    },
+    "placeholder": {
+      "date": "TT.MM.JJJJ",
+      "email": "muster@example.com",
+      "mobilenumber": "+41 79 123 12 12",
+      "phonenumber": "+41 58 123 12 12",
+      "policyNumber": "T123456789"
+    },
+    "selectionvalue": {
+      "genderF": "weiblich",
+      "genderM": "männlich",
+      "no": "Nein",
+      "salutationF": "Frau",
+      "salutationM": "Herr",
+      "yes": "Ja"
+    },
+    "stepper": {
+      "type_1": "Motorboot",
+      "type_2": "Segelboot"
+    },
+    "text": {
+      "errorPageInstruction": "Ein unbekannter Fehler aufgetreten und wurde automatisch an die Administration gemeldet.",
+      "errorPageRequest": "Ihre Anfrage konnte leider nicht bearbeitet werden.",
+      "loader": "Seite wird geladen..."
+    },
+    "title": {
+      "errorPage": "Das hat leider nicht funktioniert."
+    },
+    "validation": {
+      "ahv": "Bitte geben Sie eine gültige AHV-Nummer ein.",
+      "birthdate": "Bitte geben Sie das Datum im Format TT.MM.JJJJ ein.",
+      "creditcard": "Bitte geben Sie eine gültige Creditkartennummer ein.",
+      "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+      "fieldRequired": "Pflichtfeld ausfüllen.",
+      "iban": "Bitte geben Sie eine gültige IBAN-Nummer ein.",
+      "mobileNumber": "Bitte geben Sie eine gültige Mobilenummer ein. Beispiel: +41 79 123 12 12 oder 079 123 12 12",
+      "pattern": "Diese Angabe benötigen wir zwingend. Bitte geben Sie gültige Zeichen ein.",
+      "phoneNumber": "Diese Angabe benötigen wir zwingend. Bitte geben Sie eine gültige Telefonnummer ein.",
+      "policyNumber": "Bitte geben Sie eine gültige Policennummer ein. Beispiel: T123456789",
+      "selectionRequired": "Pflichtfeld auswählen.",
+      "url": "Bitte geben Sie eine gültige URL ein.",
+      "zip": "Diese Angabe benötigen wir zwingend. Bitte geben Sie eine gültige, 4-stellige Postleitzahl ein."
+    }
+  },
+  "footer": {
+    "link_1_label": "Impressum",
+    "link_1_url": "https://www.allianz.ch/de/informationen/impressum.html",
+    "link_2_label": "Datenschutzerklärung",
+    "link_2_url": "https://www.allianz.ch/de/informationen/datenschutz.html",
+    "link_3_label": "Rechtliche Hinweise",
+    "link_3_url": "https://www.allianz.ch/de/informationen/rechtliche-hinweise.html",
+    "link_4_label": "Kontakt"
+  },
+  "success": {
+    "btn_1": {
+      "label": "zur Bootsversicherung",
+      "url": "https://www.allianz.ch/de/privatkunden/angebote/fahrzeuge-reisen/bootsversicherung.html"
+    },
+    "btn_2": {
+      "label": "produkte für geschäftskunden",
+      "url": "https://www.allianz.ch/de/geschaeftskunden/angebote.html"
+    },
+    "copy": "We have received your request and will be in touch with you as soon as possible.",
+    "headline": "Thank you",
+    "headline_2": "Jetzt mehr entdecken"
+  },
+  "mail": {
+    "subject": "Neuer Lead | Kontaktformular | Bitte Kunde/in kontaktieren",
+    "label": {
+      "you_have_new_lead": "Du hast einen <span style=\"color: #F86200\">neuen Lead</span>",
+      "test_mail": "<span style=\"color: #c93508\">This is a TEST. <br> Please ignore!</span>",
+      "lead_assessment": "Einschätzung des Leads",
+      "lead": "Lead",
+      "personal_data": "Persönliche Daten",
+      "additional_information": "Additional information",
+      "name": "Vorname, Nachname",
+      "postal_code": "Postleitzahl",
+      "email": "E-Mail",
+      "phone_number": "Telefon-Nr.",
+      "availability": "Erreichbarkeit",
+      "is_customer": "Existing Customer",
+      "is_customer_yes": "Yes",
+      "is_customer_no": "No",
+      "feedback": "Feedback zum Lead",
+      "copyright": "© Allianz 2024",
+      "service_of": "",
+      "customerLang": "Customer language",
+      "customerNumber": "Customer number",
+      "leadApp": "Application",
+      "leadDate": "Creation Date",
+      "campaign": "Campaign",
+      "environment": "Stage",
+      "comments": "Comments",
+      "source": {
+        "where": "Woher",
+        "what": "Was",
+        "campaign_name": "Quelle"
+      }
+    }
+  }
+}

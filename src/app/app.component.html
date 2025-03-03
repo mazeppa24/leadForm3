@@ -1,0 +1,35 @@
+<div class="main-wrapper">
+  <section>
+    <router-outlet></router-outlet>
+  </section>
+  <loading-indicator/>
+  <footer>
+    <div nxLayout="grid maxwidth">
+      <nx-footer copyright="Allianz" class="nx-font-weight-light">
+        <nx-footer-navigation>
+          <a href="{{ 'app.footer.link_1_url' | translate }}" target="_blank"
+             class="nx-font-weight-light nx-margin-left-s">{{
+              "app.footer.link_1_label" | translate
+            }}</a>
+          <a href="{{ 'app.footer.link_2_url' | translate }}" target="_blank"
+             class="nx-font-weight-light nx-margin-left-s">{{
+              "app.footer.link_2_label" | translate
+            }}</a>
+          <a href="{{ 'app.footer.link_3_url' | translate }}" target="_blank"
+             class="nx-font-weight-light nx-margin-left-s">{{
+              "app.footer.link_3_label" | translate
+            }}</a>
+          <nx-icon name="phone-o" size="s" class="nx-margin-left-s"></nx-icon>
+          <a href="tel:+41583587111" target="_self"
+             class="nx-font-weight-light">+41 58 358 71 11</a>
+
+          <p nxCopytext="small" class=" u-text-center" style="color: white !important;">
+            Release: {{ environment.appVersion }}
+          </p>
+        </nx-footer-navigation>
+      </nx-footer>
+    </div>
+  </footer>
+</div>
+
+

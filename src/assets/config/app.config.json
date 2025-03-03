@@ -1,0 +1,8 @@
+{
+  "stage": "local",
+  "apiServerRoot": "",
+  "deployUrl": "https://www.allianz.ch/",
+  "baseUrl": "/",
+  "production": false,
+  "environment": "local"
+}

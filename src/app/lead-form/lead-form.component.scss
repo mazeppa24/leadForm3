@@ -1,0 +1,41 @@
+
+nx-multi-stepper {
+  .nx-multi-stepper__items,
+  .labels-container,
+  .nx-progress-stepper__title,
+  .nx-progress-stepper__mobile-label {
+    display: none !important;
+  }
+}
+.horizontal-checkboxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.submit-button {
+  width: 100% !important;
+}
+.legal-notice {
+  line-height: 16px;
+  color: #3f72b1;
+}
+.form-headline {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: bold;
+  margin: 0 0 32px 0;
+}
+
+.nx-error {
+  display: flex;
+  align-items: center;
+  nx-icon {
+    margin-right: 4px;
+  }
+}
+
+.legal-notice {
+  a {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "app": {
+    "meta": {
+      "title": "Beratung vereinbaren | Beratungsanfrage | Allianz"
+    },
+    "form": {
+      "label": {
+        "availability": "Wann erreichen wir Sie am besten?",
+        "time_1": "8-12 Uhr",
+        "time_2": "12-13 Uhr",
+        "time_3": "13-17 Uhr",
+        "time_4": "17-20 Uhr",
+        "email": "E-Mail*",
+        "firstname": "Vor- und",
+        "lastname": "Nachname*",
+        "comments": "Kommentar",
+        "phoneNumber": "Telefon-Nr.*",
+        "phoneNumberPrefix": "z.B.",
+        "zip": "Postleitzahl*"
+      },
+      "validation": {
+        "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+        "fieldRequired": "Pflichtfeld bitte ausfüllen.",
+        "phoneNumber": "Diese Angabe benötigen wir zwingend. Bitte geben Sie eine gültige Telefonnummer ein.",
+        "zip": "Diese Angabe benötigen wir zwingend. Bitte geben Sie eine gültige, 4-stellige Postleitzahl ein.",
+        "comments": "Es sind maximal 512 Zeichen erlaubt."
+      },
+      "success": {
+        "headline": "Vielen Dank",
+        "copy": "Wir haben Ihre Anfrage erhalten und kontaktieren Sie so bald wie möglich."
+      },
+      "profileImage": {
+        "message": "Ich erstelle Ihnen gerne eine auf Ihre Bedürfnisse zugeschnittene Offerte und berate Sie auf Wunsch auch persönlich."
+      },
+      "button": {
+        "submit": "Unverbindliche Beratung anfordern"
+      },
+      "legal": "Mit dem Absenden dieses Formulars erklären Sie sich mit den <a class='text-link' href='https://www.allianz.ch/de/informationen/rechtliche-hinweise.html' target='_blank'>rechtlichen Hinweisen</a> und der <a class='text-link' href='https://www.allianz.ch/de/informationen/datenschutzerklaerung.html' target='_blank'>Datenschutzerklärung</a> einverstanden."
+    },
+    "footer": {
+      "link_1_label": "Impressum",
+      "link_1_url": "https://www.allianz.ch/de/informationen/impressum.html",
+      "link_2_label": "Datenschutzerklärung",
+      "link_2_url": "https://www.allianz.ch/de/informationen/datenschutz.html",
+      "link_3_label": "Rechtliche Hinweise",
+      "link_3_url": "https://www.allianz.ch/de/informationen/rechtliche-hinweise.html"
+    },
+    "mail": {
+      "subject": "Neuer Lead | Kontaktformular | Bitte Kunde/in kontaktieren"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 148px);
+}
+
+@media (min-width: 420px) {
+
+  .sample-app {
+    min-height: calc(100% - 70px);
+  }
+}
+
+.content-border-top {
+  border-top: 1px solid var(--header-border-color) !important;
+}
+
+.content-border-bottom {
+  border-bottom: 1px solid var(--header-border-color) !important;
+}
+
+header {
+  margin: auto;
+  max-width: 1184px;
+  border-bottom: none !important;
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+section {
+  flex: 1;
+}
+

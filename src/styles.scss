@@ -1,0 +1,362 @@
+// Allianz Styles Import
+@import '@angular/cdk/overlay-prebuilt.css';
+@import '@angular/cdk/a11y-prebuilt.css';
+@import '@allianz/ngx-ndbx/scss/ndbx-base'; //includes font-references see: https://ngx-ndbx.frameworks.allianz.io/guides/getting-started#manual-setup
+//@import '@allianz/ngx-ndbx/css/ndbx-base-integrated.css'; // no local allianz fonts
+@import '@aposin/ng-aquila/styles/theming';
+@import '@aposin/ng-aquila/css/utilities.css';
+
+// AzCH Styles Import
+@import 'assets/css/azch_theme';
+@import 'assets/css/form';
+@import '@allianzch/ngx-core-ch/src/lib/assets/shared-styles/index';
+@import '@allianzch/ngx-core-ch/src/lib/assets/css/all-in';
+
+@include nx-build-theme(azch_theme);
+
+
+/* Web-Fonts */
+//
+//@font-face {
+//  font-family: 'Allianz Neo';
+//  font-style: normal;
+//  font-weight: 200;
+//  src: local('AllianzNeo-Light'), url(https://res.messaging.allianz.com/res/azeu_mid_prod2/04faa652b7a29a992e8459d7326c2a98.woff2) format('woff2');
+//}
+//
+//@font-face {
+//  font-family: 'Allianz Neo';
+//  font-style: normal;
+//  font-weight: 400;
+//  src: local('AllianzNeo-Regular'), url(https://res.messaging.allianz.com/res/azeu_mid_prod2/aaab91c6d7729ee137ae79af4f7878da.woff2) format('woff2');
+//}
+//
+//@font-face {
+//  font-family: 'Allianz Neo';
+//  font-style: normal;
+//  font-weight: 600;
+//  src: local('AllianzNeo-SemiBold'), url(https://res.messaging.allianz.com/res/azeu_mid_prod2/24d2aeee73ec38d815b499603574dda3.woff2) format('woff2');
+//}
+//
+//@font-face {
+//  font-family: 'Allianz Neo';
+//  font-style: normal;
+//  font-weight: 700;
+//  src: local('AllianzNeo-Bold'), url(https://res.messaging.allianz.com/res/azeu_mid_prod2/12f8246a8f006776b20ccaab28a321d0.woff2) format('woff2');
+//}
+
+
+.paddingcleaner {
+  padding: 0 !important;
+}
+
+.margincleaner {
+  margin: 0 !important;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Allianz Neo', serif;
+}
+
+// For IE
+// sass-lint:disable no-vendor-prefixes
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  p {
+    margin: 0 !important;
+  }
+}
+
+// For IE Edge
+// sass-lint:disable no-vendor-prefixes
+@supports (-ms-accelerator: true) {
+  p {
+    margin: 0 !important;
+  }
+}
+
+// Kill Margins and Paddings
+// <h1>
+.nx-heading--subsection-large {
+  margin-bottom: 0 !important;
+}
+
+// h3
+.nx-heading--subsection-small {
+  margin-bottom: 0 !important;
+}
+
+.nx-heading--subsection-xsmall {
+  margin-bottom: 0 !important;
+}
+
+p {
+  margin-block-start: 0 !important;
+  margin-block-end: 0 !important;
+}
+
+.as-content-min-height {
+  min-height: calc(100vh - 200px);
+}
+
+
+.c-header__wrapper {
+  max-width: 1170px;
+  padding: 0 30px;
+  margin: auto;
+}
+
+.c-header-metabar__content {
+  height: 60px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c-header__logo img {
+  vertical-align: middle;
+  height: 30px;
+}
+
+.c-header__logo {
+  display: block;
+  margin-right: 20px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c-header-metabar {
+  border-bottom: 1px solid #d9d9d9;
+  display: none;
+}
+
+.c-heading--page {
+  margin-top: 0;
+}
+
+.c-icon {
+  font-family: 'Allianz-Icons';
+}
+
+.c-icon--arrow-right:before {
+  content: "\e903";
+}
+
+.c-icon--check:before {
+  content: "\e911";
+}
+
+.c-icon--phone-o:before {
+  content: "\e910";
+}
+
+.c-footer__phone .c-phone-link__title {
+  line-height: 29px;
+}
+
+.c-phone-link__title {
+  display: inline-block;
+  margin-right: 11px;
+  line-height: 2;
+}
+
+.c-phone-link__title--tablet {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .c-phone-link__title--desktop {
+    display: none;
+  }
+  .c-phone-link__title--tablet {
+    display: inline-block;
+  }
+}
+
+.c-footer__phone .c-phone-link__number {
+  line-height: 29px;
+  font-weight: 600;
+}
+
+.c-phone-link__icon {
+  margin-right: 10px;
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+.c-footer__service {
+  font-size: 16px;
+}
+
+.c-list {
+  font-size: 18px;
+}
+
+.c-list__item {
+  padding-left: 35px;
+  position: relative;
+}
+
+.c-list__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 24px;
+}
+
+@media (min-width: 704px) {
+  .c-list__item {
+    font-weight: bold;
+  }
+}
+
+.c-copy {
+  margin-bottom: 30px;
+}
+
+.c-copy--large {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.u-text-center, .u-text-align-center {
+  text-align: center;
+}
+
+@media (max-width: 703px) {
+  .nx-formfield__wrapper {
+    padding-bottom: 0 !important;
+  }
+}
+
+.c-header__wrapper {
+  max-width: 1170px;
+  padding: 0 30px;
+  margin: auto;
+}
+
+.c-header-metabar__content {
+  height: 60px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c-header__logo img {
+  vertical-align: middle;
+  height: 30px;
+}
+
+.c-header__logo {
+  display: block;
+  margin-right: 20px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c-header-metabar {
+  border-bottom: 1px solid #d9d9d9;
+  display: none;
+}
+
+.c-heading--page {
+  margin-top: 0;
+}
+
+.c-icon {
+  font-family: 'Allianz-Icons';
+}
+
+.c-icon--arrow-right:before {
+  content: "\e903";
+}
+
+.c-icon--check:before {
+  content: "\e911";
+}
+
+.c-icon--phone-o:before {
+  content: "\e910";
+}
+
+.c-footer__phone .c-phone-link__title {
+  line-height: 29px;
+}
+
+.c-phone-link__title {
+  display: inline-block;
+  margin-right: 11px;
+  line-height: 2;
+}
+
+.c-phone-link__title--tablet {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .c-phone-link__title--desktop {
+    display: none;
+  }
+  .c-phone-link__title--tablet {
+    display: inline-block;
+  }
+}
+
+.c-footer__phone .c-phone-link__number {
+  line-height: 29px;
+  font-weight: 600;
+}
+
+.c-phone-link__icon {
+  margin-right: 10px;
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+.c-footer__service {
+  font-size: 16px;
+}
+
+.c-list {
+  font-size: 18px;
+}
+
+.c-list__item {
+  padding-left: 35px;
+  position: relative;
+}
+
+.c-list__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 24px;
+}
+
+@media (min-width: 704px) {
+  .c-list__item {
+    font-weight: bold;
+  }
+}
+
+.c-copy {
+  margin-bottom: 30px;
+}
+
+.c-copy--large {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.u-text-center, .u-text-align-center {
+  text-align: center;
+}
+
+@media (max-width: 703px) {
+  .nx-formfield__wrapper {
+    padding-bottom: 0 !important;
+  }
+}

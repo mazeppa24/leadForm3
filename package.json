@@ -1,0 +1,49 @@
+{
+  "name": "allianz-leadform",
+  "version": "1.0.0",
+  "scripts": {
+    "local": "ng serve --configuration local --serve-path / --port 4800",
+    "dev": "ng serve --configuration dev --serve-path / --port 4800",
+    "test": "ng serve --configuration test --serve-path / --port 4800",
+    "abn": "ng serve --configuration abn --serve-path / --port 4800",
+    "prod": "ng serve --configuration prod --serve-path /",
+    "build": "ng build --base-href / --deploy-url /",
+    "build:dam:prod": "ng build  --configuration aem-production",
+    "build:dam:test": "ng build  --configuration aem-test"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "private": true,
+  "dependencies": {
+    "@allianz/ngx-aem-integration": "20.0.0",
+    "@allianz/ngx-ndbx": "18.5.1",
+    "@allianzch/ngx-core-ch": "17.1.3",
+    "@angular-eslint/schematics": "^18.0.0",
+    "@angular/animations": "^18.0.5",
+    "@angular/cdk": "^18.0.6",
+    "@angular/common": "^18.0.5",
+    "@angular/compiler": "^18.0.5",
+    "@angular/core": "^18.0.5",
+    "@angular/forms": "^18.0.5",
+    "@angular/platform-browser": "^18.0.5",
+    "@angular/platform-browser-dynamic": "^18.0.5",
+    "@angular/router": "^18.0.5",
+    "@aposin/ng-aquila": "18.5.1",
+    "@ngx-translate/core": "14.0.0",
+    "@ngx-translate/http-loader": "7.0.0",
+    "css-vars-ponyfill": "~2.4.7",
+    "i18n-iso-countries": "^6.8.0",
+    "moment": "~2.29.1",
+    "ngx-turnstile": "^0.2.4",
+    "rxjs": "~7.5.4"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^18.1.2",
+    "@angular-devkit/core": "^18.1.2",
+    "@angular/cli": "18.1.2",
+    "@angular/compiler-cli": "18.1.2",
+    "@angular/language-service": "18.1.2",
+    "@types/node": "22.0.0",
+    "@types/uuid": "9.0.8",
+    "typescript": "5.5.4"
+  }
+}

@@ -1,0 +1,13 @@
+.horizontal-buttons {
+  display: flex;
+  flex-direction: row;
+
+  nx-radio {
+    &:not(:last-child) {
+      padding-right: 32px;
+    }
+  }
+}
+h1{
+  hyphens:initial;
+}

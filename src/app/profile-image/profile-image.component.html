@@ -1,0 +1,21 @@
+@if (profileImageData().imageUrl.length > 10) {
+  <div id="profileContainer" class="profile-image">
+    <div nxAvatar aria-label="Kundenberater Bild" role="img" size="xlarge" id="profile-image-picture">
+      <figure nxFigure="rounded">
+        <img
+          loading="lazy"
+          src="{{profileImageData().imageUrl}}"
+          alt="KB Picture"
+        />
+      </figure>
+    </div>
+    <div id="profile-image-name">
+      <h3 class="nx-font-weight-light nx-margin-top-2m"><span
+        style="font-weight:bold;">{{ profileImageData().firstName }}&nbsp;{{ profileImageData().lastName }}&nbsp;</span>
+      </h3>
+    </div>
+    <div class="nx-margin-top-1m" id="profile-image-message">
+      <h3 class="nx-font-weight-regular"> {{ 'app.form.profileImage.message'|translate }}</h3>
+    </div>
+  </div>
+}

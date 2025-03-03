@@ -1,0 +1,286 @@
+<!--<nx-multi-stepper #stepper [linear]="true" currentStepLabel="Step" (selectionChange)="updateStepper($event)">-->
+<nx-multi-stepper #stepper [linear]="true" currentStepLabel="Step">
+  <nx-step [stepControl]="leadFormGroup" label="{{'copy.step_3.label'|translate}}">
+    <form [formGroup]="leadFormGroup">
+      <div nxRow>
+        <div nxCol="12">
+          <h2 class="form-headline">Kontaktformular</h2>
+        </div>
+        <!--START hidden fields to mitigate bots -->
+        <div class="nx-margin-bottom-2m" nxCol="12,12,12" colOffset="0" style="display:none;">
+          <nx-formfield label="xxxxx">
+            <input formControlName="bot" nxInput type="text" id="secret"/>
+          </nx-formfield>
+        </div>
+        <!--END hidden fields to mitigate bots -->
+
+        <!--   FIRSTNAME LASTNAME     -->
+        <div class="nx-margin-bottom-2m" nxCol="12,12,12" colOffset="0">
+          <nx-formfield label="{{ 'app.form.label.firstname' | translate }} {{'app.form.label.lastname' | translate}}"
+                        appearance="outline" floatLabel="always">
+            <input formControlName="firstname" nxInput required/>
+            <nx-error nxFormfieldError appearance="text" showIcon="false">
+              <div class="nx-error">
+                <nx-icon name="exclamation-circle" size="s" style="font-size: 20px"></nx-icon>
+                <span>{{ "app.form.validation.fieldRequired" | translate }}</span>
+              </div>
+            </nx-error>
+          </nx-formfield>
+        </div>
+
+        <!--   EMAIL     -->
+        <div class="nx-margin-bottom-2m" nxCol="12,12,12" colOffset="0">
+          <nx-formfield label="{{ 'app.form.label.email' | translate }}" appearance="outline" floatLabel="always">
+            <input formControlName="email" nxInput type="email"/>
+            <nx-error nxFormfieldError appearance="text" showIcon="false">
+              <div class="nx-error">
+                <nx-icon name="exclamation-circle" size="s" style="font-size: 20px"></nx-icon>
+                <span>{{ "app.form.validation.email" | translate }}</span>
+              </div>
+            </nx-error>
+          </nx-formfield>
+        </div>
+
+        <!--   PHONE     -->
+        <div class="nx-margin-bottom-2m" nxCol="12,12,12,8" colOffset="0">
+          <nx-formfield appearance="outline" floatLabel="always">
+            <nx-formfield-label>{{ "app.form.label.phoneNumber"|translate }}</nx-formfield-label>
+            <nx-phone-input formControlName="phone" countryCode="CH"></nx-phone-input>
+            <span nxFormfieldHint>{{ "app.form.label.phoneNumberPrefix" | translate }} +41 79 123 4567</span>
+            <nx-error nxFormfieldError appearance="text" showIcon="false">
+              <div class="nx-error">
+                <nx-icon name="exclamation-circle" size="s" style="font-size: 20px"></nx-icon>
+                <span>{{ "app.form.validation.phoneNumber" | translate }}</span>
+              </div>
+            </nx-error>
+          </nx-formfield>
+        </div>
+
+        <!--   ZIP     -->
+        <div class="nx-margin-bottom-2m" nxCol="12,12,12,4" colOffset="0" [hidden]="isLeadGeneratorLink()">
+          <nx-formfield label="{{ 'app.form.label.zip' | translate }}" appearance="outline" floatLabel="always">
+            <input formControlName="zip" nxInput (change)="onZipChange()"/>
+            <span nxFormfieldPrefix>CH &#x2013;</span>
+            <nx-error nxFormfieldError appearance="text" showIcon="false">
+              <div class="nx-error">
+                <nx-icon name="exclamation-circle" size="s" style="font-size: 20px"></nx-icon>
+                <span>{{ "app.form.validation.zip" | translate }}</span>
+              </div>
+            </nx-error>
+          </nx-formfield>
+        </div>
+
+        <!--   COMMENTS     -->
+        <div nxCol="12,12,12" colOffset="0" class="nx-margin-top-1m">
+          <nx-formfield label="{{'app.form.label.comments'|translate}}" appearance="outline" floatLabel="always">
+            <textarea nxInput cdkTextareaAutosize formControlName="message"></textarea>
+            <nx-error nxFormfieldError appearance="text" showIcon="false">
+              <div class="nx-error">
+                <nx-icon name="exclamation-circle" size="s" style="font-size: 20px"></nx-icon>
+                <span>{{ "app.form.validation.comments" | translate }}</span>
+              </div>
+            </nx-error>
+          </nx-formfield>
+        </div>
+
+        <!--   TIME SLOTS     -->
+        <div class="nx-margin-top-2m" nxCol="12" colOffset="0">
+          <nx-checkbox-group formControlName="availability">
+            <nx-label size="small">{{
+                "app.form.label.availability" | translate
+              }}
+            </nx-label>
+            <div class="horizontal-checkboxes">
+              <nx-checkbox value="{{'app.form.label.time_1' | translate}}">{{ "app.form.label.time_1"|translate }}
+              </nx-checkbox>
+              <nx-checkbox value="{{'app.form.label.time_2' | translate}}">{{ "app.form.label.time_2"|translate }}
+              </nx-checkbox>
+              <nx-checkbox value="{{'app.form.label.time_3' | translate}}">{{ "app.form.label.time_3"|translate }}
+              </nx-checkbox>
+              <nx-checkbox value="{{'app.form.label.time_4' | translate}}">{{ "app.form.label.time_4"|translate }}
+              </nx-checkbox>
+            </div>
+          </nx-checkbox-group>
+        </div>
+      </div>
+    </form>
+
+    <!-- SUBMIT, TURNSTILE, VERSION-NR -->
+    <div class="nx-margin-top-xl" nxRow>
+      <div nxCol="12,12" class="nx-margin-top-0">
+        @if (this.isDisabled()) {
+          <div class="u-text-center" nxCol="12" colOffset="0">
+            <ngx-turnstile [siteKey]="environment.turnstileToken" theme="auto" [formControl]="tokenControl"
+                           [language]="this.appDataStore.userlang" appearance="always"
+                           (resolved)="onResolved($event)" ngDefaultControl
+                           (errored)="onErrored($event)"></ngx-turnstile>
+          </div>
+        } @else {
+          <div class="u-text-center nx-margin-top-0" nxCol="12" colOffset="0">
+
+          </div>
+        }
+      </div>
+      <!--      @if (this.turnstileIsValid && this.leadFormGroup.valid) {-->
+      <!--        <div class="u-text-center" nxCol="12" colOffset="0">-->
+      <!--          <button nxButton="primary" (click)="onsubmit()" type="button"-->
+      <!--                  class="submit-button">{{ "app.form.button.submit" | translate }}-->
+      <!--          </button>-->
+      <!--        </div>-->
+      <!--      }-->
+
+      <div class="u-text-center nx-margin-top-m" nxCol="12" colOffset="0">
+        <button nxButton="primary" (click)="onsubmit()" type="button" [disabled]="this.isDisabled()"
+                class="submit-button">{{ "app.form.button.submit" | translate }}
+        </button>
+      </div>
+
+      <div nxCol="12,12">
+        <p class="nx-margin-top-2m legal-notice" nxCopytext="medium" [innerHtml]="'app.form.legal' | translate"
+        ></p>
+      </div>
+      <div nxCol="12,12" class="nx-margin-bottom-2m">
+        <p nxCopytext="small" class=" u-text-center" style="color: white !important;">
+          Release: {{ environment.appVersion }}
+        </p>
+      </div>
+    </div>
+  </nx-step>
+
+  <!-- SUCCESS PAGE -->
+  <nx-step label="{{ 'copy.step_4.label' | translate }}">
+    <div class="nx-margin-top-l" nxRow>
+      <div class="nx-margin-bottom-2m nx-margin-top-4m u-text-align-center " nxCol="12" colOffset="0">
+        <nx-icon name="check" fill="true" outline="true" size="m" style="background: #1e8927"></nx-icon>
+      </div>
+      <div class="nx-margin-bottom-m u-text-align-center" nxCol="12" colOffset="0">
+        <h3 nxHeadline="section" size="m">{{ "app.form.success.headline" | translate }}</h3>
+      </div>
+      <div class="nx-margin-bottom-3xl u-text-align-center" nxCol="8" colOffset="2">
+        <p nxCopytext="large">
+          {{ "app.form.success.copy" | translate }}
+        </p>
+      </div>
+
+      <!--    DEBUG DEBUG DEBUG -->
+      @if (environment.stage != 'prod') {
+        <div class="nx-margin-bottom-4m u-text-center" nxCol="8" colOffset="2">
+          @if (mailData?.customer == true) {
+            <figure nxFigure="1dot8by1">
+              <img
+                ngSrc="/assets/img/match.jpg"
+                alt="Customer match"
+                fill
+              />
+            </figure>
+          } @else {
+            <figure nxFigure="1dot8by1">
+              <img
+                ngSrc="/assets/img/no-match.png"
+                alt="Not a customer"
+                fill
+              />
+            </figure>
+          }
+          <h1 nxHeadline size="2xl">
+            MailData
+          </h1>
+        </div>
+        <div nxLayout="grid">
+          <div nxRow>
+            <div nxCol="12,12,6,6" class="nx-margin-bottom-s">
+              <nx-data-display label="First/Last Name">{{ mailData?.customerName }}</nx-data-display>
+            </div>
+            <div nxCol="12,12,6,6" class="nx-margin-bottom-s">
+              <nx-data-display label="Zip">{{ mailData?.customerZipCode }}</nx-data-display>
+            </div>
+            <div nxCol="12,12,6,6" class="nx-margin-bottom-s">
+              <nx-data-display label="Phone">{{ mailData?.customerPhoneNumber }}</nx-data-display>
+            </div>
+            <div nxCol="12,12,6,6" class="nx-margin-bottom-s">
+              <nx-data-display label="Email">{{ mailData?.customerEmail }}</nx-data-display>
+            </div>
+            <div nxCol="12,12,6,6" class="nx-margin-bottom-s">
+              <nx-data-display label="H-Number">{{ mailData?.customerNumber }}</nx-data-display>
+            </div>
+            <div nxCol="12,12,6,6" class="nx-margin-bottom-s">
+              <nx-data-display label="Recipient Lang">{{ mailData?.mailLanguage }}</nx-data-display>
+            </div>
+            <div nxCol="12,12,6,6" class="nx-margin-bottom-s">
+              <nx-data-display label="Customer Lang">{{ mailData?.customerLanguage }}</nx-data-display>
+            </div>
+            <div nxCol="12,12,6,6" class="nx-margin-bottom-s">
+              <nx-data-display label="Agent">{{ mailData?.agent }}</nx-data-display>
+            </div>
+            <div nxCol="12,12,6,6" class="nx-margin-bottom-s">
+              <nx-data-display label="Origin">{{ mailData?.source_origin }}</nx-data-display>
+            </div>
+            <div nxCol="12,12,6,6" class="nx-margin-bottom-s">
+              <nx-data-display label="Agency">{{ mailData?.agency }}</nx-data-display>
+            </div>
+            <div nxCol="12,12,6,6" class="nx-margin-bottom-s">
+              <nx-data-display label="Application">{{ mailData?.leadApp }}</nx-data-display>
+            </div>
+            <div nxCol="12,12,6,6" class="nx-margin-bottom-s">
+              <nx-data-display label="Campaign">{{ mailData?.source_campaign }}</nx-data-display>
+            </div>
+            <div nxCol="12,12,6,6" class="nx-margin-bottom-s">
+              <nx-data-display label="Campaign Source">{{ mailData?.source_source }}</nx-data-display>
+            </div>
+            <div nxCol="12,12,6,6" class="nx-margin-bottom-s">
+              <nx-data-display label="Category">{{ mailData?.source_category }}</nx-data-display>
+            </div>
+            <div nxCol="12,12,6,6" class="nx-margin-bottom-s">
+              <nx-data-display label="Source Was">{{ mailData?.source_was }}</nx-data-display>
+            </div>
+            <div nxCol="12,12,6,6" class="nx-margin-bottom-s">
+              <nx-data-display label="Source Woher">{{ mailData?.source_woher }}</nx-data-display>
+            </div>
+            <div nxCol="12,12,6,6" class="nx-margin-bottom-s">
+              <nx-data-display label="Source URL">
+                <nx-link nxStyle="text" size="small">
+                  <a href="{{ mailData?.source_formUrl }}"
+                     target="_blank">{{ mailData?.source_woher }}</a>
+                </nx-link>
+              </nx-data-display>
+            </div>
+          </div>
+        </div>
+        <div class="nx-margin-bottom-4m nx-margin-top-2m u-text-center" nxCol="8" colOffset="2">
+          <h1 nxHeadline size="2xl">
+            LeadNavigator Data
+          </h1>
+        </div>
+        <div nxLayout="grid">
+          <div nxRow>
+            <div nxCol="12,12,6,6" class="nx-margin-bottom-s">
+              <nx-data-display label="Customer Agent Email">{{ customerValidation.customerAgentEmail }}
+              </nx-data-display>
+            </div>
+            <div nxCol="12,12,6,6" class="nx-margin-bottom-s">
+              <nx-data-display label="Customer Agent Number">{{ customerValidation.customerAgentNumber }}
+              </nx-data-display>
+            </div>
+            <div nxCol="12,12,6,6" class="nx-margin-bottom-s">
+              <nx-data-display label="Customer Language">{{ customerValidation.customerLanguage }}
+              </nx-data-display>
+            </div>
+            <div nxCol="12,12,6,6" class="nx-margin-bottom-s">
+              <nx-data-display label="Customer Number">{{ customerValidation.customerNumber }}</nx-data-display>
+            </div>
+            <div nxCol="12,12,6,6" class="nx-margin-bottom-s">
+              <nx-data-display label="Customer GA">{{ customerValidation.ga }}</nx-data-display>
+            </div>
+            <div nxCol="12,12,6,6" class="nx-margin-bottom-s">
+              <nx-data-display label="Routing Email">{{ customerValidation.routingEmail }}</nx-data-display>
+            </div>
+            <div nxCol="12,12,6,6" class="nx-margin-bottom-s">
+              <nx-data-display label="Routing Email determined by: ">{{ routingMethodDebug }}</nx-data-display>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+    <!--END DEBUG  -->
+  </nx-step>
+</nx-multi-stepper>
