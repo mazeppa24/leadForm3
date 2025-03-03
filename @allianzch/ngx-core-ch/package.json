@@ -1,0 +1,25 @@
+{
+  "publishConfig": {
+    "registry": "https://artifactory.azch.allianz/artifactory/api/npm/npm-releases/"
+  },
+  "peerDependencies": {},
+  "name": "@allianzch/ngx-core-ch",
+  "version": "17.1.3",
+  "module": "fesm2022/allianzch-ngx-core-ch.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2022": "./esm2022/allianzch-ngx-core-ch.mjs",
+      "esm": "./esm2022/allianzch-ngx-core-ch.mjs",
+      "default": "./fesm2022/allianzch-ngx-core-ch.mjs"
+    }
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}

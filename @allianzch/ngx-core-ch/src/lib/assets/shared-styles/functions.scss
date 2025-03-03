@@ -1,0 +1,37 @@
+// Helper functions to access the patternlab measurement maps
+// in a more semantic and readable way
+@function nx-spacer($key) {
+  @return map-get($sizes, $key);
+}
+
+@function nx-line-height($key) {
+  @return map-get($line-heights, $key);
+}
+
+@function nx-font-size($key) {
+  @return map-get($font-sizes, $key);
+}
+
+@function nx-border-size($key) {
+  @return map-get($borders, $key);
+}
+
+@function nx-border-radius($key) {
+  @return map-get($border-radius, $key);
+}
+
+@function nx-letter-spacing($key) {
+  @return map-get($letter-spacings, $key);
+}
+
+@function nx-color($key, $tone) {
+  @return map-get(map-get($nx-colors, $key), $tone);
+}
+
+@function nx-font-weight($key) {
+  @return map-get($font-weight, $key);
+}
+
+@function nx-box-shadow($key) {
+  @return map-get($shadows, $key);
+}

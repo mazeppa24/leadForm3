@@ -1,0 +1,4 @@
+@import '../../../../../ng-aquila/projects/ng-aquila/src/shared-styles/theming/theming.scss';
+@import '../themes/dark.scss';
+
+@include nx-build-theme(dark);

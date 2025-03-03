@@ -1,0 +1,1 @@
+{"version":3,"file":"minify-loader.js","sourceRoot":"","sources":["../../../../library/src/builders/utils/minify-loader.ts"],"names":[],"mappings":";;AAEA,oCAMC;;AARD,mCAA8B;AAE9B,SAAsB,YAAY,CAAC,UAAkB;;QACnD,OAAO,CACL,MAAM,IAAA,eAAM,EAAC,UAAU,EAAE;YACvB,QAAQ,EAAE,EAAE,SAAS,EAAE,KAAK,EAAE;SAC/B,CAAC,CACH,CAAC,IAAI,CAAC;IACT,CAAC;CAAA"}

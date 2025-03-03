@@ -1,0 +1,43 @@
+{
+  "name": "@allianz/ngx-ndbx",
+  "version": "18.5.1",
+  "description": "Angular NDBX package to be used with ng-aquila",
+  "author": "Angular NDBX team",
+  "peerDependencies": {
+    "@angular/cdk": "^18.0.0",
+    "@angular/common": "^18.0.0",
+    "@angular/core": "^18.0.0",
+    "@aposin/ng-aquila": "18.5.1"
+  },
+  "publishConfig": {
+    "registry": "https://nexus-gdf-crp2.devops-services.we1.azure.aztec.cloud.allianz/repository/npm-public-libraries/"
+  },
+  "schematics": "./schematics/collection.json",
+  "ng-update": {
+    "migrations": "./schematics/migrations.json"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "exports": {
+    "./css/": "./css/",
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2022": "./esm2022/allianz-ngx-ndbx.mjs",
+      "esm": "./esm2022/allianz-ngx-ndbx.mjs",
+      "default": "./fesm2022/allianz-ngx-ndbx.mjs"
+    },
+    "./icon": {
+      "types": "./icon/index.d.ts",
+      "esm2022": "./esm2022/icon/allianz-ngx-ndbx-icon.mjs",
+      "esm": "./esm2022/icon/allianz-ngx-ndbx-icon.mjs",
+      "default": "./fesm2022/allianz-ngx-ndbx-icon.mjs"
+    }
+  },
+  "module": "fesm2022/allianz-ngx-ndbx.mjs",
+  "typings": "index.d.ts",
+  "sideEffects": false
+}

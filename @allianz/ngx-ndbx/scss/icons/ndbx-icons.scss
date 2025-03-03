@@ -1,0 +1,21 @@
+@import 'icon-list';
+
+.ndbx-icon {
+    font-family: 'Allianz-Icons';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+
+    &:before {
+        font-family: 'Allianz-Icons';
+        font-size: inherit;
+    }
+}
+
+@each $icon in map-keys($nx-icons) {
+    .nx-icon--#{$icon} {
+        &:before {
+            content: map-get($nx-icons, $icon);
+        }
+    }
+}

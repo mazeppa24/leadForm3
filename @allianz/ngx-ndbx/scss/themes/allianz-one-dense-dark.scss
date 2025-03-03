@@ -1,0 +1,5 @@
+@import 'ndbx';
+@import './allianz-one-tokens/allianz/web/tokens-dense-dark-minimal.scss';
+@import './allianz-one-mapping';
+
+$themes: nx-register-theme($allianz-one-mapping, allianz-one-dense-dark, ndbx);

@@ -1,0 +1,12 @@
+/**
+ * Object that stores the message and its severity (= toastType). The message and its severity can be retrieved from backend
+ * validation.
+ * The toast's style depends on the toast type. The toastType is optional in case no toast is shown.
+ */
+export class Message {
+    constructor(message, toastType) {
+        this.message = message;
+        this.toastType = toastType;
+    }
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWVzc2FnZS5wb2pvLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vLi4vLi4vLi4vLi4vcHJvamVjdHMvYWxsaWFuemNoL25neC1jb3JlLWNoL3NyYy9saWIvY29tcG9uZW50cy9tZXNzYWdlL21lc3NhZ2UucG9qby50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQTs7OztHQUlHO0FBQ0gsTUFBTSxPQUFPLE9BQU87SUFDbEIsWUFDUyxPQUFlLEVBQ2YsU0FBcUI7UUFEckIsWUFBTyxHQUFQLE9BQU8sQ0FBUTtRQUNmLGNBQVMsR0FBVCxTQUFTLENBQVk7SUFDM0IsQ0FBQztDQUNMIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgVG9hc3RUeXBlIH0gZnJvbSAnLi90b2FzdC10eXBlJztcblxuLyoqXG4gKiBPYmplY3QgdGhhdCBzdG9yZXMgdGhlIG1lc3NhZ2UgYW5kIGl0cyBzZXZlcml0eSAoPSB0b2FzdFR5cGUpLiBUaGUgbWVzc2FnZSBhbmQgaXRzIHNldmVyaXR5IGNhbiBiZSByZXRyaWV2ZWQgZnJvbSBiYWNrZW5kXG4gKiB2YWxpZGF0aW9uLlxuICogVGhlIHRvYXN0J3Mgc3R5bGUgZGVwZW5kcyBvbiB0aGUgdG9hc3QgdHlwZS4gVGhlIHRvYXN0VHlwZSBpcyBvcHRpb25hbCBpbiBjYXNlIG5vIHRvYXN0IGlzIHNob3duLlxuICovXG5leHBvcnQgY2xhc3MgTWVzc2FnZSB7XG4gIGNvbnN0cnVjdG9yKFxuICAgIHB1YmxpYyBtZXNzYWdlOiBzdHJpbmcsXG4gICAgcHVibGljIHRvYXN0VHlwZT86IFRvYXN0VHlwZSxcbiAgKSB7fVxufVxuIl19

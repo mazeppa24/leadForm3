@@ -1,0 +1,59 @@
+{
+  "$schema": "../../node_modules/ng-packagr/package.schema.json",
+  "name": "@allianz/ngx-aem-integration",
+  "version": "20.0.0",
+  "description": "ngx aem integration",
+  "author": "GDF - Global digital factory",
+  "builders": "builders/builders.json",
+  "repository": {
+    "type": "git",
+    "url": "https://github.developer.allianz.io/ilt/ngx-aem-integration.git"
+  },
+  "dependencies": {
+    "app-root-path": "^3.1.0",
+    "promisepipe": "3.0.0",
+    "fs-extra": "^11.2.0",
+    "yargs": "^17.7.2",
+    "chalk": "^4.1.2",
+    "terser": "^5.31.3",
+    "glob": "^11.0.0",
+    "tslib": "^2.3.0"
+  },
+  "peerDependencies": {
+    "@angular/cli": "^18.1.1",
+    "@angular/common": "^18.1.1",
+    "@angular/core": "^18.1.1",
+    "@angular-devkit/core": "^18.1.1",
+    "@angular-devkit/build-angular": "^18.1.1",
+    "typescript": "^5.5.3"
+  },
+  "publishConfig": {
+    "registry": "https://nexus-gdf-crp2.devops-services.we1.azure.aztec.cloud.allianz/repository/npm-public-libraries/"
+  },
+  "bin": {
+    "ngx-aem-integration": "builders/scripts/cmd.js"
+  },
+  "standard-version": {
+    "infile": "../CHANGELOG.md"
+  },
+  "module": "fesm2022/allianz-ngx-aem-integration.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2022": "./esm2022/allianz-ngx-aem-integration.mjs",
+      "esm": "./esm2022/allianz-ngx-aem-integration.mjs",
+      "default": "./fesm2022/allianz-ngx-aem-integration.mjs"
+    },
+    "./ngx-translate-loader": {
+      "types": "./ngx-translate-loader/index.d.ts",
+      "esm2022": "./esm2022/ngx-translate-loader/allianz-ngx-aem-integration-ngx-translate-loader.mjs",
+      "esm": "./esm2022/ngx-translate-loader/allianz-ngx-aem-integration-ngx-translate-loader.mjs",
+      "default": "./fesm2022/allianz-ngx-aem-integration-ngx-translate-loader.mjs"
+    }
+  },
+  "sideEffects": false
+}

@@ -1,0 +1,35 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "$id": "angular-ndbx-ng-add",
+    "title": "Angular NDBX ng-add schematic",
+    "type": "object",
+    "properties": {
+        "project": {
+            "type": "string",
+            "description": "Name of the project.",
+            "$default": {
+                "$source": "projectName"
+            }
+        },
+        "type": {
+            "description": "Use case of the application.",
+            "type": "string",
+            "default": "b2c",
+            "x-prompt": {
+                "message": "Please choose your use case?",
+                "type": "list",
+                "items": [
+                    {
+                        "value": "b2c",
+                        "label": "Customer facing application (B2C)"
+                    },
+                    {
+                        "value": "b2b",
+                        "label": "Internal application (B2B)"
+                    }
+                ]
+            }
+        }
+    },
+    "required": []
+}

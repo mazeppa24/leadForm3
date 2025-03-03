@@ -1,0 +1,52 @@
+{
+    "distFolderHistory": [
+        {
+            "version": "0.0.7",
+            "comment": "Adds icon, checkbox and radio button tokens",
+            "hash": "cc04b03a0d4476e1945bed12cb5b1972ea5900c62b5ea2dba8709febda26af7a",
+            "updated": "2023-06-30T08:57:12.462Z"
+        },
+        {
+            "version": "0.1.0",
+            "comment": "Refactoring token structure and token-transform library to be aligned with multi-dimensional theming best practices",
+            "hash": "3fdd96fe563e0ac37b11ee184446a5630d30550584755fd838218e3a65554bd5",
+            "updated": "2023-08-17T20:10:03.425Z"
+        },
+        {
+            "version": "0.2.0",
+            "comment": "Token set restructurs and breaking token renamings",
+            "hash": "c9d108b383c318c9b910beb1184bc9ca3e80359bb2cc71cbefc954e1e702000d",
+            "updated": "2023-09-28T15:05:03.960Z"
+        },
+        {
+            "version": "0.2.1",
+            "comment": "Fix missing alpha values",
+            "hash": "214ce229c67be91b05f542d52b9f153b58cb476576b7f43b52270d095e51cce9",
+            "updated": "2023-11-17T13:59:15.063Z"
+        },
+        {
+            "version": "0.3.0",
+            "comment": "Major reworked and updated token set with first animation tokens",
+            "hash": "12e22c5a281910e559bdf70aa8fee5a5bfa4b7079685f77dbf877c78d298580d",
+            "updated": "2023-12-05T15:00:14.733Z"
+        },
+        {
+            "version": "0.4.0",
+            "comment": "Breaking changes in Tag component and motion tokens, and multiple other updates i.e. in demo files",
+            "hash": "8c45bafed5900e44bfbf8188fce9d7ad1061ff26fbcd71ef56314640ce997856",
+            "updated": "2024-03-20T08:53:02.815Z"
+        },
+        {
+            "version": "0.4.1",
+            "comment": "Fixes wrong semantic surface hover color and fixes wrong demo file token CDN loading",
+            "hash": "5b992bbea52cea2f6bee9617edfe29c46923767ffc9ad59602e6a609d8a3e8f1",
+            "updated": "2024-03-20T22:22:15.627Z"
+        },
+        {
+            "version": "0.5.0",
+            "comment": "Refactor core grid tokens and fix dense component typography token values",
+            "hash": "91aa55c26bb03d99d5d53ac3cfa0c2f6fc48be71ae31122f7bff9322dfa01639",
+            "updated": "2024-07-03T10:18:23.679Z"
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+  "builders": {
+    "generate-js-loader": {
+      "implementation": "./generate-js-loader/generate-js-loader.builder.js",
+      "schema": "./generate-js-loader/generate-js-loader.schema.json",
+      "description": "Generates the JS Loader"
+    },
+    "build": {
+      "implementation": "./build/build.builder.js",
+      "schema": "./build/build.schema.json",
+      "description": "Builds the application"
+    },
+    "generate-env-args": {
+      "implementation": "./env-args/generate/generate-env-args.builder.js",
+      "schema": "./env-args/generate/generate-env-args.schema.json",
+      "description": "Generate the env args and store the args in a file"
+    },
+    "clean-env-args": {
+      "implementation": "./env-args/clean/clean-env-args.builder.js",
+      "schema": "./env-args/clean/clean-env-args.schema.json",
+      "description": "Clean the generated env args and restore the file to its previous status"
+    }
+  }
+}

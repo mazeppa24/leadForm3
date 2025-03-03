@@ -1,0 +1,161 @@
+// primary colors
+$c-primary-brand: #003781;
+//$c-primary-grey:                              #414141;
+
+// basic colors
+$c-white: #fff;
+$c-black: #000;
+
+// secondary colors
+// rich
+$c-rich-grey: #5a5360;
+$c-rich-grey-light: #d7d3d9; //D6D4D7;
+
+$c-rich-purple: #5a3982;
+$c-rich-purple-light: #dad0e1; //D7CDDF;
+
+$c-rich-olive: #5b5d30;
+$c-rich-olive-light: #d4d5c8; //CDCEC1;
+
+$c-rich-green: #407d71;
+$c-rich-green-light: #c3d8d4;
+
+$c-rich-green2: #617b6f;
+
+$c-rich-blue: #49648c;
+$c-rich-blue-light: #cad4de; //C7D0DB;
+
+$c-rich-red: #b71e3f;
+$c-rich-red-light: #f1c8d0; //EFC6CE;
+
+$c-rich-petrol: #007d8c;
+$c-rich-petrol-light: #b1dadd; //AFD8DC;
+
+// soft
+$c-soft-green: #c0ddbd;
+$c-soft-green-light: #dfeede;
+$c-soft-green-lightest: #eff6ee;
+
+$c-soft-nude: #eacfc0; //E6CCC1;
+$c-soft-nude-light: #f3e5df;
+$c-soft-nude-lightest: #f9f2ef;
+
+$c-soft-grey: #d4cdcd;
+$c-soft-grey-light: #efe8e6; //E9E6E6;
+$c-soft-grey-lightest: #f8f4f2; //F4F2F2;
+
+$c-soft-blue: #cfe9ee;
+$c-soft-blue-light: #e6f4f6;
+$c-soft-blue-lightest: #f1f9fa;
+
+$c-soft-beige: #ebe1bf;
+$c-soft-beige-light: #f5f0e0;
+$c-soft-beige-lightest: #faf7ef;
+
+$c-soft-rose: #eeccd5;
+$c-soft-rose-light: #f6e5ea;
+$c-soft-rose-lightest: #fbf2f4;
+
+$c-soft-mud: #dbd3bd; //D9D1BB;
+$c-soft-mud-light: #ebe7db;
+$c-soft-mud-lightest: #f5f3ed;
+
+// vibrant
+$c-vibrant-green: #ccdd61; //C8D95D;
+$c-vibrant-green-light: #e3ebaf;
+
+$c-vibrant-blue: #96dcfa; //8AD7FA;
+$c-vibrant-blue-light: #c1ebfb;
+
+$c-vibrant-purple: #8a679c;
+$c-vibrant-purple-light: #e1cfeb; //D9C6E3;
+
+$c-vibrant-red: #e4003a;
+$c-vibrant-red-light: #f7c7c3; //F6C0BC;
+
+$c-vibrant-turquoise: #7fe4e0; //7ADEDB;
+$c-vibrant-turquoise-light: #c3e8e7;
+
+$c-vibrant-yellow: #fdd25c;
+$c-vibrant-yellow-light: #ffe8b0;
+
+$c-vibrant-orange: #ff934f;
+$c-vibrant-orange-light: #f7caab; //F0C5A7;
+
+// action colors
+//$c-primary-action:                            #007AB3;
+$c-primary-action-medium: #008ed6; //#00ADFF;
+$c-primary-action-light: #7fbcd9;
+$c-primary-action-lighter: #b2d7e8;
+$c-primary-action-lightest: #d9ebf4;
+$c-primary-action-dark: #006192; //0068B3;
+$c-primary-action-darker: #075994;
+
+//$c-action-orange:                             #F86200;
+//$c-action-orange-dark:                        #E15200;
+//$c-action-orange-darker:                      #C15500;
+//$c-action-orange-light:                       #F3C09F;
+
+//$c-action-green:                              #3DA556;
+//$c-action-green-dark:                         #348357;
+//$c-action-green-darker:                       #276442;
+//$c-action-green-light:                        #B5D9B9;
+
+//$c-action-grey:                               #AEAEAE;
+//$c-action-grey-light:                         #D1D3D1;
+//$c-action-grey-lighter:                       #DDDCDB;
+
+// additional colors
+$c-tweaked-blue: #496ebd; // forms info message text
+$c-negative-green: #177082; // negative forms background
+
+// font-colors
+//$c-font-grey-primary:                         $c-primary-grey;
+
+// external brand colors
+$c-brand-facebook: #3b5998;
+$c-brand-twitter: #1da1f2;
+$c-brand-gplus: #dd4b39;
+
+/////////////////////////////////////////////////////
+// shades of grey
+$c-grey-bg: #999999; // Background only, not with text
+$c-grey-border: #8b8b8b;
+$c-grey-arrow: #676767;
+$c-grey-middle: #767676; // taglist & footer font color
+$c-grey-light: #c2c2c2; // checkbox border & apple switcher background
+
+$c-secondary-dark-grey: #5b5b5b; // footnote text & table border
+$c-secondary-dark-grey-gradation1: #c2c2c2; // table border
+$c-secondary-dark-grey-gradation2: #d9d9d9; // didvider & tabs border & taglists background + border
+$c-secondary-dark-grey-gradation3: #ececec; // checkbox background
+
+$c-secondary-light-grey: #d9d9d9; // background + border in slider (form element) & table background & border for popups, tooltips etc
+$c-secondary-light-grey-gradation3: #f5f5f5; // configurator checkbox border & table background
+
+$c-secondary-green: #4d7162; // table font color
+$c-secondary-petrol-gradation1: #bcd0d6; // bullet points unordered list
+
+/////////////////////////////////////////////////////
+
+// accent colors
+$c-accent-green: #1e8927; // forms success
+$c-accent-red: #dc3149; //de3f56; // forms error (border + text)
+$c-acent-yellow: #efbe25; // forms warning
+// process/signal colours
+$c-error: $c-accent-red;
+$c-success: $c-accent-green;
+$c-warning: $c-acent-yellow;
+$c-info: $c-tweaked-blue;
+
+// font-colors
+$c-font-basic-secondary: #767676; // font color for pullquote, secondary copytext & footer text
+$c-font-basic-additional-infos: #8d8d8d; // configurator checkbox font color for additional infos
+
+// transparent colors
+$c-grey-shadow: rgba(65, 65, 65, 0.5); // shadow color for buttons, tooltips, popups & tags
+$c-grey-shadow-light: rgba(65, 65, 65, 0.35); // tooltip border
+$c-grey-shadow-lighter: rgba(65, 65, 65, 0.2); // tooltip border
+$c-red-shadow: rgba(174, 36, 62, 0.5); // error message shadow
+$c-black-shadow: rgba(0, 0, 0, 0.6);
+$c-black-shadow-light: rgba(0, 0, 0, 0.35); //  agent tooltip border

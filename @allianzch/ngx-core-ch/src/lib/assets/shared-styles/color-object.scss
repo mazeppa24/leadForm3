@@ -1,0 +1,230 @@
+//color object
+
+$color-basic: (
+  primary-brand: #003781,
+  primary-white: #fff,
+  primary-black: #000,
+  secondary-black: #343434
+);
+
+$color-high-contrast: (
+  yellow: #ffff00,
+  white: map_get($color-basic, primary-white),
+  green: #008000
+);
+
+$color-rich: (
+  rich-grey: #5a5360,
+  rich-purple: #5a3982,
+  rich-olive: #5b5d30,
+  rich-green: #407d71,
+  rich-blue: #49648c,
+  rich-red: #b71e3f,
+  rich-petrol: #007d8c
+);
+
+$color-rich-light: (
+  rich-grey-light: #d7d3d9,
+  rich-purple-light: #dad0e1,
+  rich-olive-light: #d4d5c8,
+  rich-green-light: #c3d8d4,
+  rich-blue-light: #cad4de,
+  rich-red-light: #f1c8d0,
+  rich-petrol-light: #b1dadd
+);
+
+$color-soft: (
+  soft-green: #c0ddbd,
+  soft-nude: #eacfc0,
+  soft-grey: #d4cdcd,
+  soft-blue: #cfe9ee,
+  soft-beige: #ebe1bf,
+  soft-rose: #eeccd5,
+  soft-mud: #dbd3bd
+);
+$color-soft-light: (
+  soft-green-light: #dfeede,
+  soft-nude-light: #f3e5df,
+  soft-grey-light: #efe8e6,
+  soft-blue-light: #e6f4f6,
+  soft-beige-light: #f5f0e0,
+  soft-rose-light: #f6e5ea,
+  soft-mud-light: #ebe7db
+);
+
+$color-soft-lightest: (
+  soft-green-lightest: #eff6ee,
+  soft-nude-lightest: #f9f2ef,
+  soft-grey-lightest: #f8f4f2,
+  soft-blue-lightest: #f1f9fa,
+  soft-beige-lightest: #faf7ef,
+  soft-rose-lightest: #fbf2f4,
+  soft-mud-lightest: #f5f3ed
+);
+
+$color-vibrant: (
+  vibrant-green: #ccdd61,
+  vibrant-blue: #96dcfa,
+  vibrant-purple: #8a679c,
+  vibrant-red: #e4003a,
+  vibrant-turquoise: #7fe4e0,
+  vibrant-yellow: #fdd25c,
+  vibrant-orange: #ff934f
+);
+
+$color-vibrant-light: (
+  vibrant-green-light: #e3ebaf,
+  vibrant-blue-light: #c1ebfb,
+  vibrant-purple-light: #e1cfeb,
+  vibrant-red-light: #f7c7c3,
+  vibrant-turquoise-light: #c3e8e7,
+  vibrant-yellow-light: #ffe8b0,
+  vibrant-orange-light: #f7caab
+);
+
+//grey gradation
+/*
+*** Warning ***
+Do not use this object any more.
+And, use $color-grey-tones instance of this.
+It's going to remove very soon.
+ */
+$color-grey-gradation: (
+  secondary-dark-grey: #5b5b5b,
+  secondary-dark-grey-gradation1: #c2c2c2,
+  secondary-dark-grey-gradation2: #d9d9d9,
+  secondary-dark-grey-gradation3: #ececec,
+  secondary-dark-grey-gradation4: #767676,
+  secondary-dark-grey-gradation5: #999999,
+  secondary-light-grey: #d9d9d9,
+  secondary-light-grey-gradation3: #f5f5f5
+);
+
+$color-grey-tones: (
+  grey-tone-1: #414141,
+  grey-tone-2: #5b5b5b,
+  grey-tone-3: #767676,
+  grey-tone-4: #999999,
+  grey-tone-5: #c2c2c2,
+  grey-tone-6: #d9d9d9,
+  grey-tone-7: #ececec,
+  grey-tone-8: #f5f5f5
+);
+
+//action color
+$color-primary-action: (
+  primary-action-bright: #007ab3,
+  primary-action-medium: #008ed6,
+  //#00ADFF
+    primary-action-light: #7fbcd9,
+  primary-action-lighter: #b2d7e8,
+  primary-action-lightest: #d9ebf4,
+  primary-action-dark: #006192,
+  //0068B3
+    primary-action-darker: #075994,
+  primary-action-accessibility: #009de6
+);
+
+$color-direct: (
+  direct-orange: #f86200,
+  direct-orange-light: #f3c09f,
+  direct-orange-dark: #e15200,
+  direct-orange-darker: #c15500,
+  direct-green: #3da556,
+  direct-green-light: #b5d9b9,
+  direct-green-dark: #348357,
+  direct-green-darker: #276442
+);
+
+$color-process: (
+  process-error: #dc3149,
+  process-success: #1e8927,
+  process-warning: #efbe25,
+  process-info: #496ebd
+);
+
+// shadows
+$shadows: (
+  s: 0 2px 4px rgba(65, 65, 65, 0.5),
+  l: 0 8px 24px rgba(65, 65, 65, 0.35)
+);
+
+$nx-colors: ();
+$nx-colors: map-merge(
+  $nx-colors,
+  (
+    basic: $color-basic
+  )
+);
+$nx-colors: map-merge(
+  $nx-colors,
+  (
+    high-contrast: $color-high-contrast
+  )
+);
+$nx-colors: map-merge(
+  $nx-colors,
+  (
+    rich: $color-rich
+  )
+);
+$nx-colors: map-merge(
+  $nx-colors,
+  (
+    rich-light: $color-rich-light
+  )
+);
+$nx-colors: map-merge(
+  $nx-colors,
+  (
+    soft: $color-soft
+  )
+);
+$nx-colors: map-merge(
+  $nx-colors,
+  (
+    soft-light: $color-soft-light
+  )
+);
+$nx-colors: map-merge(
+  $nx-colors,
+  (
+    soft-lightest: $color-soft-lightest
+  )
+);
+$nx-colors: map-merge(
+  $nx-colors,
+  (
+    vibrant: $color-vibrant
+  )
+);
+$nx-colors: map-merge(
+  $nx-colors,
+  (
+    vibrant-light: $color-vibrant-light
+  )
+);
+$nx-colors: map-merge(
+  $nx-colors,
+  (
+    grey-tones: $color-grey-tones
+  )
+);
+$nx-colors: map-merge(
+  $nx-colors,
+  (
+    primary-action: $color-primary-action
+  )
+);
+$nx-colors: map-merge(
+  $nx-colors,
+  (
+    direct: $color-direct
+  )
+);
+$nx-colors: map-merge(
+  $nx-colors,
+  (
+    process: $color-process
+  )
+);

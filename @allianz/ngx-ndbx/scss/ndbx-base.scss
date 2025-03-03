@@ -1,0 +1,184 @@
+@font-face {
+    font-family: 'Allianz Neo';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src:
+        url('./fonts/allianz-neo/AllianzNeo-Light.woff2') format('woff2'),
+        url('./fonts/allianz-neo/AllianzNeo-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Allianz Neo';
+    font-style: italic;
+    font-weight: 300;
+    font-display: swap;
+    src:
+        url('./fonts/allianz-neo/AllianzNeo-LightItalic.woff2') format('woff2'),
+        url('./fonts/allianz-neo/AllianzNeo-LightItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Allianz Neo';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src:
+        url('./fonts/allianz-neo/AllianzNeo-Regular.woff2') format('woff2'),
+        url('./fonts/allianz-neo/AllianzNeo-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Allianz Neo';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src:
+        url('./fonts/allianz-neo/AllianzNeo-Italic.woff2') format('woff2'),
+        url('./fonts/allianz-neo/AllianzNeo-Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Allianz Neo';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src:
+        url('./fonts/allianz-neo/AllianzNeo-SemiBold.woff2') format('woff2'),
+        url('./fonts/allianz-neo/AllianzNeo-SemiBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Allianz Neo';
+    font-style: italic;
+    font-weight: 600;
+    font-display: swap;
+    src:
+        url('./fonts/allianz-neo/AllianzNeo-SemiBoldItalic.woff2') format('woff2'),
+        url('./fonts/allianz-neo/AllianzNeo-SemiBoldItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Allianz Neo';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src:
+        url('./fonts/allianz-neo/AllianzNeo-Bold.woff2') format('woff2'),
+        url('./fonts/allianz-neo/AllianzNeo-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Allianz Neo';
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src:
+        url('./fonts/allianz-neo/AllianzNeo-BoldItalic.woff2') format('woff2'),
+        url('./fonts/allianz-neo/AllianzNeo-BoldItalic.woff') format('woff');
+}
+
+/* Keep for compatibility for now */
+@font-face {
+    font-family: 'Patternlab-Icon';
+    font-style: normal;
+    font-weight: normal;
+    font-display: block;
+    src:
+        url('./fonts/allianz-icons/Allianz-Icons.woff2') format('woff2'),
+        url('./fonts/allianz-icons/Allianz-Icons.ttf') format('truetype'),
+        url('./fonts/allianz-icons/Allianz-Icons.svg#Allianz-Icons') format('svg');
+}
+
+@font-face {
+    font-family: 'Allianz-Icons';
+    font-style: normal;
+    font-weight: normal;
+    font-display: block;
+    src:
+        url('./fonts/allianz-icons/Allianz-Icons.woff2') format('woff2'),
+        url('./fonts/allianz-icons/Allianz-Icons.ttf') format('truetype'),
+        url('./fonts/allianz-icons/Allianz-Icons.svg#Allianz-Icons') format('svg');
+}
+
+@import './icons/ndbx-icons.scss';
+
+/* to be removed in a separate normalize file? */
+table,
+th,
+td,
+tr {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+a {
+    color: inherit;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+small {
+    font-size: inherit;
+}
+
+em,
+address {
+    font-style: normal;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+:host {
+    font-family: 'Allianz Neo', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: #414141;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    text-decoration: none;
+}
+
+body,
+:host {
+    background-color: var(--ui-background);
+    color: var(--text-01);
+}
