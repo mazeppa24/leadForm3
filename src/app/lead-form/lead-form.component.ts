@@ -9,6 +9,7 @@ import {
   signal,
   ViewChild,
   ViewEncapsulation,
+  CreateEffectOptions,
 } from "@angular/core";
 import {toSignal} from "@angular/core/rxjs-interop";
 import {
@@ -57,6 +58,7 @@ import {NxColComponent, NxLayoutComponent, NxRowComponent} from "@aposin/ng-aqui
 import {CdkTextareaAutosize} from "@angular/cdk/text-field";
 import {NxFigureComponent} from "@aposin/ng-aquila/image";
 import {NxHeadlineComponent} from "@aposin/ng-aquila/headline";
+import {filter, take} from "rxjs/operators";
 
 @Component({
   selector: "app-lead-form",
@@ -170,6 +172,8 @@ export class LeadFormComponent implements OnInit, AfterViewInit, AfterViewChecke
   protected mailData: MailDataClass | undefined;
   private testZipCodes = ['9999', '9998', '9997', '9996'];
 
+  // Flag to track if analytics have been sent
+  private analyticsSent = false;
 
   constructor() {
     effect(() => {
@@ -204,22 +208,38 @@ export class LeadFormComponent implements OnInit, AfterViewInit, AfterViewChecke
         //this.trackingService.ls_gaID = agency.id;
       }
     });
-    effect(async () => {
 
-        console.log('in effect with campaign');
-        this.adobeAnalytics.track(
-          this.adobeAnalytics.buildApplicationObject('start'),
-          this.adobeAnalytics.buildPageObject(),
-          this.adobeAnalytics.buildEventObject(PAGE_VIEW),
-          this.adobeAnalytics.buildLeadObject(),
-        );
-        this.adobeAnalytics.track(
-          this.adobeAnalytics.buildApplicationObject('start'),
-          this.adobeAnalytics.buildPageObject(),
-          this.adobeAnalytics.buildEventObject(CONSULTATION_START),
-          this.adobeAnalytics.buildLeadObject(),
-        );
-    })
+    // Use effect to watch for initialization and send analytics
+    // Allow signal writes inside the effect
+    const effectOptions: CreateEffectOptions = { allowSignalWrites: true };
+    
+    effect(() => {
+      if (this.initialAppParamsService.isInitialized() && !this.analyticsSent) {
+        console.log('InitialAppParamsService is initialized, sending Adobe Analytics tracking');
+        this.sendInitialAnalytics();
+        this.analyticsSent = true;
+      }
+    }, effectOptions);
+  }
+
+  /**
+   * Send initial Adobe Analytics tracking events
+   * This is called once the InitialAppParamsService is initialized
+   */
+  private sendInitialAnalytics(): void {
+    console.log('Sending initial Adobe Analytics tracking');
+    this.adobeAnalytics.track(
+      this.adobeAnalytics.buildApplicationObject('start'),
+      this.adobeAnalytics.buildPageObject(),
+      this.adobeAnalytics.buildEventObject(PAGE_VIEW),
+      this.adobeAnalytics.buildLeadObject(),
+    );
+    this.adobeAnalytics.track(
+      this.adobeAnalytics.buildApplicationObject('start'),
+      this.adobeAnalytics.buildPageObject(),
+      this.adobeAnalytics.buildEventObject(CONSULTATION_START),
+      this.adobeAnalytics.buildLeadObject(),
+    );
   }
 
   ngOnInit(): void {

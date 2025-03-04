@@ -1,18 +1,84 @@
 import {environment} from '../../../../environments/environment';
-import {computed, inject, Injectable} from '@angular/core';
+import {computed, effect, inject, Injectable, signal, CreateEffectOptions} from '@angular/core';
 import {InitialAppParamsService} from "../../../modules/initial-app-params/initial-app-params.service";
 import {DEFAULT_LANGUAGE} from "../../../constants";
+import {filter, take} from "rxjs";
 
 @Injectable({
   providedIn: 'root',
 })
 export class AdobeAnalytics {
-  constructor(
-    private initialAppParamsService :InitialAppParamsService
-  ) {
+  private initialAppParamsService = inject(InitialAppParamsService);
+  private isReady = signal<boolean>(false);
+  
+  // Queue for tracking calls that are made before the service is ready
+  private trackingQueue: Array<() => void> = [];
+  
+  // Flag to prevent processing the queue twice
+  private queueProcessed = false;
+
+  
+  constructor() {
+    // Check if InitialAppParamsService is already initialized
+    if (this.initialAppParamsService.isInitialized()) {
+      this.isReady.set(true);
+      console.log('Adobe Analytics service is now ready (InitialAppParamsService was already initialized)');
+      // Process any queued tracking calls immediately
+      this.processQueue();
+    }
+
+    // Use effect to wait for the InitialAppParamsService to be initialized
+    // Allow signal writes inside the effect
+    const effectOptions: CreateEffectOptions = { allowSignalWrites: true };
+    
+    effect(() => {
+      if (this.initialAppParamsService.isInitialized() && !this.isReady()) {
+        this.isReady.set(true);
+        console.log('Adobe Analytics service is now ready with initialized parameters');
+        
+        // Process any queued tracking calls
+        this.processQueue();
+      }
+    }, effectOptions);
+  }
+
+  // Process any queued tracking calls
+  private processQueue(): void {
+    // If there are no items in the queue, just mark as processed and return
+    if (this.trackingQueue.length === 0) {
+      console.log('No queued Adobe Analytics tracking calls to process');
+      this.queueProcessed = true;
+      return;
+    }
+    
+    // Prevent processing the queue multiple times
+    if (this.queueProcessed) {
+      console.log('Queue already processed, skipping');
+      return;
+    }
+    
+    console.log(`Processing ${this.trackingQueue.length} queued Adobe Analytics tracking calls`);
+    
+    // Make a copy of the queue before processing to avoid potential issues
+    // with new items being added during processing
+    const queueToProcess = [...this.trackingQueue];
+    this.trackingQueue = [];
+    
+    // Execute all queued tracking calls
+    queueToProcess.forEach(trackingCall => {
+      try {
+        trackingCall();
+      } catch (error) {
+        console.error('Error executing queued Adobe Analytics tracking call:', error);
+      }
+    });
+    
+    this.queueProcessed = true;
   }
 
 
+  // Computed properties
+  // ---------------------------------------------------------------------------
   decodedEmail = computed(
     () =>
       this.initialAppParamsService.initialAppParams()?.preselectedEmail || "",
@@ -49,8 +115,25 @@ export class AdobeAnalytics {
       DEFAULT_LANGUAGE,
   );
 
+  // Tracking methods
+  // ---------------------------------------------------------------------------
 
+  // track page view
   track(applicationData: Application, page: Page, event: Event, leads: Leads) {
+    // If not ready, queue the tracking call for later
+    if (!this.isReady()) {
+      console.log('Queueing Adobe Analytics track call until initialization is complete');
+      this.trackingQueue.push(() => this.track(applicationData, page, event, leads));
+      
+      // If the queue has been processed but we're still getting calls,
+      // we need to process this call immediately when the service becomes ready
+      if (this.queueProcessed) {
+        console.log('Queue was already processed, processing this call immediately when ready');
+        this.queueProcessed = false;
+      }
+      return;
+    }
+    
     const application = this.buildApplicationObject(applicationData.virtualPageName);
     const pageTrackingData: PageTrackingData = {
       application,
@@ -58,22 +141,42 @@ export class AdobeAnalytics {
       event,
       leads,
     };
+    console.log('Executing Adobe Analytics track call', pageTrackingData);
     //@ts-ignore
     window.digitalDataLayer.push(pageTrackingData);
   }
 
+  // track event  
   trackEvent(eventInfo: EventInfo, value: string = '', category: string = '') {
+    // If not ready, queue the tracking call for later
+    if (!this.isReady()) {
+      console.log('Queueing Adobe Analytics trackEvent call until initialization is complete');
+      this.trackingQueue.push(() => this.trackEvent(eventInfo, value, category));
+      
+      // If the queue has been processed but we're still getting calls,
+      // we need to process this call immediately when the service becomes ready
+      if (this.queueProcessed) {
+        console.log('Queue was already processed, processing this call immediately when ready');
+        this.queueProcessed = false;
+      }
+      return;
+    }
+    
     const attributes = this.buildAttributes('', '', category, '', '', value);
     const event: Event = this.buildEventObject(eventInfo, attributes);
 
     const dataLayerEvent = {
       event,
     };
+    console.log('Executing Adobe Analytics trackEvent call', dataLayerEvent);
     //@ts-ignore
     window.digitalDataLayer.push(dataLayerEvent);
   }
 
+  // Build methods
+  // ---------------------------------------------------------------------------
   buildApplicationObject(virtualPageName: string): Application {
+    
     if (virtualPageName && virtualPageName.startsWith('/')) {
       virtualPageName = virtualPageName.substring(1);
     }
@@ -105,6 +208,7 @@ export class AdobeAnalytics {
   }
 
   buildLeadObject(sourceOrigin?: string): Leads {
+    
     let origin: string = '';
     let type = '';
     let lsCustomerNumber: string = '';
@@ -112,25 +216,6 @@ export class AdobeAnalytics {
       origin = sourceOrigin;
     }
 
-    // // get the variables from query-params or session-storage
-    // this.activatedRoute.queryParams.subscribe((params) => {
-    //   if (params['cp']) {
-    //     this.appDataStore.campaign = params['cp'];
-    //   }
-    //   if (params['sc']) {
-    //     this.appDataStore.source = params['sc'];
-    //   }
-    //   if (params['ga']) {
-    //     this.appDataStore.ga = params['ga'];
-    //   }
-    //   if (params['we']) {
-    //     this.appDataStore = params['we'];
-    //   }
-    // });
-
-    // if (this.ga() !== '' && typeof this.ga() !== 'undefined' && this.ga() != null) {
-    //   type = 'GeneralAgentur';
-    // }
     if (this.ga()) type = 'GeneralAgentur';
 
     lsCustomerNumber = localStorage.getItem('_azch_elvia_data_mm_nr') || '';
@@ -154,7 +239,7 @@ export class AdobeAnalytics {
     };
   }
 
-  buildEventObject(eventInfo: EventInfo, attributes?: Attributes): Event {
+  buildEventObject(eventInfo: EventInfo, attributes?: Attributes): Event {    
     let attribute: any;
     if (attributes?.componentPath !== undefined) {
       attribute = this.buildAttributes(
@@ -198,7 +283,7 @@ export class AdobeAnalytics {
 
   buildEmptyAttribute() {
     return {
-      currenURL: '',
+      currentURL: '',
       componentPath: '',
       elementName: '',
       linkText: '',
@@ -207,7 +292,7 @@ export class AdobeAnalytics {
     };
   }
 
-  buildPageObject() {
+  buildPageObject() {    
     return {
       pageInfo: {
         URLqueryParams: window.location.search,
@@ -220,6 +305,7 @@ export class AdobeAnalytics {
   }
 
   buildPageObjectCustom(pageName: string) {
+
     return {
       pageInfo: {
         URLqueryParams: window.location.search,
@@ -232,6 +318,8 @@ export class AdobeAnalytics {
   }
 }
 
+// Data Layer types
+// ---------------------------------------------------------------------------
 interface Page {
   pageInfo: {
     URLqueryParams: string;
@@ -305,6 +393,8 @@ export interface Attributes {
   value: string;
 }
 
+// Event types
+// ---------------------------------------------------------------------------
 export const PAGE_VIEW = {
   eventAction: 'page load',
   eventName: 'generic',

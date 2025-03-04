@@ -1,4 +1,6 @@
-import {inject, Injectable, signal} from "@angular/core";
+import {NxFigureComponent} from "@aposin/ng-aquila/image";
+import {NxHeadlineComponent} from "@aposin/ng-aquila/headline";
+import {inject, Injectable, signal, effect} from "@angular/core";
 import {ActivatedRoute, NavigationEnd, ParamMap, Router,} from "@angular/router";
 import {filter, forkJoin, map, skipWhile, switchMap, take,} from "rxjs";
 import {Agency, AgencyListService,} from "../../core/services/agency-list.service";
@@ -33,6 +35,11 @@ export class InitialAppParamsService {
   private router = inject(Router);
 
   /**
+   * Signal that indicates whether the service has completed initialization
+   */
+  isInitialized = signal<boolean>(false);
+
+  /**
    * Initial Application Params gathered from the query parameters during page load
    */
   initialAppParams = signal<InitialAppParams>({
@@ -48,20 +55,31 @@ export class InitialAppParamsService {
   });
 
   constructor() {
+    console.log('InitialAppParamsService constructor called');
+    
     const initialSetup$ = this.router.events.pipe(
       filter((event) => event instanceof NavigationEnd),
       take(1),
-      switchMap(() => this.processInitialParameters()),
+      switchMap(() => {
+        console.log('NavigationEnd event received, processing initial parameters');
+        return this.processInitialParameters();
+      }),
     );
     initialSetup$.subscribe({
       next: (params) => {
+        console.log('Initial parameters processed successfully:', params);
         this.initialAppParams.set(params);
+        this.isInitialized.set(true);
+        console.log('InitialAppParamsService initialization complete');
       },
       error: (error) => {
         console.error(
-          "Critical error occured during initial parameter initialization:",
+          "Critical error occurred during initial parameter initialization:",
           error,
         );
+        // Even on error, mark as initialized to prevent blocking the application
+        this.isInitialized.set(true);
+        console.log('InitialAppParamsService initialization failed but marked as complete');
       },
     });
   }
