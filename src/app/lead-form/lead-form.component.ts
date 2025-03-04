@@ -11,7 +11,7 @@ import {
   ViewEncapsulation,
   CreateEffectOptions,
 } from "@angular/core";
-import {toSignal} from "@angular/core/rxjs-interop";
+import { toSignal } from "@angular/core/rxjs-interop";
 import {
   AbstractControl,
   FormControl,
@@ -21,28 +21,28 @@ import {
   ValidatorFn,
   Validators,
 } from "@angular/forms";
-import {NxButtonModule} from "@aposin/ng-aquila/button";
-import {NxCheckboxModule} from "@aposin/ng-aquila/checkbox";
-import {NxCopytextModule} from "@aposin/ng-aquila/copytext";
-import {NxFormfieldLabelDirective, NxFormfieldModule,} from "@aposin/ng-aquila/formfield";
-import {NxIconModule} from "@aposin/ng-aquila/icon";
-import {NxInputModule} from "@aposin/ng-aquila/input";
-import {NxPhoneInputComponent} from "@aposin/ng-aquila/phone-input";
-import {NxMultiStepperComponent, NxStepComponent,} from "@aposin/ng-aquila/progress-stepper";
-import {TranslateModule, TranslateService} from "@ngx-translate/core";
+import { NxButtonModule } from "@aposin/ng-aquila/button";
+import { NxCheckboxModule } from "@aposin/ng-aquila/checkbox";
+import { NxCopytextModule } from "@aposin/ng-aquila/copytext";
+import { NxFormfieldLabelDirective, NxFormfieldModule, } from "@aposin/ng-aquila/formfield";
+import { NxIconModule } from "@aposin/ng-aquila/icon";
+import { NxInputModule } from "@aposin/ng-aquila/input";
+import { NxPhoneInputComponent } from "@aposin/ng-aquila/phone-input";
+import { NxMultiStepperComponent, NxStepComponent, } from "@aposin/ng-aquila/progress-stepper";
+import { TranslateModule, TranslateService } from "@ngx-translate/core";
 import countries from "i18n-iso-countries";
-import {debounceTime} from "rxjs";
-import {Agency, AgencyListService,} from "src/app/core/services/agency-list.service";
-import {AppDatastore} from "src/app/core/services/app-store/app.datastore";
-import {SourceResult, SourcesService,} from "src/app/core/services/sources/sources.service";
-import {InitialAppParamsService} from "src/app/modules/initial-app-params/initial-app-params.service";
-import {environment} from "src/environments/environment";
-import {ImageProfileResult, ImageProfileService} from "../core/services/profile-image/image-profile.service";
-import {NgxTurnstileModule} from "ngx-turnstile";
-import {DEFAULT_LANGUAGE, EMAIL_BLACKLIST, FORM_SUBMIT_COOLDOWN_MS, LEAD_RATING} from "../constants";
-import {LeadNavigatorService, ValidationResult} from "../core/services/lead-navigator/lead-navigator.service";
-import {NxDataDisplayModule} from "@aposin/ng-aquila/data-display";
-import {NxLinkModule} from "@aposin/ng-aquila/link";
+import { debounceTime } from "rxjs";
+import { Agency, AgencyListService, } from "src/app/core/services/agency-list.service";
+import { AppDatastore } from "src/app/core/services/app-store/app.datastore";
+import { SourceResult, SourcesService, } from "src/app/core/services/sources/sources.service";
+import { InitialAppParamsService } from "src/app/modules/initial-app-params/initial-app-params.service";
+import { environment } from "src/environments/environment";
+import { ImageProfileResult, ImageProfileService } from "../core/services/profile-image/image-profile.service";
+import { NgxTurnstileModule } from "ngx-turnstile";
+import { DEFAULT_LANGUAGE, EMAIL_BLACKLIST, FORM_SUBMIT_COOLDOWN_MS, LEAD_RATING } from "../constants";
+import { LeadNavigatorService, ValidationResult } from "../core/services/lead-navigator/lead-navigator.service";
+import { NxDataDisplayModule } from "@aposin/ng-aquila/data-display";
+import { NxLinkModule } from "@aposin/ng-aquila/link";
 import {
   AdobeAnalytics,
   CONSULTATION_COMPLETE,
@@ -53,12 +53,12 @@ import {
   TRIGGER_SPAM_HONEYPOT,
   TRIGGER_SPAM_RAPID_SUBMISSION
 } from "../core/services/adobe-analytics/adobe-analytics";
-import {LeadMailService, MailDataClass} from "../core/services/lead-mail/lead.mail.service";
-import {NxColComponent, NxLayoutComponent, NxRowComponent} from "@aposin/ng-aquila/grid";
-import {CdkTextareaAutosize} from "@angular/cdk/text-field";
-import {NxFigureComponent} from "@aposin/ng-aquila/image";
-import {NxHeadlineComponent} from "@aposin/ng-aquila/headline";
-import {filter, take} from "rxjs/operators";
+import { LeadMailService, MailDataClass } from "../core/services/lead-mail/lead.mail.service";
+import { NxColComponent, NxLayoutComponent, NxRowComponent } from "@aposin/ng-aquila/grid";
+import { CdkTextareaAutosize } from "@angular/cdk/text-field";
+import { NxFigureComponent } from "@aposin/ng-aquila/image";
+import { NxHeadlineComponent } from "@aposin/ng-aquila/headline";
+import { filter, take } from "rxjs/operators";
 
 @Component({
   selector: "app-lead-form",
@@ -90,7 +90,9 @@ import {filter, take} from "rxjs/operators";
   styleUrl: "./lead-form.component.scss",
   encapsulation: ViewEncapsulation.None,
 })
-export class LeadFormComponent implements OnInit, AfterViewInit, AfterViewChecked {
+export class LeadFormComponent implements OnInit {
+
+  // Injectables
   private fb = inject(UntypedFormBuilder);
   private agencyListService = inject(AgencyListService);
   private translateService = inject(TranslateService);
@@ -102,6 +104,7 @@ export class LeadFormComponent implements OnInit, AfterViewInit, AfterViewChecke
   private adobeAnalytics = inject(AdobeAnalytics);
   private leadMailService = inject(LeadMailService);
 
+  // Form group
   readonly leadFormGroup = this.fb.group({
     zip: ["", [Validators.required, this.zipCodeValidator()]],
     email: ["", [Validators.required, this.emailValidator()]],
@@ -112,10 +115,21 @@ export class LeadFormComponent implements OnInit, AfterViewInit, AfterViewChecke
     bot: ['', this.hiddenFieldValidator()]
   });
 
-  formValueChanges = toSignal(
-    this.leadFormGroup.valueChanges.pipe(debounceTime(300)),
-  );
+  // Stepper
+  @ViewChild("stepper") private myStepper!: NxMultiStepperComponent;
 
+  // Signal to track form value changes
+  formValueChanges = toSignal(this.leadFormGroup.valueChanges.pipe(debounceTime(300)),);
+
+  // Signal to track profile image data
+  protected profileImageData = signal(new ImageProfileResult());
+
+  // Allow signal writes inside the effect
+  private effectOptions: CreateEffectOptions = { allowSignalWrites: true };
+
+
+  // Computed properties
+  // ---------------------------------------------------------------------------
   decodedEmail = computed(
     () =>
       this.initialAppParamsService.initialAppParams()?.preselectedEmail || "",
@@ -123,7 +137,7 @@ export class LeadFormComponent implements OnInit, AfterViewInit, AfterViewChecke
   isLeadGeneratorLink = computed(() => {
     return this.decodedEmail() !== "";
   });
-  agencies = toSignal(this.agencyListService.getList(), {initialValue: []});
+  agencies = toSignal(this.agencyListService.getList(), { initialValue: [] });
   showDebug = computed(
     () => this.initialAppParamsService.initialAppParams()?.debug,
   );
@@ -158,9 +172,7 @@ export class LeadFormComponent implements OnInit, AfterViewInit, AfterViewChecke
     );
   });
 
-  protected profileImageData = signal(new ImageProfileResult());
 
-  @ViewChild("stepper") private myStepper!: NxMultiStepperComponent;
 
   // Non reactive properties
   protected turnstileIsValid = false;
@@ -176,6 +188,7 @@ export class LeadFormComponent implements OnInit, AfterViewInit, AfterViewChecke
   private analyticsSent = false;
 
   constructor() {
+
     effect(() => {
       //this.trackingService.appLanguage = this.language();
     });
@@ -210,37 +223,24 @@ export class LeadFormComponent implements OnInit, AfterViewInit, AfterViewChecke
     });
 
     // Use effect to watch for initialization and send analytics
-    // Allow signal writes inside the effect
-    const effectOptions: CreateEffectOptions = { allowSignalWrites: true };
-    
     effect(() => {
       if (this.initialAppParamsService.isInitialized() && !this.analyticsSent) {
         console.log('InitialAppParamsService is initialized, sending Adobe Analytics tracking');
-        this.sendInitialAnalytics();
+        if (this.analyticsSent) {
+          console.log('Initial analytics already sent, skipping');
+          return;
+        }
+        console.log('Sending initial Adobe Analytics tracking');
+
+        //TODO: check the methods. there is some overlap
+        // Using the new simplified trackPageView method
+        this.adobeAnalytics.trackPageView('start', undefined, PAGE_VIEW);
+        this.adobeAnalytics.trackEvent(CONSULTATION_START);
         this.analyticsSent = true;
       }
-    }, effectOptions);
+    }, this.effectOptions);
   }
 
-  /**
-   * Send initial Adobe Analytics tracking events
-   * This is called once the InitialAppParamsService is initialized
-   */
-  private sendInitialAnalytics(): void {
-    console.log('Sending initial Adobe Analytics tracking');
-    this.adobeAnalytics.track(
-      this.adobeAnalytics.buildApplicationObject('start'),
-      this.adobeAnalytics.buildPageObject(),
-      this.adobeAnalytics.buildEventObject(PAGE_VIEW),
-      this.adobeAnalytics.buildLeadObject(),
-    );
-    this.adobeAnalytics.track(
-      this.adobeAnalytics.buildApplicationObject('start'),
-      this.adobeAnalytics.buildPageObject(),
-      this.adobeAnalytics.buildEventObject(CONSULTATION_START),
-      this.adobeAnalytics.buildLeadObject(),
-    );
-  }
 
   ngOnInit(): void {
     // clear validators in case the customer came to the form via a personal leadGenerator link
@@ -248,11 +248,6 @@ export class LeadFormComponent implements OnInit, AfterViewInit, AfterViewChecke
       this.leadFormGroup.controls['zip'].clearValidators();
       this.leadFormGroup.controls['zip'].updateValueAndValidity();
     }
-
-  }
-  ngAfterViewInit(): void {
-  }
-  ngAfterViewChecked(): void {
   }
 
   public async onsubmit(): Promise<void> {
@@ -465,7 +460,7 @@ export class LeadFormComponent implements OnInit, AfterViewInit, AfterViewChecke
     this.turnstileIsValid = true;
   }
 
-// on failure from turnstile (disable submit button)
+  // on failure from turnstile (disable submit button)
   onErrored(errorCode: string | null) {
     this.turnstileIsValid = false;
   }
@@ -483,7 +478,7 @@ export class LeadFormComponent implements OnInit, AfterViewInit, AfterViewChecke
       // regex for validating email structure
       const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
       if (!emailRegex.test(email)) {
-        return {invalidEmail: true};
+        return { invalidEmail: true };
       }
 
       // regex word-matching full domain name (e.g. fakemail.com), case-insensitive
@@ -492,7 +487,7 @@ export class LeadFormComponent implements OnInit, AfterViewInit, AfterViewChecke
       if (EMAIL_BLACKLIST.some((item) => regex.test(item))) {
         //console.error('Blacklisted domain detected', email.split('@')[1]);
         this.adobeAnalytics.trackEvent(TRIGGER_SPAM_EMAIL, domain, 'blacklisted domain');
-        return {blacklistedDomain: true};
+        return { blacklistedDomain: true };
       }
       // regex for uppercase characters (common pattern observed by sea-bots)
       // might prevent honest users from submitting but uppercase emails are rare
@@ -500,7 +495,7 @@ export class LeadFormComponent implements OnInit, AfterViewInit, AfterViewChecke
       if (uppercaseRegex.test(email)) {
         //console.error('UpperCase email detected', email);
         this.adobeAnalytics.trackEvent(TRIGGER_SPAM_EMAIL, email.replace("@", "#"), 'uppercase email');
-        return {uppercaseEmail: true};
+        return { uppercaseEmail: true };
       }
       return null;
     };
@@ -522,7 +517,7 @@ export class LeadFormComponent implements OnInit, AfterViewInit, AfterViewChecke
       const zipRegex = /^[0-9]{4}$/;
       // valid zip and code must be in agency list
       if (!zipRegex.test(zip) || this.agencyListService.getByZip(zip).length === 0) {
-        return {invalidZip: true};
+        return { invalidZip: true };
       }
       return null;
     };
@@ -537,7 +532,7 @@ export class LeadFormComponent implements OnInit, AfterViewInit, AfterViewChecke
       if (value.length > 0) {
         // console.warn('VALIDATOR: Honeypot field has been filled out. Bot detected!');
         this.adobeAnalytics.trackEvent(TRIGGER_SPAM_HONEYPOT, value);
-        return {invalidValue: true};
+        return { invalidValue: true };
       }
       return null;
     }
@@ -600,7 +595,7 @@ export class LeadFormComponent implements OnInit, AfterViewInit, AfterViewChecke
         return x.replace(/\\+/g, '\\+')
       }).join("|"));
 
-      return !regex.test(value) ? {validCode: false} : null;
+      return !regex.test(value) ? { validCode: false } : null;
     }
   }
 }

@@ -134,7 +134,10 @@ export class AdobeAnalytics {
       return;
     }
     
-    const application = this.buildApplicationObject(applicationData.virtualPageName);
+    const application = new ApplicationBuilder()
+      .withVirtualPageName(applicationData.virtualPageName)
+      .build();
+      
     const pageTrackingData: PageTrackingData = {
       application,
       page,
@@ -142,6 +145,52 @@ export class AdobeAnalytics {
       leads,
     };
     console.log('Executing Adobe Analytics track call', pageTrackingData);
+    //@ts-ignore
+    window.digitalDataLayer.push(pageTrackingData);
+  }
+
+  // Simplified track method using builders
+  trackPageView(virtualPageName: string, customPageName?: string, eventInfo?: EventInfo) {
+    // If not ready, queue the tracking call for later
+    if (!this.isReady()) {
+      console.log('Queueing Adobe Analytics trackPageView call until initialization is complete');
+      this.trackingQueue.push(() => this.trackPageView(virtualPageName, customPageName, eventInfo));
+      
+      if (this.queueProcessed) {
+        console.log('Queue was already processed, processing this call immediately when ready');
+        this.queueProcessed = false;
+      }
+      return;
+    }
+    
+    const application = new ApplicationBuilder()
+      .withVirtualPageName(virtualPageName)
+      .build();
+      
+    const pageBuilder = new PageBuilder(this);
+    if (customPageName) {
+      pageBuilder.withCustomPageName(customPageName);
+    }
+    const page = pageBuilder.build();
+    
+    const defaultEventInfo: EventInfo = eventInfo || PAGE_VIEW;
+    const event = new EventBuilder()
+      .withEventInfo(defaultEventInfo)
+      .withAttributes(new AttributesBuilder().build())
+      .build();
+      
+    const leads = new LeadsBuilder(this)
+      .withDefaultValues()
+      .build();
+      
+    const pageTrackingData: PageTrackingData = {
+      application,
+      page,
+      event,
+      leads,
+    };
+    
+    console.log('Executing Adobe Analytics trackPageView call', pageTrackingData);
     //@ts-ignore
     window.digitalDataLayer.push(pageTrackingData);
   }
@@ -162,8 +211,10 @@ export class AdobeAnalytics {
       return;
     }
     
-    const attributes = this.buildAttributes('', '', category, '', '', value);
-    const event: Event = this.buildEventObject(eventInfo, attributes);
+    const event = new EventBuilder()
+      .withEventInfo(eventInfo)
+      .withSimpleAttributes(category, value)
+      .build();
 
     const dataLayerEvent = {
       event,
@@ -173,94 +224,134 @@ export class AdobeAnalytics {
     window.digitalDataLayer.push(dataLayerEvent);
   }
 
-  // Build methods
+  // Example of using the builder pattern for a complex tracking scenario
+  trackComplexEvent(
+    virtualPageName: string, 
+    eventInfo: EventInfo, 
+    customAttributes?: Partial<Attributes>,
+    customLeadInfo?: {
+      origin?: string;
+      intermediaryName?: string;
+      campaignName?: string;
+      campaignSource?: string;
+      customerNumber?: string;
+    }
+  ) {
+    // If not ready, queue the tracking call for later
+    if (!this.isReady()) {
+      console.log('Queueing Adobe Analytics trackComplexEvent call until initialization is complete');
+      this.trackingQueue.push(() => this.trackComplexEvent(
+        virtualPageName, 
+        eventInfo, 
+        customAttributes, 
+        customLeadInfo
+      ));
+      
+      if (this.queueProcessed) {
+        console.log('Queue was already processed, processing this call immediately when ready');
+        this.queueProcessed = false;
+      }
+      return;
+    }
+    
+    // Build application object
+    const application = new ApplicationBuilder()
+      .withVirtualPageName(virtualPageName)
+      .build();
+    
+    // Build page object
+    const page = new PageBuilder(this).build();
+    
+    // Build event object with custom attributes if provided
+    const eventBuilder = new EventBuilder()
+      .withEventInfo(eventInfo);
+      
+    if (customAttributes) {
+      const attributesBuilder = new AttributesBuilder();
+      
+      if (customAttributes.currentURL) attributesBuilder.withCurrentURL(customAttributes.currentURL);
+      if (customAttributes.componentPath) attributesBuilder.withComponentPath(customAttributes.componentPath);
+      if (customAttributes.elementName) attributesBuilder.withElementName(customAttributes.elementName);
+      if (customAttributes.linkText) attributesBuilder.withLinkText(customAttributes.linkText);
+      if (customAttributes.targetURL) attributesBuilder.withTargetURL(customAttributes.targetURL);
+      if (customAttributes.value) attributesBuilder.withValue(customAttributes.value);
+      
+      eventBuilder.withAttributes(attributesBuilder.build());
+    }
+    
+    const event = eventBuilder.build();
+    
+    // Build leads object with custom lead info if provided
+    const leadsBuilder = new LeadsBuilder(this)
+      .withDefaultValues();
+      
+    if (customLeadInfo) {
+      if (customLeadInfo.origin) leadsBuilder.withOrigin(customLeadInfo.origin);
+      if (customLeadInfo.intermediaryName) {
+        leadsBuilder.withIntermediary(
+          customLeadInfo.intermediaryName,
+          customLeadInfo.intermediaryName ? 'GeneralAgentur' : '',
+          this.werber()
+        );
+      }
+      if (customLeadInfo.campaignName || customLeadInfo.campaignSource) {
+        leadsBuilder.withCampaign(
+          customLeadInfo.campaignName || this.campaign(),
+          customLeadInfo.campaignSource || this.campaignSource()
+        );
+      }
+      if (customLeadInfo.customerNumber) {
+        leadsBuilder.withUser(customLeadInfo.customerNumber);
+      }
+    }
+    
+    const leads = leadsBuilder.build();
+    
+    // Create the final tracking data object
+    const pageTrackingData: PageTrackingData = {
+      application,
+      page,
+      event,
+      leads,
+    };
+    
+    console.log('Executing Adobe Analytics trackComplexEvent call', pageTrackingData);
+    //@ts-ignore
+    window.digitalDataLayer.push(pageTrackingData);
+  }
+
+  // Build methods (keeping for backward compatibility)
   // ---------------------------------------------------------------------------
   buildApplicationObject(virtualPageName: string): Application {
-    
-    if (virtualPageName && virtualPageName.startsWith('/')) {
-      virtualPageName = virtualPageName.substring(1);
-    }
-    return {
-      applicationId: environment.applicationId,
-      applicationName: environment.applicationName,
-      virtualPageName: virtualPageName,
-    };
+    return new ApplicationBuilder()
+      .withVirtualPageName(virtualPageName)
+      .build();
   }
 
   emptyLead(): Leads {
-    return {
-      intermediary: {
-        name: '',
-        type: '',
-        werber: '',
-      },
-      origin: {
-        origin: '',
-      },
-      campaign: {
-        name: '',
-        source: '',
-      },
-      user: {
-        customerNumber: '',
-      },
-    };
+    return new LeadsBuilder(this).build();
   }
 
   buildLeadObject(sourceOrigin?: string): Leads {
-    
-    let origin: string = '';
-    let type = '';
-    let lsCustomerNumber: string = '';
-    if (typeof sourceOrigin === 'string') {
-      origin = sourceOrigin;
+    const builder = new LeadsBuilder(this)
+      .withDefaultValues();
+      
+    if (sourceOrigin) {
+      builder.withOrigin(sourceOrigin);
     }
-
-    if (this.ga()) type = 'GeneralAgentur';
-
-    lsCustomerNumber = localStorage.getItem('_azch_elvia_data_mm_nr') || '';
-
-    return {
-      origin: {
-        origin: origin,
-      },
-      intermediary: {
-        name: this.ga(),
-        type: type,
-        werber: this.werber(),
-      },
-      campaign: {
-        name: this.campaign(),
-        source: this.campaignSource(),
-      },
-      user: {
-        customerNumber: lsCustomerNumber,
-      },
-    };
+    
+    return builder.build();
   }
 
   buildEventObject(eventInfo: EventInfo, attributes?: Attributes): Event {    
-    let attribute: any;
+    const builder = new EventBuilder()
+      .withEventInfo(eventInfo);
+      
     if (attributes?.componentPath !== undefined) {
-      attribute = this.buildAttributes(
-        attributes.currentURL,
-        attributes.componentPath,
-        attributes.elementName,
-        attributes.linkText,
-        attributes.targetURL,
-        attributes.value,
-      );
-    } else {
-      attribute = this.buildEmptyAttribute();
+      builder.withAttributes(attributes);
     }
-    return {
-      eventInfo: {
-        eventAction: eventInfo.eventAction,
-        eventName: eventInfo.eventName,
-        eventType: eventInfo.eventType,
-      },
-      attributes: attribute,
-    };
+    
+    return builder.build();
   }
 
   buildAttributes(
@@ -271,50 +362,28 @@ export class AdobeAnalytics {
     targetURL: string,
     value: any,
   ): Attributes {
-    return {
-      currentURL: currenURL,
-      componentPath: componentPath,
-      elementName: elementName,
-      linkText: linkText,
-      targetURL: targetURL,
-      value: value,
-    };
+    return new AttributesBuilder()
+      .withCurrentURL(currenURL)
+      .withComponentPath(componentPath)
+      .withElementName(elementName)
+      .withLinkText(linkText)
+      .withTargetURL(targetURL)
+      .withValue(value)
+      .build();
   }
 
-  buildEmptyAttribute() {
-    return {
-      currentURL: '',
-      componentPath: '',
-      elementName: '',
-      linkText: '',
-      targetURL: '',
-      value: '',
-    };
+  buildEmptyAttribute(): Attributes {
+    return new AttributesBuilder().build();
   }
 
-  buildPageObject() {    
-    return {
-      pageInfo: {
-        URLqueryParams: window.location.search,
-        fullURL: window.location.href,
-        hostname: window.location.hostname,
-        language: this.language(),
-        pageName: `${window.location.hostname}${window.location.pathname}`,
-      },
-    };
+  buildPageObject(): Page {    
+    return new PageBuilder(this).build();
   }
 
-  buildPageObjectCustom(pageName: string) {
-
-    return {
-      pageInfo: {
-        URLqueryParams: window.location.search,
-        fullURL: window.location.href,
-        hostname: window.location.hostname,
-        language: this.language(),
-        pageName: `${window.location.hostname}${window.location.pathname}/` + pageName,
-      },
-    };
+  buildPageObjectCustom(pageName: string): Page {
+    return new PageBuilder(this)
+      .withCustomPageName(pageName)
+      .build();
   }
 }
 
@@ -472,3 +541,222 @@ export const TRIGGER_ERROR_FORM_SUBMIT = {
   eventName: '',
   eventType: 'trigger',
 };
+
+// Builder classes for tracking objects
+// ---------------------------------------------------------------------------
+export class ApplicationBuilder {
+  private application: Application = {
+    applicationId: '',
+    applicationName: '',
+    virtualPageName: '',
+  };
+
+  constructor() {
+    // Set default values from environment
+    this.application.applicationId = environment.applicationId;
+    this.application.applicationName = environment.applicationName;
+  }
+
+  withVirtualPageName(virtualPageName: string): ApplicationBuilder {
+    if (virtualPageName && virtualPageName.startsWith('/')) {
+      virtualPageName = virtualPageName.substring(1);
+    }
+    this.application.virtualPageName = virtualPageName;
+    return this;
+  }
+
+  build(): Application {
+    return { ...this.application };
+  }
+}
+
+export class PageBuilder {
+  private page: Page = {
+    pageInfo: {
+      URLqueryParams: '',
+      fullURL: '',
+      hostname: '',
+      language: '',
+      pageName: '',
+    }
+  };
+
+  constructor(private adobeAnalytics: AdobeAnalytics) {
+    // Set default values from window location
+    this.page.pageInfo.URLqueryParams = window.location.search;
+    this.page.pageInfo.fullURL = window.location.href;
+    this.page.pageInfo.hostname = window.location.hostname;
+    this.page.pageInfo.language = this.adobeAnalytics.language();
+    this.page.pageInfo.pageName = `${window.location.hostname}${window.location.pathname}`;
+  }
+
+  withCustomPageName(pageName: string): PageBuilder {
+    this.page.pageInfo.pageName = `${window.location.hostname}${window.location.pathname}/` + pageName;
+    return this;
+  }
+
+  withLanguage(language: string): PageBuilder {
+    this.page.pageInfo.language = language;
+    return this;
+  }
+
+  build(): Page {
+    return { ...this.page };
+  }
+}
+
+export class EventBuilder {
+  private event: Event = {
+    eventInfo: {
+      eventAction: '',
+      eventName: '',
+      eventType: '',
+    },
+    attributes: {
+      currentURL: '',
+      componentPath: '',
+      elementName: '',
+      linkText: '',
+      targetURL: '',
+      value: '',
+    }
+  };
+
+  constructor() {}
+
+  withEventInfo(eventInfo: EventInfo): EventBuilder {
+    this.event.eventInfo = { ...eventInfo };
+    return this;
+  }
+
+  withAttributes(attributes: Attributes): EventBuilder {
+    this.event.attributes = { ...attributes };
+    return this;
+  }
+
+  withSimpleAttributes(category: string = '', value: string = ''): EventBuilder {
+    this.event.attributes = {
+      currentURL: '',
+      componentPath: '',
+      elementName: category,
+      linkText: '',
+      targetURL: '',
+      value: value,
+    };
+    return this;
+  }
+
+  build(): Event {
+    return { ...this.event };
+  }
+}
+
+export class AttributesBuilder {
+  private attributes: Attributes = {
+    currentURL: '',
+    componentPath: '',
+    elementName: '',
+    linkText: '',
+    targetURL: '',
+    value: '',
+  };
+
+  constructor() {}
+
+  withCurrentURL(url: string): AttributesBuilder {
+    this.attributes.currentURL = url;
+    return this;
+  }
+
+  withComponentPath(path: string): AttributesBuilder {
+    this.attributes.componentPath = path;
+    return this;
+  }
+
+  withElementName(name: string): AttributesBuilder {
+    this.attributes.elementName = name;
+    return this;
+  }
+
+  withLinkText(text: string): AttributesBuilder {
+    this.attributes.linkText = text;
+    return this;
+  }
+
+  withTargetURL(url: string): AttributesBuilder {
+    this.attributes.targetURL = url;
+    return this;
+  }
+
+  withValue(value: string): AttributesBuilder {
+    this.attributes.value = value;
+    return this;
+  }
+
+  build(): Attributes {
+    return { ...this.attributes };
+  }
+}
+
+export class LeadsBuilder {
+  private leads: Leads = {
+    origin: {
+      origin: '',
+    },
+    intermediary: {
+      name: '',
+      type: '',
+      werber: '',
+    },
+    campaign: {
+      name: '',
+      source: '',
+    },
+    user: {
+      customerNumber: '',
+    },
+  };
+
+  constructor(private adobeAnalytics: AdobeAnalytics) {}
+
+  withOrigin(origin: string): LeadsBuilder {
+    this.leads.origin.origin = origin;
+    return this;
+  }
+
+  withIntermediary(name: string, type: string, werber: string): LeadsBuilder {
+    this.leads.intermediary.name = name;
+    this.leads.intermediary.type = type;
+    this.leads.intermediary.werber = werber;
+    return this;
+  }
+
+  withCampaign(name: string, source: string): LeadsBuilder {
+    this.leads.campaign.name = name;
+    this.leads.campaign.source = source;
+    return this;
+  }
+
+  withUser(customerNumber: string): LeadsBuilder {
+    this.leads.user.customerNumber = customerNumber;
+    return this;
+  }
+
+  withDefaultValues(): LeadsBuilder {
+    const lsCustomerNumber = localStorage.getItem('_azch_elvia_data_mm_nr') || '';
+    let type = this.adobeAnalytics.ga() ? 'GeneralAgentur' : '';
+
+    this.leads.intermediary.name = this.adobeAnalytics.ga();
+    this.leads.intermediary.type = type;
+    this.leads.intermediary.werber = this.adobeAnalytics.werber();
+    this.leads.campaign.name = this.adobeAnalytics.campaign();
+    this.leads.campaign.source = this.adobeAnalytics.campaignSource();
+    this.leads.user.customerNumber = lsCustomerNumber;
+    
+    return this;
+  }
+
+  build(): Leads {
+    return { ...this.leads };
+  }
+}
