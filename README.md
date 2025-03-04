@@ -11,6 +11,17 @@
 "@allianz/ngx-ndbx": "18.0.0",
 "@allianzch/ngx-core-ch": "17.1.3",
 
+
+
+# Todos
+
+- Add additional Success Events to Adobe Analytics (IsLeadgenerator Lead, isCustomerLead, FormValidationError)
+- Set GA in intermediary object
+- Test LeadGenerator link
+- Test OnSubmit (Analytics and MailData)
+
+
+
 # Testing
 
 ## LeadGenerator Link examples

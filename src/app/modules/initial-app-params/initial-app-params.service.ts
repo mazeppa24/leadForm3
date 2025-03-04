@@ -1,9 +1,7 @@
-import {NxFigureComponent} from "@aposin/ng-aquila/image";
-import {NxHeadlineComponent} from "@aposin/ng-aquila/headline";
-import {inject, Injectable, signal, effect} from "@angular/core";
-import {ActivatedRoute, NavigationEnd, ParamMap, Router,} from "@angular/router";
-import {filter, forkJoin, map, skipWhile, switchMap, take,} from "rxjs";
-import {Agency, AgencyListService,} from "../../core/services/agency-list.service";
+import { inject, Injectable, signal } from "@angular/core";
+import { ActivatedRoute, NavigationEnd, ParamMap, Router, } from "@angular/router";
+import { filter, forkJoin, map, skipWhile, switchMap, take, } from "rxjs";
+import { Agency, AgencyListService, } from "../../core/services/agency-list.service";
 
 /**
  * The InitialAppParamsService gets certain query parameters on page load
@@ -13,6 +11,7 @@ import {Agency, AgencyListService,} from "../../core/services/agency-list.servic
  *
  * Please see interface InitialAppParams for details on which ones will be stored
  *
+ * 
  * For correct results inject this service on application component level
  * otherwise it might have not catch the query parameters on the page load.
  * ```js
