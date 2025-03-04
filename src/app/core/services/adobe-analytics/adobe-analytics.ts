@@ -2,7 +2,8 @@ import {environment} from '../../../../environments/environment';
 import {computed, effect, inject, Injectable, signal, CreateEffectOptions} from '@angular/core';
 import {InitialAppParamsService} from "../../../modules/initial-app-params/initial-app-params.service";
 import {DEFAULT_LANGUAGE} from "../../../constants";
-import {filter, take} from "rxjs";
+import {debounceTime, filter, take} from "rxjs";
+import { UntypedFormGroup, ValidationErrors } from '@angular/forms';
 
 @Injectable({
   providedIn: 'root',
@@ -30,7 +31,7 @@ export class AdobeAnalytics {
     // Use effect to wait for the InitialAppParamsService to be initialized
     // Allow signal writes inside the effect
     const effectOptions: CreateEffectOptions = { allowSignalWrites: true };
-    
+
     effect(() => {
       if (this.initialAppParamsService.isInitialized() && !this.isReady()) {
         this.isReady.set(true);
@@ -108,12 +109,97 @@ export class AdobeAnalytics {
       this.initialAppParamsService.initialAppParams()?.agency?.id || ""
     );
   });
-
   language = computed(
     () =>
       this.initialAppParamsService.initialAppParams()?.language ||
       DEFAULT_LANGUAGE,
   );
+
+
+  /**
+   * Set up tracking for form field interactions
+   * This helps track user behavior with the form
+   */
+  public setupFormFieldTracking(formGroup: UntypedFormGroup): void {
+    // Track when fields are touched and then changed
+    // This helps understand user interaction patterns
+    const formControls = formGroup.controls;
+
+    Object.keys(formControls).forEach(key => {
+      if (key === 'bot') return; // Skip honeypot field
+
+      const control = formControls[key as keyof typeof formControls];
+
+      // Skip if the control doesn't exist
+      if (!control) return;
+
+      // Track when the field is first touched
+      control.valueChanges.pipe(
+        filter(() => control.dirty),
+        debounceTime(100), // Wait for user to finish typing
+        take(1) // Only track the first change after touch
+      ).subscribe(value => {
+        // Don't track empty values or default values
+        if (!value || (key === 'phone' && value === '+41')) return;
+
+        this.trackFieldInteraction(key);
+      });
+
+      //TODO: Initial validation errors (blur without typing) are not tracked
+      // Track validation errors when the user leaves a field
+      control.statusChanges.pipe(
+        filter(() => control.invalid),
+        debounceTime(1500),
+      ).subscribe(() => {
+        if (control.errors) {
+          this.trackFormValidationError(key, control.errors);
+        }
+      });
+    });
+  }
+
+  /**
+   * Track form validation errors
+   * @param fieldName The name of the field with the error
+   * @param errors The validation errors
+   */
+  private trackFormValidationError(fieldName: string, errors: ValidationErrors): void {
+    // Get the first error type
+    const errorType = Object.keys(errors)[0];
+
+    console.log(`Tracking validation error: ${fieldName} - ${errorType}`);
+
+    //TODO: Create Trigger Constant
+    this.trackEvent(
+      {
+        eventAction: 'form-validation-error',
+        eventName: 'lead-form',
+        eventType: 'error'
+      },
+      errorType, // value
+      fieldName // category
+    );
+  }
+
+  /**
+   * Track a form field interaction
+   * @param fieldName The name of the field that was interacted with
+   */
+  private trackFieldInteraction(fieldName: string): void {
+    console.log(`Tracking field interaction: ${fieldName}`);
+
+    //TODO: Create Trigger Constant
+    this.trackEvent(
+      {
+        eventAction: 'form-field-interaction',
+        eventName: 'lead-form',
+        eventType: 'interaction'
+      },
+      '', // value
+      fieldName // category
+    );
+  }
+
 
   // Tracking methods
   // ---------------------------------------------------------------------------

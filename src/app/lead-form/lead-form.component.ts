@@ -1,15 +1,14 @@
+import { CdkTextareaAutosize } from "@angular/cdk/text-field";
 import {
-  AfterViewChecked,
-  AfterViewInit,
   Component,
   computed,
+  CreateEffectOptions,
   effect,
   inject,
   OnInit,
   signal,
   ViewChild,
-  ViewEncapsulation,
-  CreateEffectOptions,
+  ViewEncapsulation
 } from "@angular/core";
 import { toSignal } from "@angular/core/rxjs-interop";
 import {
@@ -24,25 +23,26 @@ import {
 import { NxButtonModule } from "@aposin/ng-aquila/button";
 import { NxCheckboxModule } from "@aposin/ng-aquila/checkbox";
 import { NxCopytextModule } from "@aposin/ng-aquila/copytext";
+import { NxDataDisplayModule } from "@aposin/ng-aquila/data-display";
 import { NxFormfieldLabelDirective, NxFormfieldModule, } from "@aposin/ng-aquila/formfield";
+import { NxColComponent, NxLayoutComponent, NxRowComponent } from "@aposin/ng-aquila/grid";
+import { NxHeadlineComponent } from "@aposin/ng-aquila/headline";
 import { NxIconModule } from "@aposin/ng-aquila/icon";
+import { NxFigureComponent } from "@aposin/ng-aquila/image";
 import { NxInputModule } from "@aposin/ng-aquila/input";
+import { NxLinkModule } from "@aposin/ng-aquila/link";
 import { NxPhoneInputComponent } from "@aposin/ng-aquila/phone-input";
 import { NxMultiStepperComponent, NxStepComponent, } from "@aposin/ng-aquila/progress-stepper";
 import { TranslateModule, TranslateService } from "@ngx-translate/core";
 import countries from "i18n-iso-countries";
+import { NgxTurnstileModule } from "ngx-turnstile";
 import { debounceTime } from "rxjs";
 import { Agency, AgencyListService, } from "src/app/core/services/agency-list.service";
 import { AppDatastore } from "src/app/core/services/app-store/app.datastore";
 import { SourceResult, SourcesService, } from "src/app/core/services/sources/sources.service";
 import { InitialAppParamsService } from "src/app/modules/initial-app-params/initial-app-params.service";
 import { environment } from "src/environments/environment";
-import { ImageProfileResult, ImageProfileService } from "../core/services/profile-image/image-profile.service";
-import { NgxTurnstileModule } from "ngx-turnstile";
 import { DEFAULT_LANGUAGE, EMAIL_BLACKLIST, FORM_SUBMIT_COOLDOWN_MS, LEAD_RATING } from "../constants";
-import { LeadNavigatorService, ValidationResult } from "../core/services/lead-navigator/lead-navigator.service";
-import { NxDataDisplayModule } from "@aposin/ng-aquila/data-display";
-import { NxLinkModule } from "@aposin/ng-aquila/link";
 import {
   AdobeAnalytics,
   CONSULTATION_COMPLETE,
@@ -54,11 +54,8 @@ import {
   TRIGGER_SPAM_RAPID_SUBMISSION
 } from "../core/services/adobe-analytics/adobe-analytics";
 import { LeadMailService, MailDataClass } from "../core/services/lead-mail/lead.mail.service";
-import { NxColComponent, NxLayoutComponent, NxRowComponent } from "@aposin/ng-aquila/grid";
-import { CdkTextareaAutosize } from "@angular/cdk/text-field";
-import { NxFigureComponent } from "@aposin/ng-aquila/image";
-import { NxHeadlineComponent } from "@aposin/ng-aquila/headline";
-import { filter, take } from "rxjs/operators";
+import { LeadNavigatorService, ValidationResult } from "../core/services/lead-navigator/lead-navigator.service";
+import { ImageProfileResult, ImageProfileService } from "../core/services/profile-image/image-profile.service";
 
 @Component({
   selector: "app-lead-form",
@@ -108,7 +105,7 @@ export class LeadFormComponent implements OnInit {
   readonly leadFormGroup = this.fb.group({
     zip: ["", [Validators.required, this.zipCodeValidator()]],
     email: ["", [Validators.required, this.emailValidator()]],
-    phone: ["+41", [Validators.required, Validators.minLength(12), Validators.maxLength(16)]], //this.validateCountryCodesPhone()
+    phone: ["+41", [Validators.required, Validators.minLength(12), Validators.maxLength(16), this.numbersOnlyValidator()],],
     availability: "",
     firstname: ["", Validators.required],
     message: ['', Validators.maxLength(512)],
@@ -123,6 +120,20 @@ export class LeadFormComponent implements OnInit {
 
   // Signal to track profile image data
   protected profileImageData = signal(new ImageProfileResult());
+
+  // Signal to track form submission status
+  private formSubmitted = signal<boolean>(false);
+
+  // Signal to store submission data for analytics
+  private submissionData = signal<{
+    origin: string;
+    agency: Agency | null;
+    customerNumber: string;
+  }>({
+    origin: '',
+    agency: null,
+    customerNumber: ''
+  });
 
   // Allow signal writes inside the effect
   private effectOptions: CreateEffectOptions = { allowSignalWrites: true };
@@ -215,12 +226,6 @@ export class LeadFormComponent implements OnInit {
         this.addAgencyLanguage(agency);
       }
     });
-    effect(() => {
-      const agency = this.initialAppParamsService.initialAppParams()?.agency;
-      if (agency) {
-        //this.trackingService.ls_gaID = agency.id;
-      }
-    });
 
     // Use effect to watch for initialization and send analytics
     effect(() => {
@@ -239,6 +244,61 @@ export class LeadFormComponent implements OnInit {
         this.analyticsSent = true;
       }
     }, this.effectOptions);
+
+    // Effect to track form submission analytics
+    effect(() => {
+      if (this.formSubmitted()) {
+        console.log('Form submitted successfully, sending completion analytics');
+        const data = this.submissionData();
+
+        this.adobeAnalytics.trackEvent(CONSULTATION_COMPLETE);
+        this.adobeAnalytics.trackPageView('success', '', PAGE_VIEW);
+        // Use the complex event tracking for more detailed analytics
+        /*         this.adobeAnalytics.trackComplexEvent(
+                  'success',
+                  CONSULTATION_COMPLETE,
+                  {
+                    componentPath: 'lead-form/submit',
+                    elementName: 'FormSubmission',
+                    value: 'completed'
+                  },
+                  {
+                    origin: data.origin,
+                    intermediaryName: data.agency?.id || this.ga(),
+                    customerNumber: data.customerNumber
+                  }
+                );
+         */
+        // Track page view for success page
+        // this.adobeAnalytics.trackPageView('success', 'success', PAGE_VIEW);
+
+        // Track additional details about the submission
+        if (this.isLeadGeneratorLink()) {
+          this.adobeAnalytics.trackEvent({
+            eventAction: 'lead-generator-submission',
+            eventName: 'lead-form',
+            eventType: 'trigger'
+          }, data.agency?.id || '');
+        }
+
+        // Track if this was a customer match
+        if (data.customerNumber) {
+          this.adobeAnalytics.trackEvent({
+            eventAction: 'customer-match',
+            eventName: 'lead-form',
+            eventType: 'trigger'
+          });
+        }
+
+        console.log('Form submission analytics sent successfully');
+
+        // Reset the form submission state after a delay to avoid duplicate tracking
+        // if the component is not destroyed
+        setTimeout(() => {
+          this.resetFormSubmissionState();
+        }, 2000);
+      }
+    }, this.effectOptions);
   }
 
 
@@ -248,7 +308,10 @@ export class LeadFormComponent implements OnInit {
       this.leadFormGroup.controls['zip'].clearValidators();
       this.leadFormGroup.controls['zip'].updateValueAndValidity();
     }
+    // Set up tracking for form field interactions
+    this.adobeAnalytics.setupFormFieldTracking(this.leadFormGroup);
   }
+
 
   public async onsubmit(): Promise<void> {
 
@@ -317,7 +380,15 @@ export class LeadFormComponent implements OnInit {
       // send mail
       this.sendMailLead(agency, source, subject, this.determineRecipientEmail(agency));
 
-      this.trackSubmit(source.origin);
+      // Store submission data for analytics
+      this.submissionData.set({
+        origin: source.origin,
+        agency: agency,
+        customerNumber: this.customerValidation.customerNumber || ''
+      });
+
+      // Set form as submitted to trigger the analytics effect
+      this.formSubmitted.set(true);
 
       this.myStepper.next();
     } catch (e) {
@@ -425,27 +496,6 @@ export class LeadFormComponent implements OnInit {
     }
   }
 
-  /**
-   * Track the submit event
-   * @param origin
-   * @private
-   */
-  private trackSubmit(origin: string) {
-    // Adobe Analytics
-    this.adobeAnalytics.track(
-      this.adobeAnalytics.buildApplicationObject('success'),
-      this.adobeAnalytics.buildPageObjectCustom('success'),
-      this.adobeAnalytics.buildEventObject(PAGE_VIEW),
-      this.adobeAnalytics.buildLeadObject(origin),
-    );
-    this.adobeAnalytics.track(
-      this.adobeAnalytics.buildApplicationObject('success'),
-      this.adobeAnalytics.buildPageObject(),
-      this.adobeAnalytics.buildEventObject(CONSULTATION_COMPLETE),
-      this.adobeAnalytics.buildLeadObject(origin),
-    );
-  }
-
   // formValidation and cloudFlare must both be valid before the submit button can be activated
   isDisabled(): boolean {
     if (this.leadFormGroup.valid) {
@@ -518,6 +568,21 @@ export class LeadFormComponent implements OnInit {
       // valid zip and code must be in agency list
       if (!zipRegex.test(zip) || this.agencyListService.getByZip(zip).length === 0) {
         return { invalidZip: true };
+      }
+      return null;
+    };
+  }
+
+  private numbersOnlyValidator(): ValidatorFn {
+    return (control: AbstractControl): ValidationErrors | null => {
+      const value = control.value;
+      if (!value) {
+        return null;
+      }
+      // Updated regex to allow a "+" at the beginning followed by numbers only
+      const numbersWithPlusRegex = /^\+?[0-9]+$/;
+      if (!numbersWithPlusRegex.test(value)) {
+        return { numbersOnly: true };
       }
       return null;
     };
@@ -597,6 +662,19 @@ export class LeadFormComponent implements OnInit {
 
       return !regex.test(value) ? { validCode: false } : null;
     }
+  }
+
+  /**
+   * Reset the form submission state
+   * This prevents duplicate tracking if the component is not destroyed
+   */
+  private resetFormSubmissionState(): void {
+    this.formSubmitted.set(false);
+    this.submissionData.set({
+      origin: '',
+      agency: null,
+      customerNumber: ''
+    });
   }
 }
 
