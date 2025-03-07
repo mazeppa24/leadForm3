@@ -1,13 +1,33 @@
 <div nxLayout="grid maxwidth">
   <div nxRow>
-    @if (this.profileImageData().imageUrl.length > 10) {
-      <div nxCol="12, 12, 12, 4" class="profile-image-container order-first order-md-last">
-        <app-profile-image class="profile-image"></app-profile-image>
-      </div>
+    <!-- Profile Image - Visible on all devices -->
+    @if(this.profileImageData().imageUrl.length > 10) {
+    <div nxCol="12, 12, 12, 4" class="profile-image-container order-first order-md-last">
+      <app-profile-image class="profile-image"></app-profile-image>
+    </div>
     }
-    <div [nxCol]="this.profileImageData().imageUrl.length > 10 ? '12, 12, 12, 8' : '12, 12, 10, 8'"
-         [colOffset]="profileImageData().imageUrl.length > 10 ? '0' : '0, 0, 1, 2'" class="form-container">
+    <!-- Payd variant - Empty column to the left (increased size) -->
+    @if(this.isPayedMedia()) {
+    <div nxCol="12, 12, 12, 6" class="payd-column-container payd-desktop">
+      <!-- This empty column will be filled out later -->
+      <div style="background-color: red; width: 100%; height: 100%;">
+        <h1>Payd</h1>
+      </div>
+    </div>
+    }
+    <!-- Lead Form - Responsive width based on profile image visibility and payd variant -->
+    <div [nxCol]="getFormColumnWidth()" [colOffset]="getFormColumnOffset()" class="form-container">
       <app-lead-form class="form-host"></app-lead-form>
     </div>
+
+    <!-- Payd variant for mobile - Only visible on mobile-->
+    @if(this.isPayedMedia()) {
+    <div nxCol="12, 12, 12, 6" class="payd-column-container payd-mobile">
+      <!-- This empty column will be filled out later -->
+      <div style="background-color: red; width: 100%; height: 100%;">
+        <h1>Payd</h1>
+      </div>
+    </div>
+    }
   </div>
 </div>

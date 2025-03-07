@@ -26,8 +26,8 @@ export class AdobeAnalytics {
   private queueProcessed = false;
 
   constructor() {
-    // Use effect to wait for the InitialAppParamsService to be initialized
-    // Allow signal writes inside the effect
+    // wait for the InitialAppParamsService to be initialized
+    // allow signal writes inside the effect
     const effectOptions: CreateEffectOptions = {allowSignalWrites: true};
 
     effect(() => {

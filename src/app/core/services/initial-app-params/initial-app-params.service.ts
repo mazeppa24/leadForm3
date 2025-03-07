@@ -62,7 +62,7 @@ export class InitialAppParamsService {
       filter((event) => event instanceof NavigationEnd),
       take(1),
       switchMap(() => {
-        //console.log('NavigationEnd event received, processing initial parameters');
+        console.log('NavigationEnd event received, processing initial parameters');
         return this.processInitialParameters();
       }),
     );
@@ -70,10 +70,10 @@ export class InitialAppParamsService {
     // before executing any logic depending on the query params (e.g. AdobeAnalytics)
     initialSetup$.subscribe({
       next: (params) => {
-        //console.log('Initial parameters processed successfully:', params);
+        console.log('Initial parameters processed successfully:', params);
         this.initialAppParams.set(params);
         this.isInitialized.set(true);
-        //console.log('InitialAppParamsService initialization complete');
+        console.log('InitialAppParamsService initialization complete');
       },
       error: (error) => {
         console.error(
@@ -112,6 +112,9 @@ export class InitialAppParamsService {
         agency = agencies.find((agency) => agency.id == environment.defaultAgencyID);
       }
     }
+
+    console.log("campaignSource", params.get('sc'));
+    
     let email: string | undefined;
     try {
       email = atob(params.get("data_zp") || params.get("d") || "") || undefined;
