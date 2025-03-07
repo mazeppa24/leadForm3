@@ -37,13 +37,15 @@
 
 // Container styling
 .profile-image-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  margin-bottom: 2rem;
+  display: block;
+  text-align: left;
+  
+  // More space on mobile
+  margin-bottom: 32px;
   
   @media (min-width: 768px) {
     margin-bottom: 0;
+    padding-top: 16px; // Add some top padding on desktop
   }
 }
 
@@ -56,4 +58,13 @@
 .profile-image {
   width: 100%;
   max-width: 300px;
+  
+  // Add some space around the component
+  @media (max-width: 767px) {
+    padding: 0 16px;
+  }
+  
+  @media (min-width: 768px) {
+    padding: 0 8px;
+  }
 }
