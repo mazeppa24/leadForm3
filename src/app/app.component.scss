@@ -4,20 +4,6 @@
   min-height: calc(100vh - 148px);
 }
 
-@media (min-width: 420px) {
-
-  .sample-app {
-    min-height: calc(100% - 70px);
-  }
-}
-
-.content-border-top {
-  border-top: 1px solid var(--header-border-color) !important;
-}
-
-.content-border-bottom {
-  border-bottom: 1px solid var(--header-border-color) !important;
-}
 
 header {
   margin: auto;
@@ -25,10 +11,34 @@ header {
   border-bottom: none !important;
 }
 
+.footer-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 footer {
   bottom: 0;
   width: 100%;
+  max-width: 1184px;
   z-index: 1000;
+  
+  ::ng-deep .nx-footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+    .nx-footer-navigation {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      
+      a, p {
+        margin: 0 8px;
+      }
+    }
+  }
 }
 
 section {
