@@ -1,0 +1,65 @@
+.nx-image--rounded {
+  padding-top: 80% !important;
+  // desktop
+  @media (max-width: 769px) {
+    padding-top: 55% !important;
+  }
+}
+
+.profile-image-pic {
+  width: 218px;
+  height: 218px;
+}
+
+.profile-image {
+  display: block;
+  text-align: left;
+
+  // mobile spacing
+  .nx-figure-picture {
+    margin-bottom: 76px !important;
+    display: block !important;
+  }
+
+  .profile-image-pic {
+    max-width: 100%;
+    display: inline-block !important;
+  }
+
+  // desktop
+  @media (min-width: 768px) {
+    .nx-figure-picture {
+      margin-bottom: 8px !important;
+    }
+    #profile-image-name {
+      margin-top: 4px !important;
+      margin-bottom: 4px !important;
+    }
+    #profile-image-message {
+      margin-top: 4px !important;
+      margin-bottom: 0px !important;
+    }
+  }
+}
+
+// Additional container spacing in lead-form-host component
+:host {
+  display: block;
+  // desktop
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}
+
+.profile-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // Mobile spacing
+  margin-top: 24px;
+
+  //// Desktop spacing
+  //@media (min-width: 768px) {
+  //  //margin-top: 0px;
+  //}
+}

@@ -1,8 +1,7 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-// import {HomeComponent} from "./modules/demohome/home.component";
-import {LeadFormHostComponent} from "./lead-form-host/lead-form-host.component";
-import {ErrorPageComponent} from "./modules/error-page/error-page.component";
+import {LeadFormHostComponent} from "./components/lead-form-host/lead-form-host.component";
+import {ErrorPageComponent} from "./components/error-page/error-page.component";
 
 
 // -------- App Pages ---------------------

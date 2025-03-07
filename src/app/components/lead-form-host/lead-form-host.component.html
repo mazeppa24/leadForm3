@@ -1,0 +1,13 @@
+<div nxLayout="grid maxwidth">
+  <div nxRow>
+    @if (this.profileImageData().imageUrl.length > 10) {
+      <div nxCol="12, 12, 12, 4" class="profile-image-container order-first order-md-last">
+        <app-profile-image class="profile-image"></app-profile-image>
+      </div>
+    }
+    <div [nxCol]="this.profileImageData().imageUrl.length > 10 ? '12, 12, 12, 8' : '12, 12, 10, 8'"
+         [colOffset]="profileImageData().imageUrl.length > 10 ? '0' : '0, 0, 1, 2'" class="form-container">
+      <app-lead-form class="form-host"></app-lead-form>
+    </div>
+  </div>
+</div>

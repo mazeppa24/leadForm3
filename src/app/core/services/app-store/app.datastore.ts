@@ -1,5 +1,5 @@
-import { Injectable } from '@angular/core';
-import { ErrorPageReason } from '../../../modules/error-page/error-page-reason';
+import {Injectable} from '@angular/core';
+import {ErrorPageReason} from '../../../components/error-page/error-page-reason';
 
 @Injectable({
   providedIn: 'root',

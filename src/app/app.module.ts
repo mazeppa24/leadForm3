@@ -5,7 +5,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {AppComponent} from './app.component';
 
 // Shared Elements
-import {SharedModule} from './modules/shared/shared.module';
+import {SharedModule} from './components/shared/shared.module';
 import {NX_DATE_LOCALE, NxDatepickerIntl} from '@aposin/ng-aquila/datefield';
 
 // Router
@@ -43,7 +43,6 @@ import {sharedLibraryConfigFactory} from './core/app-config/shared-library-confi
 import {appInitializer} from './app.initializer';
 import {AemTranslateLoader} from '@allianz/ngx-aem-integration/ngx-translate-loader';
 import {NxDataDisplayModule} from "@aposin/ng-aquila/data-display";
-import {WindowPortalComponent} from './window-portal/window-portal.component';
 import {SourcesModule} from './core/services/sources/sources.module';
 import {environment} from '../environments/environment';
 import {NdbxIconModule} from "@allianz/ngx-ndbx/icon";
@@ -51,9 +50,10 @@ import {NxIconModule} from "@aposin/ng-aquila/icon";
 // -------- End Shared Lib ----------------------
 import {NgxTurnstileModule} from "ngx-turnstile";
 import {LoadingInterceptor} from "./core/services/loading-service/loading.interceptor";
-import {LeadFormHostComponent} from "./lead-form-host/lead-form-host.component";
-import {LoadingIndicatorComponent} from "./modules/loading-indicator/loading-indicator.component";
+import {LeadFormHostComponent} from "./components/lead-form-host/lead-form-host.component";
+import {LoadingIndicatorComponent} from "./components/loading-indicator/loading-indicator.component";
 import {DEFAULT_LANGUAGE} from "./constants";
+import {FooterComponent} from "./components/footer/footer.component";
 
 registerLocaleData(localeDeCH);
 registerLocaleData(localeItCH);
@@ -61,7 +61,7 @@ registerLocaleData(localeFrCH);
 registerLocaleData(localeEnCH);
 
 @NgModule({
-  declarations: [AppComponent, WindowPortalComponent],
+  declarations: [AppComponent],
   imports: [
     // -------- Shared Core ---------------------
     NgxCoreChModule.forRoot({
@@ -109,7 +109,8 @@ registerLocaleData(localeEnCH);
     SourcesModule,
     NgxTurnstileModule,
     LeadFormHostComponent,
-    LoadingIndicatorComponent
+    LoadingIndicatorComponent,
+    FooterComponent
   ],
   providers: [
     {provide: APP_BASE_HREF, useValue: environment.baseUrl},

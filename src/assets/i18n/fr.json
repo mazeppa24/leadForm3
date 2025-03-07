@@ -1,60 +1,60 @@
 {
   "app": {
     "meta": {
-      "title": "Prendre rendez-vous pour une consultation | Demande de consultation | Allianz"
+      "title": "Fixer un rendez-vous de conseil | Demande de conseil | Allianz"
     },
     "form": {
       "label": {
         "title": "Formulaire de contact",
-        "availability": "Quand pouvons-nous vous joindre au mieux ?",
-        "time_1": "8–12 heures",
-        "time_2": "12–13 heures",
-        "time_3": "13–17 heures",
-        "time_4": "17–20 heures",
+        "availability": "Quand pouvons-nous vous joindre au mieux?",
+        "time_1": "8h-12h",
+        "time_2": "12h-13h",
+        "time_3": "13h-17h",
+        "time_4": "17h-20h",
         "email": "E-mail",
-        "firstname": "Prénom et",
+        "firstname": "Prénom",
         "lastname": "Nom",
         "comments": "Commentaire (facultatif)",
-        "phoneNumber": "Numéro de téléphone",
-        "phoneNumberPrefix": "ex.",
-        "zip": "Code postal"
+        "phoneNumber": "N° de téléphone",
+        "phoneNumberPrefix": "p. ex.",
+        "zip": "NPA"
       },
       "validation": {
-        "email": "Veuillez entrer une adresse e-mail valide.",
-        "fieldRequired": "Veuillez remplir ce champ obligatoire.",
-        "name": "Veuillez entrer votre prénom et votre nom.",
-        "phoneNumber": "Veuillez entrer un numéro de téléphone valide.",
-        "zip": "Veuillez entrer un code postal valide à 4 chiffres.",
-        "comments": "512 caractères maximum sont autorisés.",
-        "turnstile": "Veuillez valider la case."
+        "email": "Veuillez saisir une adresse e-mail valide.",
+        "fieldRequired": "Remplir le champ obligatoire.",
+        "name": "Veuillez saisir votre prénom et votre nom.",
+        "phoneNumber": "Veuillez saisir un numéro de téléphone valide.",
+        "zip": "Veuillez saisir un numéro postal d’acheminement valide composé de 4 chiffres.",
+        "comments": "Un maximum de 512 caractères est autorisé.",
+        "turnstile": "Veuillez confirmer le Captcha."
       },
       "success": {
-        "headline": "Merci",
-        "copy": "Nous avons reçu votre demande et nous vous contacterons dès que possible."
+        "headline": "Merci ",
+        "copy": "Nous avons bien reçu votre demande et vous contacterons dès que possible."
       },
       "error": {
         "headline": "Erreur",
-        "copy": "Nous nous excusons. Malheureusement, une erreur s'est produite lors du traitement du formulaire. Veuillez réessayer plus tard."
+        "copy": "Nous sommes désolés. Malheureusement, une erreur est survenue lors du traitement du formulaire. Veuillez réessayer ultérieurement."
       },
       "profileImage": {
-        "message": "Je suis heureux de vous proposer une offre personnalisée et de vous conseiller personnellement si vous le souhaitez."
+        "message": "Je vous prépare volontiers une offre adaptée à vos besoins et vous conseille personnellement si vous le souhaitez."
       },
       "button": {
-        "submit": "Demander une consultation sans engagement",
+        "submit": "Demander un conseil sans engagement",
         "back": "Retour"
       },
-      "legal": "En soumettant ce formulaire, vous acceptez les <a class='text-link' href='https://www.allianz.ch/de/informationen/rechtliche-hinweise.html' target='_blank'>mentions légales</a> et la <a class='text-link' href='https://www.allianz.ch/de/informationen/datenschutzerklaerung.html' target='_blank'>politique de confidentialité</a>."
+      "legal": "Par l'envoi de ce formulaire, vous déclarez approuver les <a class='text-link' href='https://www.allianz.ch/de/informationen/rechtliche-hinweise.html' target='_blank'>mentions légales</a> et la <a class='text-link' href='https://www.allianz.ch/de/informationen/datenschutzerklaerung.html' target='_blank'>déclaration relative à la protection des données</a>."
     },
     "footer": {
-      "link_1_label": "Mentions légales",
+      "link_1_label": "Impressum",
       "link_1_url": "https://www.allianz.ch/fr/informationen/impressum.html",
-      "link_2_label": "Politique de confidentialité",
+      "link_2_label": "Déclaration relative à la protection des données",
       "link_2_url": "https://www.allianz.ch/fr/informationen/datenschutz.html",
-      "link_3_label": "Informations légales",
+      "link_3_label": "Mentions légales",
       "link_3_url": "https://www.allianz.ch/fr/informationen/rechtliche-hinweise.html"
     },
     "mail": {
-      "subject": "Nouveau lead | {{value}} | Veuillez contacter le/la client(e)"
+      "subject": "Nouveau lead| {{value}} | Veuillez contacter le client/la cliente"
     }
   }
 }

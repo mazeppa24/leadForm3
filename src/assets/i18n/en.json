@@ -1,52 +1,60 @@
 {
   "app": {
     "meta": {
-      "title": "Beratung vereinbaren | Beratungsanfrage | Allianz"
+      "title": "Schedule a consultation | Consultation request | Allianz"
     },
     "form": {
       "label": {
-        "availability": "Wann erreichen wir Sie am besten?",
-        "time_1": "8-12 Uhr",
-        "time_2": "12-13 Uhr",
-        "time_3": "13-17 Uhr",
-        "time_4": "17-20 Uhr",
-        "email": "E-Mail*",
-        "firstname": "Vor- und",
-        "lastname": "Nachname*",
-        "comments": "Kommentar",
-        "phoneNumber": "Telefon-Nr.*",
-        "phoneNumberPrefix": "z.B.",
-        "zip": "Postleitzahl*"
+        "title": "Contact form",
+        "availability": "When is the best time to reach you?",
+        "time_1": "8-12 a.m",
+        "time_2": "12-1 p.m",
+        "time_3": "1-5 p.m",
+        "time_4": "5-8 p.m",
+        "email": "E-mail",
+        "firstname": "First name",
+        "lastname": "Last name",
+        "comments": "Comments (optional)",
+        "phoneNumber": "Phone no.",
+        "phoneNumberPrefix": "e.g.",
+        "zip": "Postcode"
       },
       "validation": {
-        "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
-        "fieldRequired": "Pflichtfeld bitte ausfüllen.",
-        "phoneNumber": "Diese Angabe benötigen wir zwingend. Bitte geben Sie eine gültige Telefonnummer ein.",
-        "zip": "Diese Angabe benötigen wir zwingend. Bitte geben Sie eine gültige, 4-stellige Postleitzahl ein.",
-        "comments": "Es sind maximal 512 Zeichen erlaubt."
+        "email": "Please enter a valid email address.",
+        "fieldRequired": "Please fill in the mandatory field.",
+        "name": "Please enter your first and last name.",
+        "phoneNumber": "Please enter a valid phone number.",
+        "zip": "Please enter a valid 4-digit postal code.",
+        "comments": "A maximum of 512 characters is allowed.",
+        "turnstile": "Please validate the captcha."
       },
       "success": {
-        "headline": "Vielen Dank",
-        "copy": "Wir haben Ihre Anfrage erhalten und kontaktieren Sie so bald wie möglich."
+        "headline": "Thank you.",
+        "copy": "We have received your enquiry and will contact you as soon as possible."
+      },
+      "error": {
+        "headline": "Error",
+        "copy": "We apologise for any inconvenience. Unfortunately, an error occurred while processing the form. Please try again later."
       },
       "profileImage": {
-        "message": "Ich erstelle Ihnen gerne eine auf Ihre Bedürfnisse zugeschnittene Offerte und berate Sie auf Wunsch auch persönlich."
+        "message": "I will be happy to provide you with an offer tailored to your needs and can also advise you personally if you wish."
       },
       "button": {
-        "submit": "Unverbindliche Beratung anfordern"
+        "submit": "Request a no-binding consultation",
+        "back": "Back"
       },
-      "legal": "Mit dem Absenden dieses Formulars erklären Sie sich mit den <a class='text-link' href='https://www.allianz.ch/de/informationen/rechtliche-hinweise.html' target='_blank'>rechtlichen Hinweisen</a> und der <a class='text-link' href='https://www.allianz.ch/de/informationen/datenschutzerklaerung.html' target='_blank'>Datenschutzerklärung</a> einverstanden."
+      "legal": "By submitting this form, you agree to the <a class='text-link' href='https://www.allianz.ch/de/informationen/rechtliche-hinweise.html' target='_blank'>legal notice</a> and <a class='text-link' href='https://www.allianz.ch/de/informationen/datenschutzerklaerung.html' target='_blank'>privacy policy</a>."
     },
     "footer": {
-      "link_1_label": "Impressum",
-      "link_1_url": "https://www.allianz.ch/de/informationen/impressum.html",
-      "link_2_label": "Datenschutzerklärung",
-      "link_2_url": "https://www.allianz.ch/de/informationen/datenschutz.html",
-      "link_3_label": "Rechtliche Hinweise",
-      "link_3_url": "https://www.allianz.ch/de/informationen/rechtliche-hinweise.html"
+      "link_1_label": "Legal information",
+      "link_1_url": "https://www.allianz.ch/en/information/websitecredits.html",
+      "link_2_label": "Privacy policy",
+      "link_2_url": "https://www.allianz.ch/en/information/privacypolicy.html",
+      "link_3_label": "Legal notice",
+      "link_3_url": "https://www.allianz.ch/en/information/legal-information.html"
     },
     "mail": {
-      "subject": "Neuer Lead | Kontaktformular | Bitte Kunde/in kontaktieren"
+      "subject": "New lead | {{value}} | Please contact customer"
     }
   }
 }

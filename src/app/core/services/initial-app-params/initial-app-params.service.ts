@@ -1,9 +1,8 @@
-import { inject, Injectable, signal } from "@angular/core";
-import { ActivatedRoute, NavigationEnd, ParamMap, Router, } from "@angular/router";
-import { filter, forkJoin, map, skipWhile, switchMap, take, } from "rxjs";
-import { Agency, AgencyListService, } from "../agency/agency-list.service";
+import {inject, Injectable, signal} from "@angular/core";
+import {ActivatedRoute, NavigationEnd, ParamMap, Router,} from "@angular/router";
+import {filter, forkJoin, map, skipWhile, switchMap, take,} from "rxjs";
+import {Agency, AgencyListService,} from "../agency/agency-list.service";
 import {environment} from "../../../../environments/environment";
-import * as constants from "node:constants";
 import {DEFAULT_LANGUAGE} from "../../../constants";
 
 /**
@@ -108,7 +107,7 @@ export class InitialAppParamsService {
     let agency: Agency | undefined;
     if (agencyParam) {
       agency = agencies.find((agency) => agency.id == agencyParam);
-      if(!agency) {
+      if (!agency) {
         console.warn("Agency with id", agencyParam, "not found in agency list. Setting fallback-agency");
         agency = agencies.find((agency) => agency.id == environment.defaultAgencyID);
       }
@@ -120,7 +119,7 @@ export class InitialAppParamsService {
       console.warn("Invalid base64 email encoding:", e);
     }
 
-    let debug: boolean |  undefined;
+    let debug: boolean | undefined;
 
     if (params.has("debug") && params.get("debug") == "true") {
       debug = true;
@@ -163,6 +162,6 @@ interface InitialAppParams {
   campaign: string | undefined; // from cp param
   externalLink: string | undefined; // extLnk
   agency: Agency | undefined; // ga
-  campaignSource:string| undefined; // sc (&sc=)
+  campaignSource: string | undefined; // sc (&sc=)
   werber: string | undefined; // we (&we=)
 }

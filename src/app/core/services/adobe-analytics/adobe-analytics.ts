@@ -563,7 +563,6 @@ export class EventBuilder {
 
   withEventInfo(eventInfo: EventInfo): EventBuilder {
     this.event.eventInfo = eventInfo;
-    console.log('withEventInfo event value: ', this.event.eventInfo);
     return this;
   }
 

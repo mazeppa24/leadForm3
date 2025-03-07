@@ -1,0 +1,49 @@
+.form-host {
+  display: block;
+  // top, right, bottom, left
+  padding: 40px 40px 48px 40px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px 0 rgba(18, 43, 84, 0.12),
+  0 2px 8px 0 rgba(18, 43, 84, 0.16);
+  width: 100%;
+  // desktop
+  @media (max-width: 769px) {
+    padding: 40px 16px 48px 16px;
+  }
+}
+
+// grid helper
+.order-first {
+  order: -1;
+}
+
+.order-md-last {
+  // move image to the right on desktop
+  // and to top for everything else smaller
+  @media (min-width: 992px) {
+    order: 1;
+  }
+}
+
+.profile-image-container {
+  display: block;
+  text-align: left;
+  margin-bottom: 8px;
+
+  // desktop
+  @media (min-width: 768px) {
+    //margin-bottom: 0;
+    //padding-top: 0px; // Add some top padding on desktop
+  }
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image {
+  width: 100%;
+  max-width: 300px;
+}

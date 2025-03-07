@@ -1,13 +1,11 @@
 .main-wrapper {
-  display: flex;
+  //display: flex;
   flex-direction: column;
   min-height: calc(100vh - 148px);
 }
-
-
-header {
+.header {
   margin: auto;
-  max-width: 1184px;
+  //max-width: 1184px;
   border-bottom: none !important;
 }
 
@@ -16,45 +14,6 @@ header {
   display: flex;
   justify-content: center;
 }
-
-footer {
-  bottom: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-.footer-content-wrapper {
-  max-width: 1184px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.centered-footer {
-  display: block;
-  text-align: center;
-}
-
-.footer-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 16px;
-  margin-bottom: 8px;
-}
-
-.phone-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 4px;
-}
-
-.release-info {
-  margin-top: 8px;
-  color: white !important;
-  text-align: center;
-}
-
 section {
   flex: 1;
 }

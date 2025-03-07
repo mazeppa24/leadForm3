@@ -361,3 +361,9 @@ WIP
 - added IT/FR translations
 - track error page view
 - update sources for caspars campaigns
+
+## 07.03.2025
+- Proper grid layout
+- New Footer Component
+- HTML Layout structure for new target cases
+- Cleanup, Moved components, delete unused files/code
