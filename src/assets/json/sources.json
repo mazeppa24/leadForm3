@@ -187,13 +187,13 @@
         }
       },
       "p_angebot_haushaltsversicherung": {
-        "origin": "angebot",
+        "origin": "generic",
         "source": "direct",
         "category": "haushaltsversicherung",
         "form_url": {
-          "de": "https://www.allianz.ch/de/privatkunden/angebote/wohnen-recht/haushaltsversicherung.html",
-          "fr": "https://www.allianz.ch/fr/clients-prives/offres/habitation-droits/assurance-rc-menage.html",
-          "it": "https://www.allianz.ch/it/clienti-privati/offerte/casa-tutela-diritti/assicurazione-economia-domestica.html"
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_haushaltsversicherung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_haushaltsversicherung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_haushaltsversicherung&lang=it"
         },
         "woher": {
           "de": "Online-Formular zu Haushaltsversicherung (P)",
@@ -201,19 +201,19 @@
           "it": "Modulo online assicurazione-economia-domestica (P)"
         },
         "was": {
-          "de": "Beratung/Offerte",
-          "fr": "Conseil/Offre",
-          "it": "Consulenz/Offerta"
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
         }
       },
       "p_angebot_haftpflichtversicherung": {
-        "origin": "angebot",
+        "origin": "generic",
         "source": "direct",
         "category": "haftpflichtversicherung",
         "form_url": {
-          "de": "https://www.allianz.ch/de/privatkunden/angebote/wohnen-recht/haftpflichtversicherung.html",
-          "fr": "https://www.allianz.ch/fr/clients-prives/offres/habitation-droits/assurance-rc.html",
-          "it": "https://www.allianz.ch/it/clienti-privati/offerte/casa-tutela-diritti/assicurazione-rc-privata.html"
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_haftpflichtversicherung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_haftpflichtversicherung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_haftpflichtversicherung&lang=it"
         },
         "woher": {
           "de": "Online-Formular zu Haftpflichtversicherung (P)",
@@ -221,19 +221,19 @@
           "it": "Modulo online assicurazione-rc-privata (P)"
         },
         "was": {
-          "de": "Beratung/Offerte",
-          "fr": "Conseil/Offre",
-          "it": "Consulenz/Offerta"
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
         }
       },
       "p_angebot_hausratversicherung": {
-        "origin": "angebot",
+        "origin": "generic",
         "source": "direct",
         "category": "hausratversicherung",
         "form_url": {
-          "de": "https://www.allianz.ch/de/privatkunden/angebote/wohnen-recht/hausratversicherung.html",
-          "fr": "https://www.allianz.ch/fr/clients-prives/offres/habitation-droits/assurance-menage.html",
-          "it": "https://www.allianz.ch/it/clienti-privati/offerte/casa-tutela-diritti/assicurazione-mobilia-domestica.html"
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_hausratversicherung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_hausratversicherung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_hausratversicherung&lang=it"
         },
         "woher": {
           "de": "Online-Formular zu Hausratversicherung (P)",
@@ -241,19 +241,19 @@
           "it": "Modulo online assicurazione-mobilia-domestica (P)"
         },
         "was": {
-          "de": "Beratung/Offerte",
-          "fr": "Conseil/Offre",
-          "it": "Consulenz/Offerta"
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
         }
       },
       "p_angebot_hausrat-all-risk": {
-        "origin": "angebot",
+        "origin": "generic",
         "source": "direct",
         "category": "hausrat-all-risk",
         "form_url": {
-          "de": "https://www.allianz.ch/de/privatkunden/angebote/wohnen-recht/hausrat-all-risk.html",
-          "fr": "https://www.allianz.ch/fr/clients-prives/offres/habitation-droits/menage-all-risk.html",
-          "it": "https://www.allianz.ch/it/clienti-privati/offerte/casa-tutela-diritti/mobilia-domestica-all-risk.html"
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_hausrat-all-risk",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_hausrat-all-risk&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_hausrat-all-risk&lang=it"
         },
         "woher": {
           "de": "Online-Formular zu Hausrat-All-Risk (P)",
@@ -261,9 +261,9 @@
           "it": "Modulo online mobilia-domestica-all-risk (P)"
         },
         "was": {
-          "de": "Beratung/Offerte",
-          "fr": "Conseil/Offre",
-          "it": "Consulenz/Offerta"
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
         }
       },
       "saeule-3a_angebot": {
@@ -439,11 +439,11 @@
       "rs_angebot": {
         "origin": "productSpecific",
         "source": "sea",
-        "category": "privatrechtsschutz",
+        "category": "rs",
         "woher": {
-          "de": "Online-Formular zu Fondsanlagen",
-          "fr": "Formulaire fonds de placement",
-          "it": "Modulo online per gli investimenti in fondi"
+          "de": "Online-Formular zu Privatrechtsschutz",
+          "fr": "Formulaire en ligne: Protection juridique privée",
+          "it": "Modulo online: Protezione giuridica privata"
         },
         "was": {
           "de": "Beratung/Offerte",
@@ -1877,8 +1877,8 @@
         "category": "mr",
         "woher": {
           "de": "Online-Formular zu MR (15.- Gutschein louis.ch)",
-          "fr": "Formulaire en ligne: Assurance moto",
-          "it": "Modulo online:  Assicurazione moto"
+          "fr": "Formulaire en ligne: Assurance moto (bon de 15.- louis.ch)",
+          "it": "Modulo online: Assicurazione per moto (buono di 15.- louis.ch)"
         },
         "was": {
           "de": "Beratung/Offerte",
@@ -1894,6 +1894,2686 @@
           "de": "Online-Formular zu Elektroauto-Versicherung (200.- Rabatt)",
           "fr": "Formulaire en ligne: Assurance véh. électr. et hybrides (200.- de rabais)",
           "it": "Modulo online: Assicurazione per auto elettriche e ibride (200.- sconto)"
+        },
+        "was": {
+          "de": "Beratung/Offerte",
+          "fr": "Conseil/offre",
+          "it": "Consulenza/offerta"
+        }
+      },
+      "p_allgemein-privatkunden": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "allgemein",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_allgemein-privatkunden",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_allgemein-privatkunden&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_allgemein-privatkunden&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Allgemein (P)",
+          "fr": "Formulaire en ligne: pour Généralités (P)",
+          "it": "Modulo online per questioni generali (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_angebot": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "angebot",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Angebote (P)",
+          "fr": "Formulaire en ligne: Offres (P)",
+          "it": "Modulo online offerte (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_angebot_autoversicherung": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "autoversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_autoversicherung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_autoversicherung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_autoversicherung&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Autoversicherung (P)",
+          "fr": "Formulaire en ligne: Assurance-voiture (P)",
+          "it": "Modulo online assicurazione-auto (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_angebot_elektroauto-versicherung": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "elektroauto-versicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_elektroauto-versicherung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_elektroauto-versicherung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_elektroauto-versicherung&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Elektroauto-Versicherung (P)",
+          "fr": "Formulaire en ligne: Assurance-voiture-electrique (P)",
+          "it": "Modulo online assicurazione-auto-elettrica (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_angebot_motorradversicherung": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "motorradversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_motorradversicherung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_motorradversicherung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_motorradversicherung&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Motorradversicherung (P)",
+          "fr": "Formulaire en ligne: Assurance-moto (P)",
+          "it": "Modulo online assicurazione-moto (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_angebot_reiseversicherung": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "reiseversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_reiseversicherung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_reiseversicherung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_reiseversicherung&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Reiseversicherung (P)",
+          "fr": "Formulaire en ligne: Assurance-voyages (P)",
+          "it": "Modulo online assicurazione-viaggio (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_angebot_oldtimerversicherung": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "oldtimerversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_oldtimerversicherung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_oldtimerversicherung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_oldtimerversicherung&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Oldtimerversicherung (P)",
+          "fr": "Formulaire en ligne: Assurance-oldtimer (P)",
+          "it": "Modulo online assicurazione-oldtimer (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_angebot_bootsversicherung": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "bootsversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_bootsversicherung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_bootsversicherung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_bootsversicherung&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Bootsversicherung (P)",
+          "fr": "Formulaire en ligne: Assurance-bateaux (P)",
+          "it": "Modulo online assicurazione-natanti (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_angebot_quadversicherung": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "quadversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_quadversicherung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_quadversicherung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_quadversicherung&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Quadversicherung (P)",
+          "fr": "Formulaire en ligne: Assurance-quad (P)",
+          "it": "Modulo online assicurazione-quad (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_angebot_velo-assistance": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "velo-assistance",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_velo-assistance",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_velo-assistance&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_velo-assistance&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Velo-Assistance (P)",
+          "fr": "Formulaire en ligne: Assistance-velo (P)",
+          "it": "Modulo online assistance-biciclette (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_angebot_wohnen-recht": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "wohnen-recht",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_wohnen-recht",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_wohnen-recht&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_wohnen-recht&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Wohnen-Recht (P)",
+          "fr": "Formulaire en ligne: Habitation-droits (P)",
+          "it": "Modulo online casa-tutela-diritti (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_angebot_rechtsschutzversicherung": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "rechtsschutzversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_rechtsschutzversicherung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_rechtsschutzversicherung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_rechtsschutzversicherung&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Rechtsschutzversicherung (P)",
+          "fr": "Formulaire en ligne: Assurance-protection-juridique (P)",
+          "it": "Modulo online assicurazione-protezione-giuridica (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_angebot_gebaeudeversicherung": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "gebaeudeversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_gebaeudeversicherung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_gebaeudeversicherung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_gebaeudeversicherung&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Gebaeudeversicherung (P)",
+          "fr": "Formulaire en ligne: Assurance-batiment (P)",
+          "it": "Modulo online assicurazione-stabili (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_angebot_cyberschutz": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "cyberschutz",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_cyberschutz",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_cyberschutz&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_cyberschutz&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Cyberschutz (P)",
+          "fr": "Formulaire en ligne: Cyberprotection (P)",
+          "it": "Modulo online protezione-rischi-informatici (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_angebot_wohnschutzbrief": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "wohnschutzbrief",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_wohnschutzbrief",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_wohnschutzbrief&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_wohnschutzbrief&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Wohnschutzbrief (P)",
+          "fr": "Formulaire en ligne: Protection-menage (P)",
+          "it": "Modulo online protezione-casa (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_angebot_kunstversicherung": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "kunstversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_kunstversicherung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_kunstversicherung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_kunstversicherung&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Kunstversicherung (P)",
+          "fr": "Formulaire en ligne: Assurance-art (P)",
+          "it": "Modulo online assicurazione-arte-privata (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_angebot_wertsachenversicherung": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "wertsachenversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_wertsachenversicherung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_wertsachenversicherung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_wertsachenversicherung&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Wertsachenversicherung (P)",
+          "fr": "Formulaire en ligne: Assurance-objet-de-valeur (P)",
+          "it": "Modulo online assicurazione-oggetti-di-valore (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_angebot_bauwesenversicherung": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "bauwesenversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_bauwesenversicherung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_bauwesenversicherung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_bauwesenversicherung&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Bauwesenversicherung (P)",
+          "fr": "Formulaire en ligne: Assurance-travaux-de-construction (P)",
+          "it": "Modulo online rc-committente-costruzione (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_angebot_bauherrenhaftpflichtversicherung": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "bauherrenhaftpflichtversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_bauherrenhaftpflichtversicherung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_bauherrenhaftpflichtversicherung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_bauherrenhaftpflichtversicherung&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Bauherrenhaftpflichtversicherung (P)",
+          "fr": "Formulaire en ligne: Assurance-rc-maitre-ouvrage (P)",
+          "it": "Modulo online assicurazione-rc-edile (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_angebot_vorsorge-lebensversicherungen": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "vorsorge-lebensversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_vorsorge-lebensversicherungen",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_vorsorge-lebensversicherungen&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_vorsorge-lebensversicherungen&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Vorsorge-Lebensversicherungen (P)",
+          "fr": "Formulaire en ligne: Prevoyance-assurance-vie (P)",
+          "it": "Modulo online previdenza-assicurazioni-vita (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_angebot_risikolebensversicherung": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "risikolebensversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_risikolebensversicherung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_risikolebensversicherung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_risikolebensversicherung&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Risikolebensversicherung (P)",
+          "fr": "Formulaire en ligne: Assurance-risque-pur (P)",
+          "it": "Modulo online assicurazione-di-rischio (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_angebot_sparen-anlegen": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "sparen-anlegen",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_sparen-anlegen",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_sparen-anlegen&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_sparen-anlegen&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Sparen-Anlegen (P)",
+          "fr": "Formulaire en ligne: Epargne-placements (P)",
+          "it": "Modulo online risparmio-investimento (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_angebot_kinderversicherung": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "kinderversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_kinderversicherung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_kinderversicherung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_kinderversicherung&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Kinderversicherung (P)",
+          "fr": "Formulaire en ligne: Assurance-enfant (P)",
+          "it": "Modulo online assicurazione-figli (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_angebot_entnahmeplan": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "entnahmeplan",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_entnahmeplan",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_entnahmeplan&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_entnahmeplan&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Entnahmeplan (P)",
+          "fr": "Formulaire en ligne: Plan-utilisation-fonds (P)",
+          "it": "Modulo online piano-di-prelievo (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_angebot_unfall-krankheit": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "unfall-krankheit",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_unfall-krankheit",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_unfall-krankheit&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_unfall-krankheit&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Unfall-Krankheit (P)",
+          "fr": "Formulaire en ligne: Accidents-maladie (P)",
+          "it": "Modulo online infortuni-malattia (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_services_anliegen": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "anliegen",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_anliegen",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_anliegen&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_anliegen&lang=it"
+        },
+        "woher": {
+          "de": "Online-Service-Formular zu Anliegen (P)",
+          "fr": "Formulaire en ligne: Demande (P)",
+          "it": "Modulo online richieste (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_services_beratung-anfordern": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "beratung-anfordern",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_beratung-anfordern",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_beratung-anfordern&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_beratung-anfordern&lang=it"
+        },
+        "woher": {
+          "de": "Online-Service-Formular zu Beratung-anfordern (P)",
+          "fr": "Formulaire en ligne: demande-de-conseil (P)",
+          "it": "Modulo online richiesta-di-consulenza (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_services_agentur-suchen": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "agentur-suchen",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_agentur-suchen",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_agentur-suchen&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_agentur-suchen&lang=it"
+        },
+        "woher": {
+          "de": "Online-Service-Formular zu Agentur-Suchen (P)",
+          "fr": "Formulaire en ligne: Recherche-agence (P)",
+          "it": "Modulo online ricerca-agenzia (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_services_geschaeftspartner-suchen": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "geschaeftspartner-suchen",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_geschaeftspartner-suchen",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_geschaeftspartner-suchen&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_geschaeftspartner-suchen&lang=it"
+        },
+        "woher": {
+          "de": "Online-Service-Formular zu Geschaeftspartner-Suchen (P)",
+          "fr": "Formulaire en ligne: Recherche-partenaires-commerciaux (P)",
+          "it": "Modulo online ricerca-partner-commerciali (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_services_praemie-berechnen": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "praemie-berechnen",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_praemie-berechnen",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_praemie-berechnen&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_praemie-berechnen&lang=it"
+        },
+        "woher": {
+          "de": "Online-Service-Formular zu Praemie-Berechnen (P)",
+          "fr": "Formulaire en ligne: Calculer-prime (P)",
+          "it": "Modulo online calcolare-premio (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_services_hypothekenrechner": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "hypothekenrechner",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_hypothekenrechner",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_hypothekenrechner&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_hypothekenrechner&lang=it"
+        },
+        "woher": {
+          "de": "Online-Service-Formular zu Hypothekenrechner (P)",
+          "fr": "Formulaire en ligne: Calculateur-hypotheques (P)",
+          "it": "Modulo online calcolatore-ipoteche (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_services_saeule-3a-rechner": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "saeule-3a-rechner",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_saeule-3a-rechner",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_saeule-3a-rechner&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_saeule-3a-rechner&lang=it"
+        },
+        "woher": {
+          "de": "Online-Service-Formular zu Saeule-3a-Rechner (P)",
+          "fr": "Formulaire en ligne: Calculateur-du-pilier-3a",
+          "it": "Modulo online calcolatore-pilastro-3a(P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_services_vorsorgeanalyse": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "vorsorgeanalyse",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_vorsorgeanalyse",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_vorsorgeanalyse&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_vorsorgeanalyse&lang=it"
+        },
+        "woher": {
+          "de": "Online-Service-Formular zu Vorsorgeanalyse (P)",
+          "fr": "Formulaire en ligne: Analyse-de-prevoyance",
+          "it": "Modulo online analisi-di-previdenza (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_services_pensionsrechner": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "pensionsrechner",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_pensionsrechner",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_pensionsrechner&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_pensionsrechner&lang=it"
+        },
+        "woher": {
+          "de": "Online-Service-Formular zu Pensionsrechner (P)",
+          "fr": "Formulaire en ligne: Calculateur-de-retraite",
+          "it": "Modulo online calcolatore-della-pensione (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_services_fondsperformance-einzelfonds": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "fondsperformance-einzelfonds",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_fondsperformance-einzelfonds",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_fondsperformance-einzelfonds&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_fondsperformance-einzelfonds&lang=it"
+        },
+        "woher": {
+          "de": "Online-Service-Formular zu Fondsperformance-Einzelfonds (P)",
+          "fr": "Formulaire en ligne: Performance-des-fonds-seul-fonds (P)",
+          "it": "Modulo online performance-fondi-unici (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_services_fondsperformance-portfolio": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "fondsperformance-portfolio",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_fondsperformance-portfolio",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_fondsperformance-portfolio&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_fondsperformance-portfolio&lang=it"
+        },
+        "woher": {
+          "de": "Online-Service-Formular zu Fondsperformance-Portfolio (P)",
+          "fr": "Formulaire en ligne: performance-des-fonds-portefeuille (P)",
+          "it": "Modulo online performance-fondi-portfolio (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_services_zinsen-konditionen": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "zinsen-konditionen",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_zinsen-konditionen",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_zinsen-konditionen&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_zinsen-konditionen&lang=it"
+        },
+        "woher": {
+          "de": "Online-Service-Formular zu Zinsen-Konditionen (P)",
+          "fr": "Formulaire en ligne: Taux-conditions (P)",
+          "it": "Modulo online tassi-e-condizioni (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_services_allianz-plus": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "allianz-plus",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_allianz-plus",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_allianz-plus&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_allianz-plus&lang=it"
+        },
+        "woher": {
+          "de": "Online-Service-Formular zu Allianz-Plus (P)",
+          "fr": "Formulaire en ligne: Allianz-plus (P)",
+          "it": "Modulo online allianz-plus (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_services_junge-erwachsene": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "junge-erwachsene",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_junge-erwachsene",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_junge-erwachsene&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_junge-erwachsene&lang=it"
+        },
+        "woher": {
+          "de": "Online-Service-Formular zu Junge-Erwachsene (P)",
+          "fr": "Formulaire en ligne: Assurances-pour-jeunes (P)",
+          "it": "Modulo online assicurazioni-giovani (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_services_elektronischer-versicherungsnachweis": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "elektronischer-versicherungsnachweis",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_elektronischer-versicherungsnachweis",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_elektronischer-versicherungsnachweis&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_elektronischer-versicherungsnachweis&lang=it"
+        },
+        "woher": {
+          "de": "Online-Service-Formular zu Elektronischer-Versicherungsnachweis (P)",
+          "fr": "Formulaire en ligne: Attestation-assurance-electronique (P)",
+          "it": "Modulo online attestato-assicurazione-elettronico (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_services_kartensperrservice": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "kartensperrservice",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_kartensperrservice",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_kartensperrservice&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_services_kartensperrservice&lang=it"
+        },
+        "woher": {
+          "de": "Online-Service-Formular zu Kartensperrservice (P)",
+          "fr": "Formulaire en ligne: Blocage-cartes (P)",
+          "it": "Modulo online blocco-carta (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_autoimport": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "autoimport",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_autoimport",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_autoimport&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_autoimport&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Autoimport (P)",
+          "fr": "Formulaire en ligne: Importation-voiture (P)",
+          "it": "Modulo online Importazione auto (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_autounfall": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "autounfall",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_autounfall",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_autounfall&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_autounfall&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Autounfall (P)",
+          "fr": "Formulaire en ligne: Constat-accident (P)",
+          "it": "Modulo online Incidente stradale auto (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_autoversicherung-kuendigen": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "autoversicherung-kuendigen",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_autoversicherung-kuendigen",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_autoversicherung-kuendigen&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_autoversicherung-kuendigen&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Autoversicherung-Kuendigen (P)",
+          "fr": "Formulaire en ligne: Resilier-assurance-auto (P)",
+          "it": "Modulo online Disdire polizza auto (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_bonus-malus-system": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "bonus-malus-system",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_bonus-malus-system",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_bonus-malus-system&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_bonus-malus-system&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Systeme-Bonus-Malus (P)",
+          "fr": "Formulaire en ligne: Systeme-bonus-malus (P)",
+          "it": "Modulo online Sistema bonus malus (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_bonusschutz": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "bonusschutz",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_bonusschutz",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_bonusschutz&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_bonusschutz&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Bonusschutz (P)",
+          "fr": "Formulaire en ligne: Protection-bonus (P)",
+          "it": "Modulo online Protezione bonus (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_boot-kaufen": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "boot-kaufen",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_boot-kaufen",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_boot-kaufen&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_boot-kaufen&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Boot-Kaufen (P)",
+          "fr": "Formulaire en ligne: Acheter-un-bateau (P)",
+          "it": "Modulo online Acquistare una barca (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_drohnenversicherung": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "drohnenversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_drohnenversicherung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_drohnenversicherung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_drohnenversicherung&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Drohnenversicherung (P)",
+          "fr": "Formulaire en ligne: Assurance-drone (P)",
+          "it": "Modulo online Assicurazione drone (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_e-bike-versicherung": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "e-bike-versicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_e-bike-versicherung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_e-bike-versicherung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_e-bike-versicherung&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber E-Bike-Versicherung (P)",
+          "fr": "Formulaire en ligne: Assurance-velos-electriques (P)",
+          "it": "Modulo online Assicurazione ebike (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_e-vignette": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "e-vignette",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_e-vignette",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_e-vignette&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_e-vignette&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber E-Vignette (P)",
+          "fr": "Formulaire en ligne: E-vignette (P)",
+          "it": "Modulo online Vignetta digitale (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_gruene-karte": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "gruene-karte",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_gruene-karte",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_gruene-karte&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_gruene-karte&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Gruene-Karte (P)",
+          "fr": "Formulaire en ligne: Carte-verte (P)",
+          "it": "Modulo online Carta verde (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_hagelschaden-auto": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "hagelschaden-auto",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_hagelschaden-auto",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_hagelschaden-auto&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_hagelschaden-auto&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Hagelschaden-Auto (P)",
+          "fr": "Formulaire en ligne: Degat-grele (P)",
+          "it": "Modulo online Danni da grandine auto (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_klimabedingte-gefahren": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "klimabedingte-gefahren",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_klimabedingte-gefahren",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_klimabedingte-gefahren&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_klimabedingte-gefahren&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Klimabedingte-Gefahren (P)",
+          "fr": "Formulaire en ligne: Risques-lies-au-climat (P)",
+          "it": "Modulo online Rischi legati al cambiamento climatico (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_mietwagenversicherung": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "mietwagenversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_mietwagenversicherung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_mietwagenversicherung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_mietwagenversicherung&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Mietwagenversicherung (P)",
+          "fr": "Formulaire en ligne: Assurance-voiture-location (P)",
+          "it": "Modulo online Assicurazione auto a noleggio (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_motorboot": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "motorboot",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_motorboot",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_motorboot&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_motorboot&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Motorboot (P)",
+          "fr": "Formulaire en ligne: Bateau-moteur (P)",
+          "it": "Modulo online Assicurare barca (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_motorrad-einwintern": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "motorrad-einwintern",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_motorrad-einwintern",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_motorrad-einwintern&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_motorrad-einwintern&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Motorrad-Einwintern (P)",
+          "fr": "Formulaire en ligne: Hiverner-sa-moto (P)",
+          "it": "Modulo online Rimessaggio invernale della moto (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_versicherung-neuwagen": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "versicherung-neuwagen",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_versicherung-neuwagen",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_versicherung-neuwagen&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_versicherung-neuwagen&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Versicherung-Neuwagen (P)",
+          "fr": "Formulaire en ligne: Voiture-neuve (P)",
+          "it": "Modulo online Auto nuova (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_parkschaden": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "parkschaden",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_parkschaden",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_parkschaden&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_parkschaden&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Parkschaden (P)",
+          "fr": "Formulaire en ligne: Dommage-de-parcage (P)",
+          "it": "Modulo online Danni da parcheggio (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_segelboot-versicherung": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "segelboot-versicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_segelboot-versicherung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_segelboot-versicherung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_segelboot-versicherung&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Segelboot-Versicherung (P)",
+          "fr": "Formulaire en ligne: Assurance-voilier (P)",
+          "it": "Modulo online Assicurazione barca a vela (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_selbstbehalt": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "selbstbehalt",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_selbstbehalt",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_selbstbehalt&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_selbstbehalt&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Selbstbehalt (P)",
+          "fr": "Formulaire en ligne: Franchise (P)",
+          "it": "Modulo online Franchigia (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_totalschaden-am-auto": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "totalschaden-am-auto",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_totalschaden-am-auto",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_totalschaden-am-auto&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_totalschaden-am-auto&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Totalschaden am Auto (P)",
+          "fr": "Formulaire en ligne: Dommage-total (P)",
+          "it": "Modulo online Danno totale (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_umweltzonen": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "umweltzonen",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_umweltzonen",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_umweltzonen&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_umweltzonen&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Umweltzonen (P)",
+          "fr": "Formulaire en ligne: Zones-environnementales (P)",
+          "it": "Modulo online Zone ambientali (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_unterhaltskosten-auto": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "unterhaltskosten-auto",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_unterhaltskosten-auto",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_unterhaltskosten-auto&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_unterhaltskosten-auto&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Unterhaltskosten-Auto (P)",
+          "fr": "Formulaire en ligne: Entretien-voiture (P)",
+          "it": "Modulo online Costi mantenimento auto (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_veloversicherung": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "veloversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_veloversicherung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_veloversicherung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_veloversicherung&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Veloversicherung (P)",
+          "fr": "Formulaire en ligne: Assurance-velo (P)",
+          "it": "Modulo online Assicurazione bici (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_unterschied-vollkasko-teilkasko": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "unterschied-vollkasko-teilkasko",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_unterschied-vollkasko-teilkasko",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_unterschied-vollkasko-teilkasko&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_unterschied-vollkasko-teilkasko&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Unterschied-Vollkasko-Teilkasko (P)",
+          "fr": "Formulaire en ligne: Difference-casco-complete-et-partielle (P)",
+          "it": "Modulo online Differenze casco totale e parziale (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_wechselschild": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "wechselschild",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_wechselschild",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_wechselschild&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_wechselschild&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Wechselschild (P)",
+          "fr": "Formulaire en ligne: Plaque-interchangeable (P)",
+          "it": "Modulo online Targa trasferibile (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_wildunfall": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "wildunfall",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_wildunfall",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_wildunfall&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_wildunfall&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Wildunfall (P)",
+          "fr": "Formulaire en ligne: Accident-du-au-gibier (P)",
+          "it": "Modulo online Incidenti con animali selvatici (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_reiseruecktrittsversicherung": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "reiseruecktrittsversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_reiseruecktrittsversicherung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_reiseruecktrittsversicherung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_reiseruecktrittsversicherung&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Reiseruecktrittsversicherung (P)",
+          "fr": "Formulaire en ligne: Assurance-annulation-voyage (P)",
+          "it": "Modulo online Assicurazione annullamento viaggio (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_reisegepaeckversicherung": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "reisegepaeckversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_reisegepaeckversicherung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_reisegepaeckversicherung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_reisegepaeckversicherung&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Reisegepaeckversicherung (P)",
+          "fr": "Formulaire en ligne: Assurance-bagages (P)",
+          "it": "Modulo online Assicurazione bagaglio (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_cyberkriminalitaet": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "cyberkriminalitaet",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_cyberkriminalitaet",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_cyberkriminalitaet&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_cyberkriminalitaet&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Cyberkriminalitaet (P)",
+          "fr": "Formulaire en ligne: Cybercriminalite (P)",
+          "it": "Modulo online cibercriminalita (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_cybermobbing": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "cybermobbing",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_cybermobbing",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_cybermobbing&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_cybermobbing&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Cybermobbing (P)",
+          "fr": "Formulaire en ligne: Cyberharcelement (P)",
+          "it": "Modulo online cyberbullismo (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_doppelversicherung": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "doppelversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_doppelversicherung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_doppelversicherung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_doppelversicherung&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Doppelversicherung (P)",
+          "fr": "Formulaire en ligne: Double-assurance (P)",
+          "it": "Modulo online doppia-assicurazione (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_obligatorische-versicherungen-schweiz": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "obligatorische-versicherungen-schweiz",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_obligatorische-versicherungen-schweiz",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_obligatorische-versicherungen-schweiz&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_obligatorische-versicherungen-schweiz&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Obligatorische-Versicherungen-Schweiz (P)",
+          "fr": "Formulaire en ligne: Assurances-obligatoires-suisse (P)",
+          "it": "Modulo online assicurazioni-obbligatorie-svizzera (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_sturmschaeden": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "sturmschaeden",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_sturmschaeden",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_sturmschaeden&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_sturmschaeden&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Sturmschaeden (P)",
+          "fr": "Formulaire en ligne: Dommages-dus-aux-tempetes (P)",
+          "it": "Modulo online danni-da-tempesta (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_unnoetige-versicherungen": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "unnoetige-versicherungen",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_unnoetige-versicherungen",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_unnoetige-versicherungen&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_unnoetige-versicherungen&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Unnoetige-Versicherungen (P)",
+          "fr": "Formulaire en ligne: Assurances-inutiles (P)",
+          "it": "Modulo online assicurazioni-inutili (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_versicherungsluecken": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "versicherungsluecken",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_versicherungsluecken",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_versicherungsluecken&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_versicherungsluecken&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Versicherungsluecken (P)",
+          "fr": "Formulaire en ligne: Sous-assurance (P)",
+          "it": "Modulo online sottoassicurazione (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_versicherungspraemie": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "versicherungspraemie",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_versicherungspraemie",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_versicherungspraemie&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_versicherungspraemie&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Versicherungspraemie (P)",
+          "fr": "Formulaire en ligne: Prime-assurance (P)",
+          "it": "Modulo online premio-assicurativo (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_vorgang-schadenfall": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "vorgang-schadenfall",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_vorgang-schadenfall",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_vorgang-schadenfall&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_vorgang-schadenfall&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Vorgang-Schadenfall (P)",
+          "fr": "Formulaire en ligne: Que-faire-en-cas-de-sinistre (P)",
+          "it": "Modulo online come-denunciare-sinistro (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_vvg-revision": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "vvg-revision",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_vvg-revision",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_vvg-revision&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_vvg-revision&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber VVG-Revision (P)",
+          "fr": "Formulaire en ligne: Revision-lca (P)",
+          "it": "Modulo online revisione-lca (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_zahlungsmoeglichkeiten": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "zahlungsmoeglichkeiten",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_zahlungsmoeglichkeiten",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_zahlungsmoeglichkeiten&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_zahlungsmoeglichkeiten&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Zahlungsmoeglichkeiten (P)",
+          "fr": "Formulaire en ligne: Modes-de-paiement (P)",
+          "it": "Modulo online strumenti-di-pagamento (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_ski-versicherung": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "ski-versicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_ski-versicherung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_ski-versicherung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_ski-versicherung&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Ski-Versicherung (P)",
+          "fr": "Formulaire en ligne: Assurance-ski (P)",
+          "it": "Modulo online assicurazione-sci (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_amortisation": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "amortisation",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_amortisation",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_amortisation&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_amortisation&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Amortisation (P)",
+          "fr": "Formulaire en ligne: Amortissement (P)",
+          "it": "Modulo online ammortamento (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_diebstahlversicherung": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "diebstahlversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_diebstahlversicherung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_diebstahlversicherung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_diebstahlversicherung&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Diebstahlversicherung (P)",
+          "fr": "Formulaire en ligne: Assurance-vol (P)",
+          "it": "Modulo online assicurazione-furto (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_eigenmietwert": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "eigenmietwert",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_eigenmietwert",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_eigenmietwert&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_eigenmietwert&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Eigenmietwert (P)",
+          "fr": "Formulaire en ligne: Valeur-locative (P)",
+          "it": "Modulo online valore-locativo (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_elementarschaeden": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "elementarschaeden",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_elementarschaeden",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_elementarschaeden&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_elementarschaeden&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Elementarschaeden (P)",
+          "fr": "Formulaire en ligne: Dommages-naturels (P)",
+          "it": "Modulo online danni-da-eventi-naturali (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_versicherungen-erste-wohnung": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "versicherungen-erste-wohnung",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_versicherungen-erste-wohnung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_versicherungen-erste-wohnung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_versicherungen-erste-wohnung&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Versicherungen-Erste-Wohnung (P)",
+          "fr": "Formulaire en ligne: Assurances-premier-appartement (P)",
+          "it": "Modulo online assicurazioni-primo-appartamento (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_festhypothek": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "festhypothek",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_festhypothek",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_festhypothek&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_festhypothek&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Festhypothek (P)",
+          "fr": "Formulaire en ligne: Hypotheque-a-taux-fixe (P)",
+          "it": "Modulo online ipoteca-tasso-fisso (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_glasbruch": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "glasbruch",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_glasbruch",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_glasbruch&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_glasbruch&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Glasbruch (P)",
+          "fr": "Formulaire en ligne: Bris-de-glaces (P)",
+          "it": "Modulo online rottura-vetri (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_hagelschaden-gebaeude": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "hagelschaden-gebaeude",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_hagelschaden-gebaeude",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_hagelschaden-gebaeude&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_hagelschaden-gebaeude&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Hagelschaden-Gebaeude (P)",
+          "fr": "Formulaire en ligne: Degat-grele-maison (P)",
+          "it": "Modulo online danni-da-grandine-casa (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_handyversicherung": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "handyversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_handyversicherung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_handyversicherung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_handyversicherung&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Handyversicherung (P)",
+          "fr": "Formulaire en ligne: Assurance-mobile (P)",
+          "it": "Modulo online assicurazione-cellulare (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_was-tun-bei-hochwasser-ueberschwemmung": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "was-tun-bei-hochwasser-ueberschwemmung",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_was-tun-bei-hochwasser-ueberschwemmung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_was-tun-bei-hochwasser-ueberschwemmung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_was-tun-bei-hochwasser-ueberschwemmung&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Was-Tun-Bei-Hochwasser-Ueberschwemmung (P)",
+          "fr": "Formulaire en ligne: Hautes-eaux-inondations (P)",
+          "it": "Modulo online piena-inondazione (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_klimaschaeden": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "klimaschaeden",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_klimaschaeden",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_klimaschaeden&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_klimaschaeden&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Klimaschaeden (P)",
+          "fr": "Formulaire en ligne: Dommages-climatiques (P)",
+          "it": "Modulo online danni-dovuti (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p-ratgeber_mieten-oder-kaufen": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "mieten-oder-kaufen",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_mieten-oder-kaufen",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_mieten-oder-kaufen&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_mieten-oder-kaufen&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Mieten oder kaufen (P)",
+          "fr": "Formulaire en ligne: Louer-ou-acheter (P)",
+          "it": "Modulo online affitto-o-acquisto (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_mieterschaeden": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "mieterschaeden",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_mieterschaeden",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_mieterschaeden&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_mieterschaeden&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Mieterschaeden (P)",
+          "fr": "Formulaire en ligne: Degats-locataire (P)",
+          "it": "Modulo online danni-causati-dagli-inquilini (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_mietkautionsversicherung": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "mietkautionsversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_mietkautionsversicherung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_mietkautionsversicherung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_mietkautionsversicherung&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Mietkautionsversicherung (P)",
+          "fr": "Formulaire en ligne: Garantie-de-loyer (P)",
+          "it": "Modulo online assicurazione-cauzione-d-affitto (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_stromausfall": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "stromausfall",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_stromausfall",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_stromausfall&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_stromausfall&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Stromausfall (P)",
+          "fr": "Formulaire en ligne: Panne-de-courant (P)",
+          "it": "Modulo online interruzione-della-corrente (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_unterversicherung": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "unterversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_unterversicherung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_unterversicherung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_unterversicherung&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Unterversicherung (P)",
+          "fr": "Formulaire en ligne: Sous-assurance (P)",
+          "it": "Modulo online sottoassicurazione (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_variable-hypothek": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "variable-hypothek",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_variable-hypothek",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_variable-hypothek&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_variable-hypothek&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Variable-Hypothek (P)",
+          "fr": "Formulaire en ligne: Hypotheque-a-taux-variable (P)",
+          "it": "Modulo online ipoteca-tasso-variabile (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_hypothek": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "hypothek",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_hypothek",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_hypothek&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_hypothek&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Hypothek (P)",
+          "fr": "Formulaire en ligne: Hypotheque (P)",
+          "it": "Modulo online ipoteca (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_wasserschaden": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "wasserschaden",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_wasserschaden",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_wasserschaden&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_wasserschaden&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Wasserschaden (P)",
+          "fr": "Formulaire en ligne: Degats-d-eau (P)",
+          "it": "Modulo online danni-d-acqua (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_hoergeraete-versicherung": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "hoergeraete-versicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_hoergeraete-versicherung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_hoergeraete-versicherung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_hoergeraete-versicherung&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Hoergeraete-Versicherung (P)",
+          "fr": "Formulaire en ligne: Assurance-appareil-auditif (P)",
+          "it": "Modulo online assicurazione-apparecchi-acustici (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_checkliste-umzug": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "checkliste-umzug",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_checkliste-umzug",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_checkliste-umzug&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_checkliste-umzug&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Checkliste-Umzug (P)",
+          "fr": "Formulaire en ligne: Check-list-demenagement (P)",
+          "it": "Modulo online checklist-trasloco (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_wg-versicherungen": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "wg-versicherungen",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_wg-versicherungen",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_wg-versicherungen&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_wg-versicherungen&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber WG-Versicherungen (P)",
+          "fr": "Formulaire en ligne: Assurances-colocation (P)",
+          "it": "Modulo online assicurazioni-per-co-locazioni (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_uhrenversicherung": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "uhrenversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_uhrenversicherung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_uhrenversicherung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_uhrenversicherung&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Uhrenversicherung (P)",
+          "fr": "Formulaire en ligne: Assurance-montres (P)",
+          "it": "Modulo online assicurazione-orologi (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_schluessel-verloren": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "schluessel-verloren",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_schluessel-verloren",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_schluessel-verloren&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_schluessel-verloren&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Schluessel verloren (P)",
+          "fr": "Formulaire en ligne: Perte-de-cles (P)",
+          "it": "Modulo online perdita-chiavi (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_3-saeulen-prinzip-schweiz": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "3-saulen-prinzip-schweiz",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_3-saeulen-prinzip-schweiz",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_3-saeulen-prinzip-schweiz&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_3-saeulen-prinzip-schweiz&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber 3-Saeulen-Prinzip-Schweiz (P)",
+          "fr": "Formulaire en ligne: 3-piliers-suisse (P)",
+          "it": "Modulo online principio-tre-pilastri-svizzera (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_bvg-erklaert": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "bvg-erklaert",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_bvg-erklaert",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_bvg-erklaert&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_bvg-erklaert&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber BVG-Erklaert (P)",
+          "fr": "Formulaire en ligne: Explication-lpp (P)",
+          "it": "Modulo online spiegazione-lpp (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_familien": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "familien",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_familien",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_familien&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_familien&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Familien (P)",
+          "fr": "Formulaire en ligne: Famille (P)",
+          "it": "Modulo online famiglie (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_freie-vorsorge-3b": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "freie-vorsorge-3b",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_freie-vorsorge-3b",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_freie-vorsorge-3b&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_freie-vorsorge-3b&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Freie-Vorsorge-3b (P)",
+          "fr": "Formulaire en ligne: Prevoyance-pilier-3b (P)",
+          "it": "Modulo online previdenza-libera-3b (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_gebundene-vorsorge-3a": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "gebundene-vorsorge-3a",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_gebundene-vorsorge-3a",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_gebundene-vorsorge-3a&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_gebundene-vorsorge-3a&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Gebundene-Vorsorge-3a (P)",
+          "fr": "Formulaire en ligne: Prevoyance-pilier-3a (P)",
+          "it": "Modulo online previdenza-vincolata-pilastro-3a (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_junge-erwachsene": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "junge-erwachsene",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_junge-erwachsene",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_junge-erwachsene&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_junge-erwachsene&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Junge-Erwachsene (P)",
+          "fr": "Formulaire en ligne: Jeunes (P)",
+          "it": "Modulo online giovani (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_kapitalversicherung": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "kapitalversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_kapitalversicherung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_kapitalversicherung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_kapitalversicherung&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Kapitalversicherung (P)",
+          "fr": "Formulaire en ligne: Assurance-capitale (P)",
+          "it": "Modulo online assicurazione-di-capitale (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_lebensversicherung": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "lebensversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_lebensversicherung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_lebensversicherung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_lebensversicherung&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Lebensversicherung (P)",
+          "fr": "Formulaire en ligne: Assurance-vie (P)",
+          "it": "Modulo online assicurazione-vita (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_pensionierung": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "pensionierung",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_pensionierung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_pensionierung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_pensionierung&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Pensionierung (P)",
+          "fr": "Formulaire en ligne: Retraite (P)",
+          "it": "Modulo online pensionamento (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_saeule-2": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "saeule-2",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_saeule-2",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_saeule-2&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_saeule-2&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Saeule-2 (P)",
+          "fr": "Formulaire en ligne: 2eme-pilier (P)",
+          "it": "Modulo online pilastro-2 (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_saeule-3": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "saeule-3",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_saeule-3",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_saeule-3&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_saeule-3&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Saeule-3 (P)",
+          "fr": "Formulaire en ligne: 3eme-pilier (P)",
+          "it": "Modulo online pilastro-3 (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_rechtliche-vorsorge": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "rechtliche-vorsorge",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_rechtliche-vorsorge",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_rechtliche-vorsorge&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_rechtliche-vorsorge&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Rechtliche-Vorsorge (P)",
+          "fr": "Formulaire en ligne: Prevoyance-juridique (P)",
+          "it": "Modulo online misure-precauzionali (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_rueckkaufswert-lebensversicherung": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "rueckkaufswert-lebensversicherung",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_rueckkaufswert-lebensversicherung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_rueckkaufswert-lebensversicherung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_rueckkaufswert-lebensversicherung&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Rueckkaufswert-Lebensversicherung (P)",
+          "fr": "Formulaire en ligne: Valeur-rachat-assurance-vie (P)",
+          "it": "Modulo online valore-di-riscatto-assicurazione-vita (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_versicherungen-familien": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "versicherungen-familien",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_versicherungen-familien",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_versicherungen-familien&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_versicherungen-familien&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Versicherungen-Familien (P)",
+          "fr": "Formulaire en ligne: Assurances-famille (P)",
+          "it": "Modulo online assicurazioni-famiglie (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_unterschied-ehe-konkubinat-partnerschaft": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "unterschied-ehe-konkubinat-partnerschaft",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_unterschied-ehe-konkubinat-partnerschaft",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_unterschied-ehe-konkubinat-partnerschaft&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_unterschied-ehe-konkubinat-partnerschaft&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Unterschied-Ehe-Konkubinat-Partnerschaft (P)",
+          "fr": "Formulaire en ligne: Difference-mariage-concubinage-partenariat (P)",
+          "it": "Modulo online differenza-matrimonio-concubinato-unione-domestica (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_saeule-1": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "saeule-1",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_saeule-1",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_saeule-1&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_saeule-1&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Saeule-1 (P)",
+          "fr": "Formulaire en ligne: 1er-pilier (P)",
+          "it": "Modulo online primo-pilastro (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_uvg-erklaert": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "uvg-erklaert",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_uvg-erklaert",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_uvg-erklaert&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_uvg-erklaert&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber UVG-Erklaert (P)",
+          "fr": "Formulaire en ligne: Laa-expliquee (P)",
+          "it": "Modulo online lainf (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_vorsorgeausweis-erklaert-pensionskassenausweis": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "vorsorgeausweis-erklaert-pensionskassenausweis",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_vorsorgeausweis-erklaert-pensionskassenausweis",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_vorsorgeausweis-erklaert-pensionskassenausweis&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_vorsorgeausweis-erklaert-pensionskassenausweis&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Vorsorgeausweis-Erklaert-Pensionskassenausweis (P)",
+          "fr": "Formulaire en ligne: Certificat-de-prevoyance (P)",
+          "it": "Modulo online certificato-di-previdenza (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_checkliste-pensionierung": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "checkliste-pensionierung",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_checkliste-pensionierung",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_checkliste-pensionierung&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_checkliste-pensionierung&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Checkliste-Pensionierung (P)",
+          "fr": "Formulaire en ligne: Planifier-retraite (P)",
+          "it": "Modulo online pianificare-pensionamento (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_steuern-sparen": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "steuern-sparen",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_steuern-sparen",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_steuern-sparen&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_steuern-sparen&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Steuern-sparen (P)",
+          "fr": "Formulaire en ligne: Economies-impots (P)",
+          "it": "Modulo online risparmiare-sulle-tasse (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_unbezahlter-urlaub": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "unbezahlter-urlaub",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_unbezahlter-urlaub",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_unbezahlter-urlaub&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_unbezahlter-urlaub&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Unbezahlter-Urlaub (P)",
+          "fr": "Formulaire en ligne: Conge-sabbatique (P)",
+          "it": "Modulo online congedo-sabbatico (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_scheidung-pensionskasse-vorsorge": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "scheidung-pensionskasse-vorsorge",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_scheidung-pensionskasse-vorsorge",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_scheidung-pensionskasse-vorsorge&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_scheidung-pensionskasse-vorsorge&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Scheidung-Pensionskasse-Vorsorge (P)",
+          "fr": "Formulaire en ligne: Divorce-pension-alimentaire-prevoyance (P)",
+          "it": "Modulo online divorzio-alimenti-previdenza (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_altersvorsorge-ehe-konkubinat": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "altersvorsorge-ehe-konkubinat",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_altersvorsorge-ehe-konkubinat",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_altersvorsorge-ehe-konkubinat&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_altersvorsorge-ehe-konkubinat&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Altersvorsorge-Ehe-Konkubinat (P)",
+          "fr": "Formulaire en ligne: Prevoyance-marriage-concubinage (P)",
+          "it": "Modulo online previdenza-matrimonio-convivenza (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_ahv-reform-21": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "ahv-reform-21",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_ahv-reform-21",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_ahv-reform-21&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_ahv-reform-21&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber AHV-Reform-21 (P)",
+          "fr": "Formulaire en ligne: Reforme-avs-21 (P)",
+          "it": "Modulo online riforma-avs-21 (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_bvg-reform": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "bvg-reform",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_bvg-reform",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_bvg-reform&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_bvg-reform&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber BVG Reform (P)",
+          "fr": "Formulaire en ligne: Reforme-lpp (P)",
+          "it": "Modulo online riforma-lpp (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_pensionskassen-einkauf": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "pensionskassen-einkauf",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_pensionskassen-einkauf",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_pensionskassen-einkauf&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_pensionskassen-einkauf&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Pensionskassen-Einkauf (P)",
+          "fr": "Formulaire en ligne: Rachat-dans-la-caisse-de-pensions (P)",
+          "it": "Modulo online riscatti-nella-cassa-pensioni (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_ratgeber_mehrere-saeule-3a-konten-policen": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "mehrere-saeule-3a-konten-policen",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_mehrere-saeule-3a-konten-policen",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_mehrere-saeule-3a-konten-policen&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_ratgeber_mehrere-saeule-3a-konten-policen&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Ratgeber Mehrere-Saeule-3a-Konten-Policen (P)",
+          "fr": "Formulaire en ligne: Pluralite-de-comptes-polices-pilier-3a (P)",
+          "it": "Modulo online piu-conti-polizze-del-pilastro-3a (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "p_angebot_darum-allianz": {
+        "origin": "generic",
+        "source": "direct",
+        "category": "darumallianz",
+        "form_url": {
+          "de": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_darum-allianz",
+          "fr": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_darum-allianz&lang=fr",
+          "it": "https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/?cp=p_angebot_darum-allianz&lang=it"
+        },
+        "woher": {
+          "de": "Online-Formular zu Darum-Allianz (P)",
+          "fr": "Formulaire en ligne: Les-raisons-de-choisir-allianz (P)",
+          "it": "Modulo online perche-allianz (P)"
+        },
+        "was": {
+          "de": "Beratung",
+          "fr": "Conseil",
+          "it": "Consulenza"
+        }
+      },
+      "mf_angebot_b": {
+        "origin": "productSpecific",
+        "source": "sea",
+        "category": "mf",
+        "form_url": {
+          "de": "",
+          "fr": "",
+          "it": ""
+        },
+        "woher": {
+          "de": "Online-Formular zu MF",
+          "fr": "Formulaire en ligne voiture",
+          "it": "Modulo online per VM"
         },
         "was": {
           "de": "Beratung/Offerte",

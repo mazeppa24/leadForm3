@@ -1,7 +1,26 @@
-<ngx-core-ch-error-page
-  errorPageTitle="{{ errorPageTitle | translate }}"
-  errorPageText="{{ errorPageText | translate }}"
-  message="{{ errorPageMessage | translate }}"
-  applicationReloadLabel="{{'core.label.reloadApplication' | translate}}"
->
-</ngx-core-ch-error-page>
+<div class="nx-margin-top-l" nxRow>
+  <div class="nx-margin-bottom-2m nx-margin-top-4m u-text-align-center " nxCol="12" colOffset="0">
+    <nx-icon name="exclamation-circle" fill="true" outline="true" size="m" style="background: #c41d0e"></nx-icon>
+  </div>
+  <div class="nx-margin-bottom-m u-text-align-center" nxCol="12" colOffset="0">
+    <h3 nxHeadline="section" size="m">{{ "app.form.error.headline" | translate }}</h3>
+  </div>
+  <div class="nx-margin-bottom-3xl u-text-align-center" nxCol="8" colOffset="2">
+    <p nxCopytext="large">
+      {{ "app.form.error.copy" | translate }}
+    </p>
+  </div>
+  @if (this.showDebug()) {
+    <div class="nx-margin-bottom-3xl u-text-align-center" nxCol="8" colOffset="2">
+      <p nxCopytext="large">
+        {{ errorMessage }}
+      </p>
+    </div>
+  }
+  <div class="nx-margin-bottom-3xl u-text-align-center" nxCol="8" colOffset="2">
+    <button nxButton="primary" type="button" [routerLink]="''"
+            class="submit-button">{{ "app.form.button.back" | translate }}
+    </button>
+  </div>
+</div>
+

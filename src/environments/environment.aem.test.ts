@@ -11,10 +11,11 @@ export const environment = {
   stage: 'aem-test',
 
   /*CloudFlare Turnstile*/
+  turnstileToken: "3x00000000000000000000FF", //testing: forces interaction
   //turnstileToken:"0x4AAAAAAA8YxhZmNlQT1spM", //localhost
-  //turnstileToken: "2x00000000000000000000AB"; //testing: always fails (visible)
-  //turnstileToken: "1x00000000000000000000AA"; //testing: always passes (visible)
-  turnstileToken:"0x4AAAAAAA8XMHEjRLdDqBj4", //allianz.ch
+  //turnstileToken: "2x00000000000000000000AB", //testing: always fails (visible)
+  //turnstileToken: "1x00000000000000000000AA", //testing: always passes (visible)
+  //turnstileToken:"0x4AAAAAAA8XMHEjRLdDqBj4", //allianz.ch
 
 
   /* APIs */
@@ -31,8 +32,8 @@ export const environment = {
   imageApi: 'https://www-abn.allianz.ch/dev/crp/dsp_bff_lead4you/ext/v1/agentinfo/',
   imageApiSecret: 'random-secret',
 
-  mailServer: 'https://allianz-mailer.lespals.com/sendmail_prod.php',
   defaultEmail: 'leads-test@allianz-suisse.ch',
+  defaultAgencyID: "AS720",
 
   /* Build Settings */
   deployUrl: 'https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform_test/',

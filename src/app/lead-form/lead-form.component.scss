@@ -7,18 +7,32 @@ nx-multi-stepper {
     display: none !important;
   }
 }
+
 .horizontal-checkboxes {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  @media (max-width: 769px) { /* Desktop breakpoint */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
 }
+
 .submit-button {
   width: 100% !important;
 }
+
 .legal-notice {
   line-height: 16px;
   color: #3f72b1;
+
+  a {
+    text-decoration: underline;
+  }
 }
+
 .form-headline {
   font-size: 24px;
   line-height: 28px;
@@ -29,13 +43,9 @@ nx-multi-stepper {
 .nx-error {
   display: flex;
   align-items: center;
+
   nx-icon {
     margin-right: 4px;
   }
 }
 
-.legal-notice {
-  a {
-    text-decoration: underline;
-  }
-}

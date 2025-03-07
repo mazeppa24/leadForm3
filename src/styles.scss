@@ -1,7 +1,8 @@
 // Allianz Styles Import
 @import '@angular/cdk/overlay-prebuilt.css';
 @import '@angular/cdk/a11y-prebuilt.css';
-@import '@allianz/ngx-ndbx/scss/ndbx-base'; //includes font-references see: https://ngx-ndbx.frameworks.allianz.io/guides/getting-started#manual-setup
+@import '@allianz/ngx-ndbx/scss/ndbx-base';
+//includes font-references see: https://ngx-ndbx.frameworks.allianz.io/guides/getting-started#manual-setup
 //@import '@allianz/ngx-ndbx/css/ndbx-base-integrated.css'; // no local allianz fonts
 @import '@aposin/ng-aquila/styles/theming';
 @import '@aposin/ng-aquila/css/utilities.css';
@@ -16,40 +17,37 @@
 
 
 /* Web-Fonts */
-//
-//@font-face {
-//  font-family: 'Allianz Neo';
-//  font-style: normal;
-//  font-weight: 200;
-//  src: local('AllianzNeo-Light'), url(https://res.messaging.allianz.com/res/azeu_mid_prod2/04faa652b7a29a992e8459d7326c2a98.woff2) format('woff2');
-//}
-//
-//@font-face {
-//  font-family: 'Allianz Neo';
-//  font-style: normal;
-//  font-weight: 400;
-//  src: local('AllianzNeo-Regular'), url(https://res.messaging.allianz.com/res/azeu_mid_prod2/aaab91c6d7729ee137ae79af4f7878da.woff2) format('woff2');
-//}
-//
-//@font-face {
-//  font-family: 'Allianz Neo';
-//  font-style: normal;
-//  font-weight: 600;
-//  src: local('AllianzNeo-SemiBold'), url(https://res.messaging.allianz.com/res/azeu_mid_prod2/24d2aeee73ec38d815b499603574dda3.woff2) format('woff2');
-//}
-//
-//@font-face {
-//  font-family: 'Allianz Neo';
-//  font-style: normal;
-//  font-weight: 700;
-//  src: local('AllianzNeo-Bold'), url(https://res.messaging.allianz.com/res/azeu_mid_prod2/12f8246a8f006776b20ccaab28a321d0.woff2) format('woff2');
-//}
+@font-face {
+  font-family: 'Allianz Neo';
+  font-style: normal;
+  font-weight: 200;
+  src: local('AllianzNeo-Light'), url(https://res.messaging.allianz.com/res/azeu_mid_prod2/04faa652b7a29a992e8459d7326c2a98.woff2) format('woff2');
+}
 
+@font-face {
+  font-family: 'Allianz Neo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('AllianzNeo-Regular'), url(https://res.messaging.allianz.com/res/azeu_mid_prod2/aaab91c6d7729ee137ae79af4f7878da.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Allianz Neo';
+  font-style: normal;
+  font-weight: 600;
+  src: local('AllianzNeo-SemiBold'), url(https://res.messaging.allianz.com/res/azeu_mid_prod2/24d2aeee73ec38d815b499603574dda3.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Allianz Neo';
+  font-style: normal;
+  font-weight: 700;
+  src: local('AllianzNeo-Bold'), url(https://res.messaging.allianz.com/res/azeu_mid_prod2/12f8246a8f006776b20ccaab28a321d0.woff2) format('woff2');
+}
 
 .paddingcleaner {
   padding: 0 !important;
 }
-
 .margincleaner {
   margin: 0 !important;
 }
@@ -359,4 +357,98 @@ p {
   .nx-formfield__wrapper {
     padding-bottom: 0 !important;
   }
+}
+
+
+// override border-radius of form-fields
+nx-formfield.nx-appearance-outline .nx-formfield__outline {
+  border-radius: 8px !important;
+}
+nx-formfield.nx-appearance-outline .nx-formfield__outline-start {
+  border-radius: 8px 0 0 8px !important;
+}
+nx-formfield.nx-appearance-outline .nx-formfield__outline-end {
+  border-radius: 0 8px 8px 0 !important;
+}
+nx-formfield.nx-appearance-outline .nx-formfield__outline-gap {
+  border-radius: 0 !important;
+}
+nx-formfield.nx-appearance-outline input.nx-input,
+nx-formfield.nx-appearance-outline textarea.nx-input {
+  border-radius: 8px !important;
+}
+
+nx-formfield.nx-appearance-outline.nx-focused .nx-formfield__outline,
+nx-formfield.nx-appearance-outline.nx-focused .nx-formfield__outline-start,
+nx-formfield.nx-appearance-outline.nx-focused .nx-formfield__outline-end,
+nx-formfield.nx-appearance-outline.nx-focused .nx-formfield__outline-gap {
+  border-radius: 8px !important;
+}
+.nx-formfield__wrapper {
+  border-radius: 8px !important;
+}
+body nx-formfield.nx-appearance-outline .nx-formfield__outline,
+body nx-formfield.nx-appearance-outline .nx-formfield__outline-start,
+body nx-formfield.nx-appearance-outline .nx-formfield__outline-end,
+body nx-formfield.nx-appearance-outline .nx-formfield__outline-gap,
+body .nx-formfield.nx-appearance-outline .nx-formfield__outline,
+body .nx-formfield.nx-appearance-outline .nx-formfield__outline-start,
+body .nx-formfield.nx-appearance-outline .nx-formfield__outline-end,
+body .nx-formfield.nx-appearance-outline .nx-formfield__outline-gap {
+  border-radius: 8px !important;
+}
+
+body nx-formfield.nx-appearance-outline input.nx-input,
+body nx-formfield.nx-appearance-outline textarea.nx-input,
+body .nx-formfield.nx-appearance-outline input.nx-input,
+body .nx-formfield.nx-appearance-outline textarea.nx-input {
+  border-radius: 8px !important;
+}
+
+:root {
+  --formfield-outline-border-radius: 8px !important;
+}
+nx-formfield.nx-appearance-outline .nx-formfield__outline,
+nx-formfield.nx-appearance-outline .nx-formfield__outline-start,
+nx-formfield.nx-appearance-outline .nx-formfield__outline-end,
+nx-formfield.nx-appearance-outline .nx-formfield__outline-gap,
+.nx-formfield.nx-appearance-outline .nx-formfield__outline,
+.nx-formfield.nx-appearance-outline .nx-formfield__outline-start,
+.nx-formfield.nx-appearance-outline .nx-formfield__outline-end,
+.nx-formfield.nx-appearance-outline .nx-formfield__outline-gap {
+  border-radius: 8px !important;
+}
+
+nx-formfield.nx-appearance-outline input.nx-input,
+nx-formfield.nx-appearance-outline textarea.nx-input,
+.nx-formfield.nx-appearance-outline input.nx-input,
+.nx-formfield.nx-appearance-outline textarea.nx-input {
+  border-radius: 8px !important;
+}
+nx-formfield.nx-appearance-outline.nx-focused .nx-formfield__outline,
+nx-formfield.nx-appearance-outline.nx-focused .nx-formfield__outline-start,
+nx-formfield.nx-appearance-outline.nx-focused .nx-formfield__outline-end,
+nx-formfield.nx-appearance-outline.nx-focused .nx-formfield__outline-gap {
+  border-radius: 8px !important;
+}
+.nx-formfield__wrapper {
+  border-radius: 8px !important;
+}
+
+body nx-formfield.nx-appearance-outline .nx-formfield__outline,
+body nx-formfield.nx-appearance-outline .nx-formfield__outline-start,
+body nx-formfield.nx-appearance-outline .nx-formfield__outline-end,
+body nx-formfield.nx-appearance-outline .nx-formfield__outline-gap,
+body .nx-formfield.nx-appearance-outline .nx-formfield__outline,
+body .nx-formfield.nx-appearance-outline .nx-formfield__outline-start,
+body .nx-formfield.nx-appearance-outline .nx-formfield__outline-end,
+body .nx-formfield.nx-appearance-outline .nx-formfield__outline-gap {
+  border-radius: 8px !important;
+}
+
+body nx-formfield.nx-appearance-outline input.nx-input,
+body nx-formfield.nx-appearance-outline textarea.nx-input,
+body .nx-formfield.nx-appearance-outline input.nx-input,
+body .nx-formfield.nx-appearance-outline textarea.nx-input {
+  border-radius: 8px !important;
 }

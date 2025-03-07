@@ -12,17 +12,13 @@
 "@allianzch/ngx-core-ch": "17.1.3",
 
 
-
 # Todos
-
-- Add additional Success Events to Adobe Analytics (IsLeadgenerator Lead, isCustomerLead, FormValidationError)
-- Set GA in intermediary object
-- Test LeadGenerator link
-- Test OnSubmit (Analytics and MailData)
-
-
-
+- ExtLnk?
+- Felix Feedback UX
+- Validate Customer onBlur of Email field ?
+- 
 # Testing
+- playwright basic tests and then automate on task scheduler windows with DAM-TEST, Send Mail report via powershell 
 
 ## LeadGenerator Link examples
 
@@ -38,6 +34,10 @@
 - 
 
 # Documentation (WIP)
+
+
+# Analytics Tracking
+
 
 # SPAM prevention
 . https://github.com/mziyut/disposable-email-domains-js
@@ -111,6 +111,31 @@ return next.handle(req).pipe(
 );
 
 ```
+
+
+
+### test error page
+1. Add the following snippet to the lead-form-component.ts in the onSubmit() function between the "this.sendMailLead()" and "this.formSubmitted.set(true)" functions 
+````typescript
+
+// send mail
+this.sendMailLead(agency, source, subject, this.determineRecipientEmail(agency));
+
+// START TEST CODE -----------------------------------------
+// forces a navigation-event to the error page with code 500
+await this.router.navigate(['/error', '500'], {
+  queryParams: {message: "test"},
+  state: {attemptedAction: "fake error"},
+  queryParamsHandling: 'merge'
+});
+// END  TEST CODE ------------------------------------------
+
+// Set form as submitted to trigger the analytics effect
+this.formSubmitted.set(true);
+
+````
+
+
 # PROD DAM Deployment
 
 ````text
@@ -128,15 +153,16 @@ Verify that the productive Launch Script is enabled in the index.html file
 ````
 
 
+## Test Form Abandonment
+1. To simulate a user exiting or force-reloading our leadform (e.g. to see if the analytics event is triggerd execute the following function in the console)
+````typescript
+    window.dispatchEvent(new Event("beforeunload"));
+````
 
 
 # Change Log
 
-## 14.01.2024
--Commit Test Tony für Arjan
-
 ## 03.07.2024
-
 From Adam:
 - removed header and footer components
 - included new php-mail script that does not append header & footer mail components
@@ -149,13 +175,11 @@ From Arjan:
 
 
 ## 04.07.2024
-
 - Mandatory form input hints
 - Remove checkbox for Bestandeskunden
 
 
 ## 10.07.2024
-
 From Adam
 - Fixed mail-template, service implementation
 - I've modified sources.json such that form url are in similar structiore as woher and was (see screenshot) (on the other hand when the form url would be the same for all languages it can be written like this "form_url": "https://example.com",)
@@ -321,3 +345,19 @@ WIP
 - Better i18n labelling
 - Analytics Fixes (no default GA/Campaign if not set)
 - Fallback GA (AS701 scs@allianz.ch)
+
+## 03/04.03.2025
+- Refactored Analytics Tracking (form interactions, success events for lead-gen leads, customer matches, form validation errors etc)
+- Cleanup dead-code
+- InitialAppParam Service helper to indicate if it is initialized before use
+- updated all components to use intial App Param service
+- Layout fixes from review by Felix
+- Updated tracking (Form Abandonment)
+- Various bug-fixes from review by max
+
+## 06.03.2025
+- fix nasty analytics race condition
+- further layout fixes
+- added IT/FR translations
+- track error page view
+- update sources for caspars campaigns

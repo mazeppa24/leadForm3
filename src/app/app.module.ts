@@ -53,6 +53,7 @@ import {NgxTurnstileModule} from "ngx-turnstile";
 import {LoadingInterceptor} from "./core/services/loading-service/loading.interceptor";
 import {LeadFormHostComponent} from "./lead-form-host/lead-form-host.component";
 import {LoadingIndicatorComponent} from "./modules/loading-indicator/loading-indicator.component";
+import {DEFAULT_LANGUAGE} from "./constants";
 
 registerLocaleData(localeDeCH);
 registerLocaleData(localeItCH);
@@ -113,7 +114,7 @@ registerLocaleData(localeEnCH);
   providers: [
     {provide: APP_BASE_HREF, useValue: environment.baseUrl},
     {provide: NxDatepickerIntl, useClass: NgxCoreChDatepicker},
-    {provide: NX_DATE_LOCALE, useValue: 'de'},
+    {provide: NX_DATE_LOCALE, useValue: DEFAULT_LANGUAGE},
     AemTranslateLoader,
     {
       provide: APP_INITIALIZER,

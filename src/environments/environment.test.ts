@@ -30,8 +30,10 @@ export const environment = {
   imageApi: 'https://app.aaks.azchportal-dev.we1.azure.aztec.cloud.allianz/crp/lead-4-you-be-develop/ext/v1/agentinfo/',
   imageApiSecret: 'random-secret',
 
-  mailServer: 'https://allianz-mailer.lespals.com/sendmail_prod.php',
+
   defaultEmail: 'leads-test@allianz-suisse.ch',
+  defaultAgencyID: "AS720",
+
 
   /* Build Settings */
   deployUrl: '/',

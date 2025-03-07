@@ -1,6 +1,6 @@
 import { NgModule, inject } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { InitialAppParamsService } from "src/app/modules/initial-app-params/initial-app-params.service";
+import { InitialAppParamsService } from "src/app/core/services/initial-app-params/initial-app-params.service";
 
 @NgModule({
   declarations: [],

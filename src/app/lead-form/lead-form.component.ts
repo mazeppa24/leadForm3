@@ -1,61 +1,66 @@
-import { CdkTextareaAutosize } from "@angular/cdk/text-field";
+import {CdkTextareaAutosize} from "@angular/cdk/text-field";
 import {
   Component,
   computed,
   CreateEffectOptions,
   effect,
+  HostListener,
   inject,
   OnInit,
   signal,
   ViewChild,
   ViewEncapsulation
 } from "@angular/core";
-import { toSignal } from "@angular/core/rxjs-interop";
+import {toSignal} from "@angular/core/rxjs-interop";
 import {
   AbstractControl,
   FormControl,
+  FormGroup,
   ReactiveFormsModule,
   UntypedFormBuilder,
   ValidationErrors,
   ValidatorFn,
   Validators,
 } from "@angular/forms";
-import { NxButtonModule } from "@aposin/ng-aquila/button";
-import { NxCheckboxModule } from "@aposin/ng-aquila/checkbox";
-import { NxCopytextModule } from "@aposin/ng-aquila/copytext";
-import { NxDataDisplayModule } from "@aposin/ng-aquila/data-display";
-import { NxFormfieldLabelDirective, NxFormfieldModule, } from "@aposin/ng-aquila/formfield";
-import { NxColComponent, NxLayoutComponent, NxRowComponent } from "@aposin/ng-aquila/grid";
-import { NxHeadlineComponent } from "@aposin/ng-aquila/headline";
-import { NxIconModule } from "@aposin/ng-aquila/icon";
-import { NxFigureComponent } from "@aposin/ng-aquila/image";
-import { NxInputModule } from "@aposin/ng-aquila/input";
-import { NxLinkModule } from "@aposin/ng-aquila/link";
-import { NxPhoneInputComponent } from "@aposin/ng-aquila/phone-input";
-import { NxMultiStepperComponent, NxStepComponent, } from "@aposin/ng-aquila/progress-stepper";
-import { TranslateModule, TranslateService } from "@ngx-translate/core";
+import {NxButtonModule} from "@aposin/ng-aquila/button";
+import {NxCheckboxModule} from "@aposin/ng-aquila/checkbox";
+import {NxCopytextModule} from "@aposin/ng-aquila/copytext";
+import {NxDataDisplayModule} from "@aposin/ng-aquila/data-display";
+import {NxFormfieldLabelDirective, NxFormfieldModule,} from "@aposin/ng-aquila/formfield";
+import {NxColComponent, NxLayoutComponent, NxRowComponent} from "@aposin/ng-aquila/grid";
+import {NxHeadlineComponent} from "@aposin/ng-aquila/headline";
+import {NxIconModule} from "@aposin/ng-aquila/icon";
+import {NxFigureComponent} from "@aposin/ng-aquila/image";
+import {NxInputModule} from "@aposin/ng-aquila/input";
+import {NxLinkModule} from "@aposin/ng-aquila/link";
+import {NxPhoneInputComponent} from "@aposin/ng-aquila/phone-input";
+import {NxMultiStepperComponent, NxStepComponent,} from "@aposin/ng-aquila/progress-stepper";
+import {TranslateModule, TranslateService} from "@ngx-translate/core";
 import countries from "i18n-iso-countries";
-import { NgxTurnstileModule } from "ngx-turnstile";
-import { debounceTime } from "rxjs";
-import { Agency, AgencyListService, } from "src/app/core/services/agency-list.service";
-import { AppDatastore } from "src/app/core/services/app-store/app.datastore";
-import { SourceResult, SourcesService, } from "src/app/core/services/sources/sources.service";
-import { InitialAppParamsService } from "src/app/modules/initial-app-params/initial-app-params.service";
-import { environment } from "src/environments/environment";
-import { DEFAULT_LANGUAGE, EMAIL_BLACKLIST, FORM_SUBMIT_COOLDOWN_MS, LEAD_RATING } from "../constants";
+import {NgxTurnstileModule} from "ngx-turnstile";
+import {Agency, AgencyListService,} from "src/app/core/services/agency/agency-list.service";
+import {SourceResult, SourcesService,} from "src/app/core/services/sources/sources.service";
+import {InitialAppParamsService} from "src/app/core/services/initial-app-params/initial-app-params.service";
+import {environment} from "src/environments/environment";
+import {DEFAULT_LANGUAGE, EMAIL_BLACKLIST, FORM_SUBMIT_COOLDOWN_MS, LEAD_RATING, TEST_ZIP_CODES} from "../constants";
 import {
   AdobeAnalytics,
   CONSULTATION_COMPLETE,
   CONSULTATION_START,
   PAGE_VIEW,
+  TRIGGER_CUSTOMER_MATCH,
   TRIGGER_ERROR_FORM_SUBMIT,
+  TRIGGER_IS_CUSTOMER_LEAD,
+  TRIGGER_IS_LEAD_GENERATOR_LEAD,
   TRIGGER_SPAM_EMAIL,
   TRIGGER_SPAM_HONEYPOT,
   TRIGGER_SPAM_RAPID_SUBMISSION
 } from "../core/services/adobe-analytics/adobe-analytics";
-import { LeadMailService, MailDataClass } from "../core/services/lead-mail/lead.mail.service";
-import { LeadNavigatorService, ValidationResult } from "../core/services/lead-navigator/lead-navigator.service";
-import { ImageProfileResult, ImageProfileService } from "../core/services/profile-image/image-profile.service";
+import {LeadMailService, MailDataClass} from "../core/services/lead-mail/lead.mail.service";
+import {LeadNavigatorService, ValidationResult} from "../core/services/lead-navigator/lead-navigator.service";
+import {ImageProfileResult, ImageProfileService} from "../core/services/profile-image/image-profile.service";
+import {NgOptimizedImage} from "@angular/common";
+import {Router} from "@angular/router";
 
 @Component({
   selector: "app-lead-form",
@@ -82,6 +87,7 @@ import { ImageProfileResult, ImageProfileService } from "../core/services/profil
     CdkTextareaAutosize,
     NxFigureComponent,
     NxHeadlineComponent,
+    NgOptimizedImage,
   ],
   templateUrl: "./lead-form.component.html",
   styleUrl: "./lead-form.component.scss",
@@ -93,21 +99,21 @@ export class LeadFormComponent implements OnInit {
   private fb = inject(UntypedFormBuilder);
   private agencyListService = inject(AgencyListService);
   private translateService = inject(TranslateService);
-  public appDataStore = inject(AppDatastore);
   private sourcesService = inject(SourcesService);
-  private initialAppParamsService = inject(InitialAppParamsService);
+  protected initialAppParamsService = inject(InitialAppParamsService);
   private imageProfileService = inject(ImageProfileService);
   private leadNavigatorService = inject(LeadNavigatorService);
   private adobeAnalytics = inject(AdobeAnalytics);
   private leadMailService = inject(LeadMailService);
+  private router = inject(Router)
 
   // Form group
-  readonly leadFormGroup = this.fb.group({
+  leadFormGroup = this.fb.group({
     zip: ["", [Validators.required, this.zipCodeValidator()]],
     email: ["", [Validators.required, this.emailValidator()]],
     phone: ["+41", [Validators.required, Validators.minLength(12), Validators.maxLength(16), this.numbersOnlyValidator()],],
     availability: "",
-    firstname: ["", Validators.required],
+    firstname: ["", [Validators.required, Validators.minLength(8)]],
     message: ['', Validators.maxLength(512)],
     bot: ['', this.hiddenFieldValidator()]
   });
@@ -115,28 +121,21 @@ export class LeadFormComponent implements OnInit {
   // Stepper
   @ViewChild("stepper") private myStepper!: NxMultiStepperComponent;
 
-  // Signal to track form value changes
-  formValueChanges = toSignal(this.leadFormGroup.valueChanges.pipe(debounceTime(300)),);
-
   // Signal to track profile image data
   protected profileImageData = signal(new ImageProfileResult());
 
   // Signal to track form submission status
   private formSubmitted = signal<boolean>(false);
 
-  // Signal to store submission data for analytics
-  private submissionData = signal<{
-    origin: string;
-    agency: Agency | null;
-    customerNumber: string;
-  }>({
-    origin: '',
-    agency: null,
-    customerNumber: ''
-  });
+  // Signal that indicates whether the service has completed initialization
+  private isReady = signal<boolean>(false);
 
   // Allow signal writes inside the effect
-  private effectOptions: CreateEffectOptions = { allowSignalWrites: true };
+  private effectOptions: CreateEffectOptions = {allowSignalWrites: true};
+
+  // image paths for debug data on success page
+  protected imagePathMatch = environment.baseHref + 'assets/img/match.jpg';
+  protected imagePathNoMatch = environment.baseHref + 'assets/img/no-match.png';
 
 
   // Computed properties
@@ -145,13 +144,22 @@ export class LeadFormComponent implements OnInit {
     () =>
       this.initialAppParamsService.initialAppParams()?.preselectedEmail || "",
   );
+
+  isCustomerMatch = computed(() => {
+    return this.isCustomer(this.customerValidation);
+  });
+
   isLeadGeneratorLink = computed(() => {
     return this.decodedEmail() !== "";
   });
-  agencies = toSignal(this.agencyListService.getList(), { initialValue: [] });
-  showDebug = computed(
-    () => this.initialAppParamsService.initialAppParams()?.debug,
-  );
+
+  agencies = toSignal(this.agencyListService.getList(), {initialValue: []});
+
+  showDebug = computed(() => {
+    return (
+      this.initialAppParamsService.initialAppParams()?.debug || false);
+  });
+
   translatedCountries = computed(() => {
     const language = this.language();
     if (language) {
@@ -167,10 +175,12 @@ export class LeadFormComponent implements OnInit {
   externalLink = computed(
     () => this.initialAppParamsService.initialAppParams()?.externalLink,
   );
-  language = computed(
-    () =>
-      this.initialAppParamsService.initialAppParams()?.language ||
-      DEFAULT_LANGUAGE,
+  language = computed(() => {
+      return (
+        this.initialAppParamsService.initialAppParams()?.language ||
+        DEFAULT_LANGUAGE
+      )
+    }
   );
   campaign = computed(() => {
     return (
@@ -179,30 +189,28 @@ export class LeadFormComponent implements OnInit {
   });
   ga = computed(() => {
     return (
-      this.initialAppParamsService.initialAppParams()?.agency?.id || "AS701"
+      console.log('LeadForm: computed GA: ', this.initialAppParamsService.initialAppParams()?.agency?.id || environment.defaultAgencyID),
+      this.initialAppParamsService.initialAppParams()?.agency?.id || environment.defaultAgencyID
     );
   });
 
 
-
   // Non reactive properties
   protected turnstileIsValid = false;
+  protected turnstileIsValidValidation = true; //initial
   protected readonly environment = environment;
   private lastSubmissionTime = 0;
   protected customerValidation = new ValidationResult();
   protected routingMethodDebug: string | undefined;
   protected tokenControl = new FormControl();
   protected mailData: MailDataClass | undefined;
-  private testZipCodes = ['9999', '9998', '9997', '9996'];
 
   // Flag to track if analytics have been sent
   private analyticsSent = false;
 
   constructor() {
 
-    effect(() => {
-      //this.trackingService.appLanguage = this.language();
-    });
+    // fetch profile image
     effect(async () => {
       if (this.decodedEmail()) {
         this.leadFormGroup.controls["zip"].clearValidators();
@@ -210,90 +218,51 @@ export class LeadFormComponent implements OnInit {
         this.profileImageData.set(await this.imageProfileService.fetchKbImageLink(this.decodedEmail()))
       }
     });
+
     effect(() => {
-      if (
-        this.initialAppParamsService.initialAppParams()?.preselectedByDParam
-      ) {
-        // we set the lead 'origin' (evar211) to indicate a lead from the leadgenerator.allianz.ch tool
-        //this.trackingService.ls_origin = LEAD_BY_YOU_APP_ID;
+      if (this.initialAppParamsService.isInitialized()) {
+        console.log('LeadForm: Effect this.language() ', this.language())
+        this.translateService.use(this.language());
       }
     });
     effect(() => {
       // Agency have been preselected
       // Preload the translations files for this agency
-      const agency = this.initialAppParamsService.initialAppParams()?.agency;
-      if (agency) {
-        this.addAgencyLanguage(agency);
+      if (this.initialAppParamsService.isInitialized()) {
+        const agency = this.initialAppParamsService.initialAppParams()?.agency;
+        if (agency) {
+          this.addAgencyLanguage(agency);
+        }
       }
     });
 
-    // Use effect to watch for initialization and send analytics
+    // track initial page-view and consultation start event
     effect(() => {
       if (this.initialAppParamsService.isInitialized() && !this.analyticsSent) {
-        console.log('InitialAppParamsService is initialized, sending Adobe Analytics tracking');
         if (this.analyticsSent) {
-          console.log('Initial analytics already sent, skipping');
+          console.warn('Initial analytics already sent, skipping');
           return;
         }
-        console.log('Sending initial Adobe Analytics tracking');
-
-        //TODO: check the methods. there is some overlap
-        // Using the new simplified trackPageView method
         this.adobeAnalytics.trackPageView('start', undefined, PAGE_VIEW);
         this.adobeAnalytics.trackEvent(CONSULTATION_START);
         this.analyticsSent = true;
       }
     }, this.effectOptions);
 
-    // Effect to track form submission analytics
+    // track form submission analytics
     effect(() => {
       if (this.formSubmitted()) {
-        console.log('Form submitted successfully, sending completion analytics');
-        const data = this.submissionData();
-
         this.adobeAnalytics.trackEvent(CONSULTATION_COMPLETE);
         this.adobeAnalytics.trackPageView('success', '', PAGE_VIEW);
-        // Use the complex event tracking for more detailed analytics
-        /*         this.adobeAnalytics.trackComplexEvent(
-                  'success',
-                  CONSULTATION_COMPLETE,
-                  {
-                    componentPath: 'lead-form/submit',
-                    elementName: 'FormSubmission',
-                    value: 'completed'
-                  },
-                  {
-                    origin: data.origin,
-                    intermediaryName: data.agency?.id || this.ga(),
-                    customerNumber: data.customerNumber
-                  }
-                );
-         */
-        // Track page view for success page
-        // this.adobeAnalytics.trackPageView('success', 'success', PAGE_VIEW);
 
-        // Track additional details about the submission
+        // track if it was a leadByYou lead
         if (this.isLeadGeneratorLink()) {
-          this.adobeAnalytics.trackEvent({
-            eventAction: 'lead-generator-submission',
-            eventName: 'lead-form',
-            eventType: 'trigger'
-          }, data.agency?.id || '');
+          this.adobeAnalytics.trackEvent(TRIGGER_IS_LEAD_GENERATOR_LEAD, this.adobeAnalytics.ga(), 'leadByYou');
         }
-
-        // Track if this was a customer match
-        if (data.customerNumber) {
-          this.adobeAnalytics.trackEvent({
-            eventAction: 'customer-match',
-            eventName: 'lead-form',
-            eventType: 'trigger'
-          });
+        if (this.isCustomerMatch()) {
+          this.adobeAnalytics.trackEvent(TRIGGER_IS_CUSTOMER_LEAD)
         }
-
-        console.log('Form submission analytics sent successfully');
-
-        // Reset the form submission state after a delay to avoid duplicate tracking
-        // if the component is not destroyed
+        //Reset the form submission state after a delay to avoid duplicate tracking
         setTimeout(() => {
           this.resetFormSubmissionState();
         }, 2000);
@@ -302,21 +271,48 @@ export class LeadFormComponent implements OnInit {
   }
 
 
+  // Add a host listener for the beforeunload event
+  @HostListener('window:beforeunload', ['$event'])
+  onBeforeUnload(event: BeforeUnloadEvent): void {
+    // Track the last field interaction before the user leaves the page
+    this.adobeAnalytics.trackExitAnalytics();
+    event.returnValue = '';
+  }
+
   ngOnInit(): void {
     // clear validators in case the customer came to the form via a personal leadGenerator link
+    // zip input from the user is then not required for email routing
+    // (set already by base64 hashed email in query param d=)
+    // note: in case we match the customer with the lead-navigator service. the routing email
+    // from the lead-navigator response takes precedence
     if (this.isLeadGeneratorLink()) {
       this.leadFormGroup.controls['zip'].clearValidators();
       this.leadFormGroup.controls['zip'].updateValueAndValidity();
     }
-    // Set up tracking for form field interactions
+
+    // if(this.language()){
+    //   this.translateService.set
+    // }
+    // adobe analytics tracking for form field interactions
     this.adobeAnalytics.setupFormFieldTracking(this.leadFormGroup);
   }
-
 
   public async onsubmit(): Promise<void> {
 
     let agency: Agency;
     let source: SourceResult | undefined;
+
+    if (this.showDebug()) console.log('form valid before validation: ', this.leadFormGroup.valid)
+    if (this.showDebug()) console.log('turnstile before validation: ', this.turnstileIsValidValidation)
+
+    // validate form input
+    this.validateAllRequiredFields();
+
+    if (this.showDebug()) console.log('form valid after validation: ', this.leadFormGroup.valid)
+    if (this.showDebug()) console.log('turnstile valid after validation: ', this.turnstileIsValidValidation)
+
+    if (!this.leadFormGroup.valid) return;
+    if (!this.turnstileIsValidValidation) return;
 
     //honeypot field must be empty
     if (this.leadFormGroup.value.bot.length > 0) {
@@ -355,7 +351,8 @@ export class LeadFormComponent implements OnInit {
 
       // update the agency in case we matched a customer (mainly to determine the agency language)
       //TODO: Issue -> if an agency from the database is not in the agency.json list we fallback to default test-agency (checkAgency)
-      if (this.isCustomer(this.customerValidation)) {
+      if (this.isCustomerMatch()) {
+        this.adobeAnalytics.trackEvent(TRIGGER_CUSTOMER_MATCH, '', this.customerValidation.customerNumber)
         agency = this.agencyListService.getById(this.customerValidation.ga)[0];
       }
 
@@ -371,29 +368,33 @@ export class LeadFormComponent implements OnInit {
       // before we send the email.
       const currentLanguage = this.translateService.currentLang;
       this.translateService.currentLang = agency.language.toLowerCase();
-      const subject = this.translateService.instant('mail.subject');
-      this.translateService.currentLang = currentLanguage;
 
-      // determine source values
+      // determine source values (based on agency language)
       source = this.checkSource(this.sourcesService.getSource(environment.applicationId, this.campaign(), this.externalLink() ?? ""));
+
+      // translate mail subject
+      const subject = this.translateService.instant("app.mail.subject", {value: source.woher})
+
+      // reset language
+      this.translateService.currentLang = currentLanguage;
 
       // send mail
       this.sendMailLead(agency, source, subject, this.determineRecipientEmail(agency));
 
-      // Store submission data for analytics
-      this.submissionData.set({
-        origin: source.origin,
-        agency: agency,
-        customerNumber: this.customerValidation.customerNumber || ''
-      });
-
       // Set form as submitted to trigger the analytics effect
       this.formSubmitted.set(true);
 
+      // go to success step
       this.myStepper.next();
-    } catch (e) {
+    } catch (bad) {
       this.adobeAnalytics.trackEvent(TRIGGER_ERROR_FORM_SUBMIT)
-      console.error(e)
+      this.formSubmitted.set(false);
+      console.error(bad)
+      await this.router.navigate(['/error', '500'], {
+        queryParams: {message: bad},
+        state: {attemptedAction: bad},
+        queryParamsHandling: 'preserve'
+      });
     }
   }
 
@@ -406,7 +407,7 @@ export class LeadFormComponent implements OnInit {
    * @param recipient
    * @private
    */
-  private sendMailLead(agency: Agency, source: SourceResult, mailSubject: string, recipient: string) {
+  private sendMailLead(agency: Agency, source: SourceResult, mailSubject: string = "", recipient: string) {
     const mailData: MailDataClass = {
       leadApp: environment.applicationId, //required
       leadInternalRating: LEAD_RATING,
@@ -440,7 +441,7 @@ export class LeadFormComponent implements OnInit {
       agency: agency.id,
     };
     this.mailData = new MailDataClass(mailData);
-    console.log('final leadMail', this.mailData);
+    if (this.showDebug()) console.log('leadMail-data:', this.mailData);
     this.leadMailService.sendEmail(this.mailData).subscribe();
   }
 
@@ -458,13 +459,13 @@ export class LeadFormComponent implements OnInit {
   private determineRecipientEmail(agency: Agency): string {
     // if we use test-zip codes [9999, 9998, 9997, 9996]
     // we send mails to our default-inbox
-    if (this.testZipCodes.includes(this.leadFormGroup.value.zip)) {
-      this.routingMethodDebug = 'TEST-ZIP ' + this.leadFormGroup.value.zip + ' routing to: leadswettbewerb@allianz.ch'
+    if (TEST_ZIP_CODES.includes(this.leadFormGroup.value.zip)) {
+      this.routingMethodDebug = 'TEST-ZIP ' + this.leadFormGroup.value.zip;
       return environment.defaultEmail;
     }
     // if a customer is found we always use the routing email from the service
     if (this.isCustomer(this.customerValidation)) {
-      this.routingMethodDebug = 'LEAD-NAVIGATOR (Flux) routing to: ' + this.customerValidation.routingEmail
+      this.routingMethodDebug = 'LEAD-NAVIGATOR (Flux) routing';
       return this.customerValidation.routingEmail;
     }
     //  kb-email from the lead-generator link
@@ -473,7 +474,7 @@ export class LeadFormComponent implements OnInit {
       return this.initialAppParamsService.initialAppParams()?.preselectedEmail || environment.defaultEmail;
     }
     // zip code form input field
-    if (!this.testZipCodes.includes(this.leadFormGroup.value.zip)) {
+    if (!TEST_ZIP_CODES.includes(this.leadFormGroup.value.zip)) {
       this.routingMethodDebug = 'LEAD-AGENCY (Agency.json) routing to: ' + agency.email;
       return agency.email;
     }
@@ -496,29 +497,27 @@ export class LeadFormComponent implements OnInit {
     }
   }
 
-  // formValidation and cloudFlare must both be valid before the submit button can be activated
-  isDisabled(): boolean {
-    if (this.leadFormGroup.valid) {
-      return !this.turnstileIsValid;
-    } else {
-      return true;
-    }
-  }
+  // CloudFlare
+  // ---------------------------------------------------------------------------------------
 
-  // on success from turnstile (enable submit button)
+  // on success from turnstile
   onResolved(response: string | null) {
     this.turnstileIsValid = true;
+    this.turnstileIsValidValidation = true;
   }
 
-  // on failure from turnstile (disable submit button)
+  // on failure from turnstile
   onErrored(errorCode: string | null) {
     this.turnstileIsValid = false;
+    //this.turnstileIsValidValidation = false;
   }
 
-  /**
-   * Email validator  (blacklist and structure)
-   * @private
-   */
+
+  // VALIDATION
+  // ---------------------------------------------------------------------------------------
+
+
+  // Email validator  (blacklist and structure)
   private emailValidator(): ValidatorFn {
     return (control: AbstractControl): ValidationErrors | null => {
       const email = control.value;
@@ -528,24 +527,24 @@ export class LeadFormComponent implements OnInit {
       // regex for validating email structure
       const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
       if (!emailRegex.test(email)) {
-        return { invalidEmail: true };
+        return {invalidEmail: true};
       }
 
       // regex word-matching full domain name (e.g. fakemail.com), case-insensitive
       const domain = email.split('@')[1];
       const regex = new RegExp(`^${domain}$`, 'i');
       if (EMAIL_BLACKLIST.some((item) => regex.test(item))) {
-        //console.error('Blacklisted domain detected', email.split('@')[1]);
+        if (this.showDebug()) console.error('Blacklisted domain detected', email.split('@')[1]);
         this.adobeAnalytics.trackEvent(TRIGGER_SPAM_EMAIL, domain, 'blacklisted domain');
-        return { blacklistedDomain: true };
+        return {blacklistedDomain: true};
       }
       // regex for uppercase characters (common pattern observed by sea-bots)
       // might prevent honest users from submitting but uppercase emails are rare
       const uppercaseRegex = /[A-Z]/;
       if (uppercaseRegex.test(email)) {
-        //console.error('UpperCase email detected', email);
+        if (this.showDebug()) console.error('UpperCase email detected', email);
         this.adobeAnalytics.trackEvent(TRIGGER_SPAM_EMAIL, email.replace("@", "#"), 'uppercase email');
-        return { uppercaseEmail: true };
+        return {uppercaseEmail: true};
       }
       return null;
     };
@@ -567,7 +566,7 @@ export class LeadFormComponent implements OnInit {
       const zipRegex = /^[0-9]{4}$/;
       // valid zip and code must be in agency list
       if (!zipRegex.test(zip) || this.agencyListService.getByZip(zip).length === 0) {
-        return { invalidZip: true };
+        return {invalidZip: true};
       }
       return null;
     };
@@ -582,7 +581,7 @@ export class LeadFormComponent implements OnInit {
       // Updated regex to allow a "+" at the beginning followed by numbers only
       const numbersWithPlusRegex = /^\+?[0-9]+$/;
       if (!numbersWithPlusRegex.test(value)) {
-        return { numbersOnly: true };
+        return {numbersOnly: true};
       }
       return null;
     };
@@ -595,9 +594,9 @@ export class LeadFormComponent implements OnInit {
         return null;
       }
       if (value.length > 0) {
-        // console.warn('VALIDATOR: Honeypot field has been filled out. Bot detected!');
+        if (this.showDebug()) console.warn('VALIDATOR: Honeypot field has been filled out. Bot detected!');
         this.adobeAnalytics.trackEvent(TRIGGER_SPAM_HONEYPOT, value);
-        return { invalidValue: true };
+        return {invalidValue: true};
       }
       return null;
     }
@@ -621,6 +620,26 @@ export class LeadFormComponent implements OnInit {
     }
   }
 
+  // validate the form before submitting
+  validateAllRequiredFields() {
+    if (!this.turnstileIsValid) {
+      this.turnstileIsValidValidation = false;
+    }
+    this.validateAllFormFields(this.leadFormGroup)
+  }
+
+  // touch each form control to force validation
+  private validateAllFormFields(leadFormGroup: FormGroup) {
+    Object.keys(leadFormGroup.controls).forEach(field => {
+      const control = leadFormGroup.get(field);
+      if (control instanceof FormControl) {
+        control.markAsTouched({onlySelf: true});
+      } else if (control instanceof FormGroup) {
+        this.validateAllFormFields(control);
+      }
+    });
+  }
+
   //TODO: Should be fixed in service. Currently broken, will not be fixed here
   private checkSource(source: SourceResult | undefined): SourceResult {
     if (typeof source === 'undefined' || source == null || source.was == '') {
@@ -637,44 +656,11 @@ export class LeadFormComponent implements OnInit {
     }
   }
 
-  //TODO: Waiting for input from nico to refine logic (currently disabled)
-  private validateCountryCodesPhone(): ValidatorFn {
 
-    let allowedCountryCodes = [
-      '33',
-      '34',
-      '39',
-      '41',
-      '43',
-      '44',
-      '49',
-      '423',
-    ]
-
-    return (control: AbstractControl): ValidationErrors | null => {
-      const value = control.value;
-      if (!value) {
-        return null;
-      }
-      let regex = new RegExp(allowedCountryCodes.map(function (x) {
-        return x.replace(/\\+/g, '\\+')
-      }).join("|"));
-
-      return !regex.test(value) ? { validCode: false } : null;
-    }
-  }
-
-  /**
-   * Reset the form submission state
-   * This prevents duplicate tracking if the component is not destroyed
-   */
+  // reset the form submission state
+  // this prevents duplicate tracking if the component is not destroyed
   private resetFormSubmissionState(): void {
     this.formSubmitted.set(false);
-    this.submissionData.set({
-      origin: '',
-      agency: null,
-      customerNumber: ''
-    });
   }
 }
 

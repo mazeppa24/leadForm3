@@ -5,35 +5,43 @@
     },
     "form": {
       "label": {
+        "title": "Kontaktformular",
         "availability": "Wann erreichen wir Sie am besten?",
-        "time_1": "8-12 Uhr",
-        "time_2": "12-13 Uhr",
-        "time_3": "13-17 Uhr",
-        "time_4": "17-20 Uhr",
-        "email": "E-Mail*",
+        "time_1": "8–12 Uhr",
+        "time_2": "12–13 Uhr",
+        "time_3": "13–17 Uhr",
+        "time_4": "17–20 Uhr",
+        "email": "E-Mail",
         "firstname": "Vor- und",
-        "lastname": "Nachname*",
-        "comments": "Kommentar",
-        "phoneNumber": "Telefon-Nr.*",
+        "lastname": "Nachname",
+        "comments": "Kommentar (optional)",
+        "phoneNumber": "Telefon-Nr.",
         "phoneNumberPrefix": "z.B.",
-        "zip": "Postleitzahl*"
+        "zip": "Postleitzahl"
       },
       "validation": {
         "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
         "fieldRequired": "Pflichtfeld bitte ausfüllen.",
-        "phoneNumber": "Diese Angabe benötigen wir zwingend. Bitte geben Sie eine gültige Telefonnummer ein.",
-        "zip": "Diese Angabe benötigen wir zwingend. Bitte geben Sie eine gültige, 4-stellige Postleitzahl ein.",
-        "comments": "Es sind maximal 512 Zeichen erlaubt."
+        "name": "Bitte geben Sie ihren Vor und Nachnamen ein.",
+        "phoneNumber": "Bitte geben Sie eine gültige Telefonnummer ein.",
+        "zip": "Bitte geben Sie eine gültige, 4-stellige Postleitzahl ein.",
+        "comments": "Es sind maximal 512 Zeichen erlaubt.",
+        "turnstile": "Bitte validieren Sie das Captcha."
       },
       "success": {
         "headline": "Vielen Dank",
         "copy": "Wir haben Ihre Anfrage erhalten und kontaktieren Sie so bald wie möglich."
       },
+      "error": {
+        "headline": "Fehler",
+        "copy": "Wir bitten um Entschuldigung. Leider ist bei der Verarbeitung des Formulars ein Fehler aufgetreten. Bitte versuchen Sie es später noch einmal."
+      },
       "profileImage": {
         "message": "Ich erstelle Ihnen gerne eine auf Ihre Bedürfnisse zugeschnittene Offerte und berate Sie auf Wunsch auch persönlich."
       },
       "button": {
-        "submit": "Unverbindliche Beratung anfordern"
+        "submit": "Unverbindliche Beratung anfordern",
+        "back": "Zurück"
       },
       "legal": "Mit dem Absenden dieses Formulars erklären Sie sich mit den <a class='text-link' href='https://www.allianz.ch/de/informationen/rechtliche-hinweise.html' target='_blank'>rechtlichen Hinweisen</a> und der <a class='text-link' href='https://www.allianz.ch/de/informationen/datenschutzerklaerung.html' target='_blank'>Datenschutzerklärung</a> einverstanden."
     },
@@ -46,7 +54,7 @@
       "link_3_url": "https://www.allianz.ch/de/informationen/rechtliche-hinweise.html"
     },
     "mail": {
-      "subject": "Neuer Lead | Kontaktformular | Bitte Kunde/in kontaktieren"
+      "subject": "Neuer Lead | {{value}} | Bitte Kunde/in kontaktieren"
     }
   }
 }

@@ -11,6 +11,8 @@ export const FORM_SUBMIT_COOLDOWN_MS = 2000;
 export const LEAD_BY_YOU_APP_ID = 'LeadByYou';
 
 export const LEAD_RATING = 4;
+
+export const TEST_ZIP_CODES = ['9999', '9998', '9997', '9996'];
 /**
  * Email domain Blacklist
  */

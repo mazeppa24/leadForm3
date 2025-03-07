@@ -1,3 +1,11 @@
-.profile-image {
-  padding: 10px 0 0 10px;
+
+.nx-image--rounded {
+  @media (max-width: 769px) { /* Desktop breakpoint */
+    padding-top: 65% !important;
+  }
+}
+
+.profile-image-pic {
+  width: 218px;
+  height: 218px;
 }

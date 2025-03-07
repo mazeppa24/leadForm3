@@ -1,9 +1,10 @@
 import {Component, computed, effect, inject, signal} from '@angular/core';
 import {ImageProfileResult, ImageProfileService} from "../core/services/profile-image/image-profile.service";
-import {InitialAppParamsService} from "../modules/initial-app-params/initial-app-params.service";
+import {InitialAppParamsService} from "../core/services/initial-app-params/initial-app-params.service";
 import {TranslateModule} from "@ngx-translate/core";
 import {NxAvatarComponent} from "@aposin/ng-aquila/avatar";
 import {NxFigureComponent} from "@aposin/ng-aquila/image";
+import {NxHeadlineComponent} from "@aposin/ng-aquila/headline";
 
 @Component({
   selector: 'app-profile-image',
@@ -11,7 +12,8 @@ import {NxFigureComponent} from "@aposin/ng-aquila/image";
   imports: [
     TranslateModule,
     NxAvatarComponent,
-    NxFigureComponent
+    NxFigureComponent,
+    NxHeadlineComponent
   ],
   templateUrl: './profile-image.component.html',
   styleUrl: './profile-image.component.scss'

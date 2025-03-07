@@ -2,6 +2,7 @@ import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 // import {HomeComponent} from "./modules/demohome/home.component";
 import {LeadFormHostComponent} from "./lead-form-host/lead-form-host.component";
+import {ErrorPageComponent} from "./modules/error-page/error-page.component";
 
 
 // -------- App Pages ---------------------
@@ -17,6 +18,13 @@ export const appRoutes: Routes = [
   {
     path: 'home',
     component: LeadFormHostComponent
+  },
+  {
+    path: 'error/:code',
+    component: ErrorPageComponent
+  },
+  {
+    path: "**", redirectTo: 'error/404'
   }
 
 ];

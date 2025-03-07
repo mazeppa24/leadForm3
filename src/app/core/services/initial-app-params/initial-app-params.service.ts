@@ -1,7 +1,10 @@
 import { inject, Injectable, signal } from "@angular/core";
 import { ActivatedRoute, NavigationEnd, ParamMap, Router, } from "@angular/router";
 import { filter, forkJoin, map, skipWhile, switchMap, take, } from "rxjs";
-import { Agency, AgencyListService, } from "../../core/services/agency-list.service";
+import { Agency, AgencyListService, } from "../agency/agency-list.service";
+import {environment} from "../../../../environments/environment";
+import * as constants from "node:constants";
+import {DEFAULT_LANGUAGE} from "../../../constants";
 
 /**
  * The InitialAppParamsService gets certain query parameters on page load
@@ -11,7 +14,7 @@ import { Agency, AgencyListService, } from "../../core/services/agency-list.serv
  *
  * Please see interface InitialAppParams for details on which ones will be stored
  *
- * 
+ *
  * For correct results inject this service on application component level
  * otherwise it might have not catch the query parameters on the page load.
  * ```js
@@ -54,22 +57,24 @@ export class InitialAppParamsService {
   });
 
   constructor() {
-    console.log('InitialAppParamsService constructor called');
-    
+
+    // Process initial parameters on NavigationEnd event
     const initialSetup$ = this.router.events.pipe(
       filter((event) => event instanceof NavigationEnd),
       take(1),
       switchMap(() => {
-        console.log('NavigationEnd event received, processing initial parameters');
+        //console.log('NavigationEnd event received, processing initial parameters');
         return this.processInitialParameters();
       }),
     );
+    // Subscribe to the initialSetup$ observable so other services and components can react to it after initialization
+    // before executing any logic depending on the query params (e.g. AdobeAnalytics)
     initialSetup$.subscribe({
       next: (params) => {
-        console.log('Initial parameters processed successfully:', params);
+        //console.log('Initial parameters processed successfully:', params);
         this.initialAppParams.set(params);
         this.isInitialized.set(true);
-        console.log('InitialAppParamsService initialization complete');
+        //console.log('InitialAppParamsService initialization complete');
       },
       error: (error) => {
         console.error(
@@ -78,7 +83,7 @@ export class InitialAppParamsService {
         );
         // Even on error, mark as initialized to prevent blocking the application
         this.isInitialized.set(true);
-        console.log('InitialAppParamsService initialization failed but marked as complete');
+        console.error('InitialAppParamsService initialization failed but marked as complete');
       },
     });
   }
@@ -103,6 +108,10 @@ export class InitialAppParamsService {
     let agency: Agency | undefined;
     if (agencyParam) {
       agency = agencies.find((agency) => agency.id == agencyParam);
+      if(!agency) {
+        console.warn("Agency with id", agencyParam, "not found in agency list. Setting fallback-agency");
+        agency = agencies.find((agency) => agency.id == environment.defaultAgencyID);
+      }
     }
     let email: string | undefined;
     try {
@@ -110,14 +119,22 @@ export class InitialAppParamsService {
     } catch (e) {
       console.warn("Invalid base64 email encoding:", e);
     }
+
+    let debug: boolean |  undefined;
+
+    if (params.has("debug") && params.get("debug") == "true") {
+      debug = true;
+    } else {
+      debug = false;
+    }
     return {
-      debug: params.get("debug") === "true",
-      language: params.get("language") || undefined,
+      debug: debug,
+      language: params.get("lang") || DEFAULT_LANGUAGE,
       preselectedEmail: email,
       preselectedByDParam: params.has("d"),
       campaign: params.get("cp") || undefined,
       externalLink: params.get("extLnk") || undefined,
-      agency: agency,
+      agency: agency || undefined,
       campaignSource: params.get('sc') || undefined,
       werber: params.get('we') || undefined,
     };

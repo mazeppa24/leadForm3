@@ -25,8 +25,8 @@ export const environment = {
   imageApi: 'https://www.allianz.ch/crp/dsp_bff_lead4you/ext/v1/agentinfo/',
   imageApiSecret: '9b3fa5379cb9e332aa1798fd9ef5563929aa570b64897a93055a3ad34601fe2e',
 
-  mailServer: 'https://allianz-mailer.lespals.com/sendmail_prod.php',
-  defaultEmail: 'leadswettbewerb@allianz.ch',
+  defaultEmail: 'scs@allianz.ch',
+  defaultAgencyID: "AS720",
 
   /* Build Settings */
   deployUrl: 'https://www.allianz.ch/content/dam/onemarketing/azch/allianz/leadform/',

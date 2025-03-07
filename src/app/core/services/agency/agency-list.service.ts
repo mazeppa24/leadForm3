@@ -1,7 +1,8 @@
 import {APP_BASE_HREF} from '@angular/common';
-import { HttpClient } from '@angular/common/http';
+import {HttpClient} from '@angular/common/http';
 import {Inject, Injectable} from '@angular/core';
 import {BehaviorSubject, map} from 'rxjs';
+import {environment} from "../../../../environments/environment";
 
 
 @Injectable({
@@ -41,9 +42,13 @@ export class AgencyListService {
     )
   }
 
-  public getById(id: string): Agency[]{
-    //return this.agencyList.getValue().find(a => a.id === id)
-    return this.agencyList.getValue().filter(a => a.id === id)
+  public getById(id: string): Agency[] {
+    // provide fallback in case a GA id (e.g. from Flux validation) is not found
+    if (this.agencyList.getValue().filter(a => a.id === id).length > 0) {
+      return this.agencyList.getValue().filter(a => a.id === id)
+    } else {
+      return this.agencyList.getValue().filter(a => a.id === environment.defaultAgencyID)
+    }
   }
 
   public getByZip(zipCode: string): Agency[] {
